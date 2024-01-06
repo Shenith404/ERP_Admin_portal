@@ -1,0 +1,301 @@
+﻿@using Domain.Entities
+@page "/add-user"
+@using Application.Users.Interfaces
+@using System.ComponentModel.DataAnnotations
+@using FluentValidation
+@using UI.ImageUploader
+
+@rendermode InteractiveServer 
+
+
+@inject NavigationManager nav
+@inject IAddUserUseCase addUserUseCase;
+@inject ISnackbar Snackbar
+
+
+
+
+
+
+<MudCard>
+	<MudForm Model="@model" @ref="@form" Validation="@(userValidator.ValidateValue)" ValidationDelay="0">
+		<MudCardContent>
+				<MudTextField @bind-Value="model.RegNo"                              
+							  For="@(() => model.RegNo)"
+							  Immediate="true"
+							  Label="Register No" />
+
+				<MudTextField @bind-Value="model.Email"
+							  For="@(() => model.Email)"
+							  Immediate="true"
+							  Label="Email" />
+
+				<MudTextField @bind-Value="model.FirstName"
+							  For="@(() => model.FirstName)"
+							  Immediate="true"
+							  Label="FirstName" />
+
+				<MudTextField @bind-Value="model.Address1"
+							  For="@(() => model.Address1)"
+							  Immediate="true"
+							  Label="Address1" />
+
+				<MudTextField @bind-Value="model.Address2"
+							  For="@(() => model.Address2)"
+							  Immediate="true"
+							  Label="Address2" />
+                 <MudTextField @bind-Value="model.City"
+							  For="@(() => model.City)"
+							  Immediate="true"
+							  Label="City" />
+
+		
+        </MudCardContent>
+
+	</MudForm>
+    <MudCardActions>
+
+
+        <MudButton Variant="Variant.Filled" Color="Color.Primary" Class="ml-auto" OnClick="@(async () => await Submit())">
+                    Create
+        </MudButton>
+    </MudCardActions>
+</MudCard>
+
+
+<MudButton Disabled="@_processing" OnClick="ProcessSomething" Variant="Variant.Filled" Color="Color.Primary">
+    @if (_processing)
+    {
+        <MudProgressCircular Class="ms-n1" Size="Size.Small" Indeterminate="true"/>
+        <MudText Class="ms-2">Processing</MudText>
+    }
+    else
+    {
+        <MudText>Click me</MudText>
+    }
+</MudButton>
+
+
+
+
+@code {
+    private bool _processing = false;
+
+    async Task ProcessSomething()
+    {
+        _processing = true;
+        await Task.Delay(2000);
+        _processing = false;
+    }
+}
+
+@code {
+   
+    private void OnClick()
+    {
+        Snackbar.Add
+        (
+            @<div>
+                <h3>Hi from a RenderFragment</h3>
+                <ul>
+                    <li>Here's a regular item</li>
+                    <li>Here's a <strong>bold item</strong></li>
+                    <li>Here's an <em>italicized item</em></li>
+                </ul>
+            </div>
+    );
+    }
+
+    MudForm form;
+
+    OrderModelFluentValidator userValidator = new OrderModelFluentValidator();
+
+
+    User model = new User();
+  
+
+
+
+
+
+    private async Task Submit()
+    {
+        await form.Validate();
+
+        if (form.IsValid)
+        {
+            _processing = true;
+            await addUserUseCase.ExcuteAsync(model);
+            _processing = false;
+            nav.NavigateTo("/");
+        }
+    }
+
+    /// <summary>
+    /// A standard AbstractValidator which contains multiple rules and can be shared with the back end API
+    /// </summary>
+    /// <typeparam name="OrderModel"></typeparam>
+    public class OrderModelFluentValidator : AbstractValidator<User>
+    {
+        public OrderModelFluentValidator()
+        {
+            RuleFor(x => x.RegNo)
+                .NotEmpty()
+                .Length(1,100);
+
+            RuleFor(x => x.Email)
+                .Cascade(CascadeMode.Stop)
+                .NotEmpty()
+                .EmailAddress()
+                .MustAsync(async (value, cancellationToken) => await IsUniqueAsync(value));
+
+            RuleFor(x => x.FirstName)
+                .NotEmpty()
+                .Length(1, 100);
+
+
+            RuleFor(x => x.LastName)
+                .NotEmpty()
+                .Length(1,100);
+
+            RuleFor(x => x.Address1)
+                .NotEmpty()
+                .Length(1,100);
+
+            RuleFor(x => x.Address2)
+                .NotEmpty()
+                .Length(1,100);
+
+            RuleFor(x => x.City)
+                .NotEmpty()
+                .Length(1,100);
+
+        }
+
+        private async Task<bool> IsUniqueAsync(string email)
+        {
+            // Simulates a long running http call
+            await Task.Delay(2000);
+            return email.ToLower() != "test@test.com";
+        }
+
+        public Func<object, string, Task<IEnumerable<string>>> ValidateValue => async (model, propertyName) =>
+        {
+            var result = await ValidateAsync(ValidationContext<User>.CreateWithOptions((User)model, x => x.IncludeProperties(propertyName)));
+            if (result.IsValid)
+                return Array.Empty<string>();
+            return result.Errors.Select(e => e.ErrorMessage);
+        };
+    }
+
+
+
+
+
+
+
+    /// <summary>
+    /// 
+    /// 
+    /// </summary>
+    /// 
+
+
+	
+}
+
+
+@* 
+<EditForm Model="@model" OnValidSubmit="Submit">
+    <DataAnnotationsValidator />
+    <MudGrid>
+        <MudItem xs="12" sm="7">
+            <MudCard>
+                <MudCardContent>
+                    <MudTextField Label="RegNo" HelperText="Repeat the password" Class="mt-3"
+                                  @bind-Value="model.RegNo" For="@(() => model.RegNo)" />
+
+                    <MudTextField Label="First name" HelperText="Max. 8 characters"
+                                  @bind-Value="model.FirstName" For="@(() => model.FirstName)" />
+                     <MudTextField Label="LastName" HelperText="Choose a strong password" Class="mt-3"
+                                  @bind-Value="model.LastName" For="@(() => model.LastName)"  />
+                     </MudCardContent>
+                      <MudTextField Label="Email" Class="mt-3"
+                                  @bind-Value="model.Email" For="@(() => model.Email)" />
+                  
+                <MudCardActions>
+                    <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Primary" Class="ml-auto">Register</MudButton>
+                </MudCardActions>
+            </MudCard>
+        </MudItem>
+        <MudItem xs="12" sm="5">
+            <MudPaper Class="pa-4 mud-height-full">
+                <MudText Typo="Typo.subtitle2">Validation Summary</MudText>
+                @if (success)
+                {
+                    <MudText Color="Color.Success">Success</MudText>
+                }
+                else
+                {
+                    <MudText Color="@Color.Error">
+                        <ValidationSummary />
+                    </MudText>
+                }
+            </MudPaper>
+        </MudItem>
+        <MudItem xs="12">
+            <MudText Typo="Typo.body2" Align="Align.Center">
+                Fill out the form correctly to see the success message.
+            </MudText>
+        </MudItem>
+    </MudGrid>
+</EditForm>
+
+@code {
+    [Parameter]
+    public int id { get; set; }
+
+    [SupplyParameterFromForm]
+    User model { get; set; } = new User();
+
+    bool success;
+
+    public class RegisterAccountForm
+    {
+        [Required]
+        [StringLength(8, ErrorMessage = "Name length can't be more than 8.")]
+        public string FirstName { get; set; }
+
+        [Required]
+        [EmailAddress]
+        public string Email { get; set; }
+
+        [Required]
+        [StringLength(8, ErrorMessage = "Name length can't be more than 8.")]
+        public string LastName { get; set; }
+
+        [Required]
+        [StringLength(8, ErrorMessage = "Name length can't be more than 8.")]
+        public string RegNo { get; set; }
+
+    }
+
+
+
+    private async Task Submit(EditContext context)
+    {
+        try
+        {
+            
+            await addUserUseCase.ExcuteAsync(model);
+            nav.NavigateTo("/");
+        }
+        catch(Exception e)
+        {
+          
+        }
+
+
+    }
+
+} *@

@@ -1,0 +1,386 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\ERP_Admin_portal\\ERP.Admin\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8C9FD34C-0610-427A-A69C-23D361927209}|UI\\UI.csproj|e:\\erp_admin_portal\\erp.admin\\ui\\components\\pages\\edit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8C9FD34C-0610-427A-A69C-23D361927209}|UI\\UI.csproj|solutionrelative:ui\\components\\pages\\edit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CC2CA5C-9C27-4E16-BC0E-6C7CCEDC4ED1}|ERP.Admin.Pgsql\\ERP.Admin.Pgsql.csproj|e:\\erp_admin_portal\\erp.admin\\erp.admin.pgsql\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CC2CA5C-9C27-4E16-BC0E-6C7CCEDC4ED1}|ERP.Admin.Pgsql\\ERP.Admin.Pgsql.csproj|solutionrelative:erp.admin.pgsql\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C9FD34C-0610-427A-A69C-23D361927209}|UI\\UI.csproj|e:\\erp_admin_portal\\erp.admin\\ui\\imageuploader\\imageuploader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C9FD34C-0610-427A-A69C-23D361927209}|UI\\UI.csproj|solutionrelative:ui\\imageuploader\\imageuploader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C9FD34C-0610-427A-A69C-23D361927209}|UI\\UI.csproj|e:\\erp_admin_portal\\erp.admin\\ui\\imageuploader\\iimageuploader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C9FD34C-0610-427A-A69C-23D361927209}|UI\\UI.csproj|solutionrelative:ui\\imageuploader\\iimageuploader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C9FD34C-0610-427A-A69C-23D361927209}|UI\\UI.csproj|e:\\erp_admin_portal\\erp.admin\\ui\\components\\pages\\view.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8C9FD34C-0610-427A-A69C-23D361927209}|UI\\UI.csproj|solutionrelative:ui\\components\\pages\\view.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C9FD34C-0610-427A-A69C-23D361927209}|UI\\UI.csproj|e:\\erp_admin_portal\\erp.admin\\ui\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8C9FD34C-0610-427A-A69C-23D361927209}|UI\\UI.csproj|solutionrelative:ui\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C9FD34C-0610-427A-A69C-23D361927209}|UI\\UI.csproj|e:\\erp_admin_portal\\erp.admin\\ui\\components\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8C9FD34C-0610-427A-A69C-23D361927209}|UI\\UI.csproj|solutionrelative:ui\\components\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C9FD34C-0610-427A-A69C-23D361927209}|UI\\UI.csproj|e:\\erp_admin_portal\\erp.admin\\ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C9FD34C-0610-427A-A69C-23D361927209}|UI\\UI.csproj|solutionrelative:ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C9FD34C-0610-427A-A69C-23D361927209}|UI\\UI.csproj|e:\\erp_admin_portal\\erp.admin\\ui\\components\\pages\\add.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8C9FD34C-0610-427A-A69C-23D361927209}|UI\\UI.csproj|solutionrelative:ui\\components\\pages\\add.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C9FD34C-0610-427A-A69C-23D361927209}|UI\\UI.csproj|e:\\erp_admin_portal\\erp.admin\\ui\\components\\pages\\weather.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8C9FD34C-0610-427A-A69C-23D361927209}|UI\\UI.csproj|solutionrelative:ui\\components\\pages\\weather.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C9FD34C-0610-427A-A69C-23D361927209}|UI\\UI.csproj|e:\\erp_admin_portal\\erp.admin\\ui\\components\\pages\\waiting.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8C9FD34C-0610-427A-A69C-23D361927209}|UI\\UI.csproj|solutionrelative:ui\\components\\pages\\waiting.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CC2CA5C-9C27-4E16-BC0E-6C7CCEDC4ED1}|ERP.Admin.Pgsql\\ERP.Admin.Pgsql.csproj|e:\\erp_admin_portal\\erp.admin\\erp.admin.pgsql\\pgsqldbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CC2CA5C-9C27-4E16-BC0E-6C7CCEDC4ED1}|ERP.Admin.Pgsql\\ERP.Admin.Pgsql.csproj|solutionrelative:erp.admin.pgsql\\pgsqldbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C3F2C96-BEF3-4173-A8FC-533D9FAB4604}|Application\\Application.csproj|e:\\erp_admin_portal\\erp.admin\\application\\interface\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C3F2C96-BEF3-4173-A8FC-533D9FAB4604}|Application\\Application.csproj|solutionrelative:application\\interface\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C9FD34C-0610-427A-A69C-23D361927209}|UI\\UI.csproj|e:\\erp_admin_portal\\erp.admin\\ui\\ui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{8C9FD34C-0610-427A-A69C-23D361927209}|UI\\UI.csproj|solutionrelative:ui\\ui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C3F2C96-BEF3-4173-A8FC-533D9FAB4604}|Application\\Application.csproj|e:\\erp_admin_portal\\erp.admin\\application\\users\\interfaces\\iadduserusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C3F2C96-BEF3-4173-A8FC-533D9FAB4604}|Application\\Application.csproj|solutionrelative:application\\users\\interfaces\\iadduserusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C3F2C96-BEF3-4173-A8FC-533D9FAB4604}|Application\\Application.csproj|e:\\erp_admin_portal\\erp.admin\\application\\users\\interfaces\\ideleteuserusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C3F2C96-BEF3-4173-A8FC-533D9FAB4604}|Application\\Application.csproj|solutionrelative:application\\users\\interfaces\\ideleteuserusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C3F2C96-BEF3-4173-A8FC-533D9FAB4604}|Application\\Application.csproj|e:\\erp_admin_portal\\erp.admin\\application\\users\\usecases\\deleteuserusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C3F2C96-BEF3-4173-A8FC-533D9FAB4604}|Application\\Application.csproj|solutionrelative:application\\users\\usecases\\deleteuserusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C3F2C96-BEF3-4173-A8FC-533D9FAB4604}|Application\\Application.csproj|e:\\erp_admin_portal\\erp.admin\\application\\users\\usecases\\adduserusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C3F2C96-BEF3-4173-A8FC-533D9FAB4604}|Application\\Application.csproj|solutionrelative:application\\users\\usecases\\adduserusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0883AE49-093C-44E4-8276-EBDAE1F7F310}|Domain\\Domain.csproj|e:\\erp_admin_portal\\erp.admin\\domain\\entities\\base\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0883AE49-093C-44E4-8276-EBDAE1F7F310}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\base\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0883AE49-093C-44E4-8276-EBDAE1F7F310}|Domain\\Domain.csproj|e:\\erp_admin_portal\\erp.admin\\domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0883AE49-093C-44E4-8276-EBDAE1F7F310}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C9FD34C-0610-427A-A69C-23D361927209}|UI\\UI.csproj|e:\\erp_admin_portal\\erp.admin\\ui\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8C9FD34C-0610-427A-A69C-23D361927209}|UI\\UI.csproj|solutionrelative:ui\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C3F2C96-BEF3-4173-A8FC-533D9FAB4604}|Application\\Application.csproj|e:\\erp_admin_portal\\erp.admin\\application\\users\\usecases\\getusersbynameusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C3F2C96-BEF3-4173-A8FC-533D9FAB4604}|Application\\Application.csproj|solutionrelative:application\\users\\usecases\\getusersbynameusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP.Admin\\UI\\Components\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "UI\\Components\\Layout\\MainLayout.razor",
+              "ToolTip": "E:\\ERP_Admin_portal\\ERP.Admin\\UI\\Components\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "UI\\Components\\Layout\\MainLayout.razor",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABMAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-01-05T17:24:13.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IImageUploader.cs",
+              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP.Admin\\UI\\ImageUploader\\IImageUploader.cs",
+              "RelativeDocumentMoniker": "UI\\ImageUploader\\IImageUploader.cs",
+              "ToolTip": "E:\\ERP_Admin_portal\\ERP.Admin\\UI\\ImageUploader\\IImageUploader.cs",
+              "RelativeToolTip": "UI\\ImageUploader\\IImageUploader.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-03T18:29:53.097Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ImageUploader.cs",
+              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP.Admin\\UI\\ImageUploader\\ImageUploader.cs",
+              "RelativeDocumentMoniker": "UI\\ImageUploader\\ImageUploader.cs",
+              "ToolTip": "E:\\ERP_Admin_portal\\ERP.Admin\\UI\\ImageUploader\\ImageUploader.cs",
+              "RelativeToolTip": "UI\\ImageUploader\\ImageUploader.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAA0wB0AAABnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-01T19:25:51.757Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "View.razor",
+              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP.Admin\\UI\\Components\\Pages\\View.razor",
+              "RelativeDocumentMoniker": "UI\\Components\\Pages\\View.razor",
+              "ToolTip": "E:\\ERP_Admin_portal\\ERP.Admin\\UI\\Components\\Pages\\View.razor",
+              "RelativeToolTip": "UI\\Components\\Pages\\View.razor",
+              "ViewState": "AQIAAJAAAAAAAAAAAAAAACgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2023-12-30T07:29:59.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Counter.razor",
+              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP.Admin\\UI\\Components\\Pages\\Counter.razor",
+              "RelativeDocumentMoniker": "UI\\Components\\Pages\\Counter.razor",
+              "ToolTip": "E:\\ERP_Admin_portal\\ERP.Admin\\UI\\Components\\Pages\\Counter.razor",
+              "RelativeToolTip": "UI\\Components\\Pages\\Counter.razor",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAADwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2023-12-30T07:43:18.942Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Edit.razor",
+              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP.Admin\\UI\\Components\\Pages\\Edit.razor",
+              "RelativeDocumentMoniker": "UI\\Components\\Pages\\Edit.razor",
+              "ToolTip": "E:\\ERP_Admin_portal\\ERP.Admin\\UI\\Components\\Pages\\Edit.razor",
+              "RelativeToolTip": "UI\\Components\\Pages\\Edit.razor",
+              "ViewState": "AQIAABMAAAAAAAAAAAAuwBsAAABVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-01-01T19:28:40.235Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP.Admin\\ERP.Admin.Pgsql\\UserRepository.cs",
+              "RelativeDocumentMoniker": "ERP.Admin.Pgsql\\UserRepository.cs",
+              "ToolTip": "E:\\ERP_Admin_portal\\ERP.Admin\\ERP.Admin.Pgsql\\UserRepository.cs",
+              "RelativeToolTip": "ERP.Admin.Pgsql\\UserRepository.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAA0wEgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-30T07:24:01.712Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP.Admin\\UI\\Program.cs",
+              "RelativeDocumentMoniker": "UI\\Program.cs",
+              "ToolTip": "E:\\ERP_Admin_portal\\ERP.Admin\\UI\\Program.cs",
+              "RelativeToolTip": "UI\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-30T07:28:08.432Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Add.razor",
+              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP.Admin\\UI\\Components\\Pages\\Add.razor",
+              "RelativeDocumentMoniker": "UI\\Components\\Pages\\Add.razor",
+              "ToolTip": "E:\\ERP_Admin_portal\\ERP.Admin\\UI\\Components\\Pages\\Add.razor",
+              "RelativeToolTip": "UI\\Components\\Pages\\Add.razor",
+              "ViewState": "AQIAAMAAAAAAAAAAAAAnwMwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2023-12-30T12:22:18.287Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Weather.razor",
+              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP.Admin\\UI\\Components\\Pages\\Weather.razor",
+              "RelativeDocumentMoniker": "UI\\Components\\Pages\\Weather.razor",
+              "ToolTip": "E:\\ERP_Admin_portal\\ERP.Admin\\UI\\Components\\Pages\\Weather.razor",
+              "RelativeToolTip": "UI\\Components\\Pages\\Weather.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2023-12-30T07:39:52.368Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Waiting.razor",
+              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP.Admin\\UI\\Components\\Pages\\Waiting.razor",
+              "RelativeDocumentMoniker": "UI\\Components\\Pages\\Waiting.razor",
+              "ToolTip": "E:\\ERP_Admin_portal\\ERP.Admin\\UI\\Components\\Pages\\Waiting.razor",
+              "RelativeToolTip": "UI\\Components\\Pages\\Waiting.razor",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAABgAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2023-12-30T07:40:21.557Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PgsqlDbContext.cs",
+              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP.Admin\\ERP.Admin.Pgsql\\PgsqlDbContext.cs",
+              "RelativeDocumentMoniker": "ERP.Admin.Pgsql\\PgsqlDbContext.cs",
+              "ToolTip": "E:\\ERP_Admin_portal\\ERP.Admin\\ERP.Admin.Pgsql\\PgsqlDbContext.cs",
+              "RelativeToolTip": "ERP.Admin.Pgsql\\PgsqlDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-02T16:03:55.736Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP.Admin\\Application\\Interface\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "Application\\Interface\\IUserRepository.cs",
+              "ToolTip": "E:\\ERP_Admin_portal\\ERP.Admin\\Application\\Interface\\IUserRepository.cs",
+              "RelativeToolTip": "Application\\Interface\\IUserRepository.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAuwA4AAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-30T07:23:18.413Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UI.csproj",
+              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP.Admin\\UI\\UI.csproj",
+              "RelativeDocumentMoniker": "UI\\UI.csproj",
+              "ToolTip": "E:\\ERP_Admin_portal\\ERP.Admin\\UI\\UI.csproj",
+              "RelativeToolTip": "UI\\UI.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-01-02T16:06:11.58Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IAddUserUseCase.cs",
+              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP.Admin\\Application\\Users\\Interfaces\\IAddUserUseCase.cs",
+              "RelativeDocumentMoniker": "Application\\Users\\Interfaces\\IAddUserUseCase.cs",
+              "ToolTip": "E:\\ERP_Admin_portal\\ERP.Admin\\Application\\Users\\Interfaces\\IAddUserUseCase.cs",
+              "RelativeToolTip": "Application\\Users\\Interfaces\\IAddUserUseCase.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-02T16:04:01.804Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IDeleteUserUseCase.cs",
+              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP.Admin\\Application\\Users\\Interfaces\\IDeleteUserUseCase.cs",
+              "RelativeDocumentMoniker": "Application\\Users\\Interfaces\\IDeleteUserUseCase.cs",
+              "ToolTip": "E:\\ERP_Admin_portal\\ERP.Admin\\Application\\Users\\Interfaces\\IDeleteUserUseCase.cs",
+              "RelativeToolTip": "Application\\Users\\Interfaces\\IDeleteUserUseCase.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-30T07:30:46.615Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DeleteUserUseCase.cs",
+              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP.Admin\\Application\\Users\\UseCases\\DeleteUserUseCase.cs",
+              "RelativeDocumentMoniker": "Application\\Users\\UseCases\\DeleteUserUseCase.cs",
+              "ToolTip": "E:\\ERP_Admin_portal\\ERP.Admin\\Application\\Users\\UseCases\\DeleteUserUseCase.cs",
+              "RelativeToolTip": "Application\\Users\\UseCases\\DeleteUserUseCase.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAQwAoAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-30T07:21:50.624Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AddUserUseCase.cs",
+              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP.Admin\\Application\\Users\\UseCases\\AddUserUseCase.cs",
+              "RelativeDocumentMoniker": "Application\\Users\\UseCases\\AddUserUseCase.cs",
+              "ToolTip": "E:\\ERP_Admin_portal\\ERP.Admin\\Application\\Users\\UseCases\\AddUserUseCase.cs",
+              "RelativeToolTip": "Application\\Users\\UseCases\\AddUserUseCase.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-02T16:04:04.796Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "User.cs",
+              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP.Admin\\Domain\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\User.cs",
+              "ToolTip": "E:\\ERP_Admin_portal\\ERP.Admin\\Domain\\Entities\\User.cs",
+              "RelativeToolTip": "Domain\\Entities\\User.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAAAoAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-30T11:35:05.931Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Home.razor",
+              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP.Admin\\UI\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "UI\\Components\\Pages\\Home.razor",
+              "ToolTip": "E:\\ERP_Admin_portal\\ERP.Admin\\UI\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "UI\\Components\\Pages\\Home.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2023-12-30T07:51:15.95Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP.Admin\\Domain\\Entities\\Base\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Base\\BaseEntity.cs",
+              "ToolTip": "E:\\ERP_Admin_portal\\ERP.Admin\\Domain\\Entities\\Base\\BaseEntity.cs",
+              "RelativeToolTip": "Domain\\Entities\\Base\\BaseEntity.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABkAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-30T09:02:49.276Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "GetUsersByNameUseCase.cs",
+              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP.Admin\\Application\\Users\\UseCases\\GetUsersByNameUseCase.cs",
+              "RelativeDocumentMoniker": "Application\\Users\\UseCases\\GetUsersByNameUseCase.cs",
+              "ToolTip": "E:\\ERP_Admin_portal\\ERP.Admin\\Application\\Users\\UseCases\\GetUsersByNameUseCase.cs",
+              "RelativeToolTip": "Application\\Users\\UseCases\\GetUsersByNameUseCase.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-30T07:20:53.547Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

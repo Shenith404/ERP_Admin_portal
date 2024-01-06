@@ -1,0 +1,11 @@
+E:\ERP_Admin_portal\Domain\Infastructure\bin\Debug\net8.0\Infastructure.deps.json
+E:\ERP_Admin_portal\Domain\Infastructure\bin\Debug\net8.0\Infastructure.dll
+E:\ERP_Admin_portal\Domain\Infastructure\bin\Debug\net8.0\Infastructure.pdb
+E:\ERP_Admin_portal\Domain\Infastructure\obj\Debug\net8.0\Infastructure.GeneratedMSBuildEditorConfig.editorconfig
+E:\ERP_Admin_portal\Domain\Infastructure\obj\Debug\net8.0\Infastructure.AssemblyInfoInputs.cache
+E:\ERP_Admin_portal\Domain\Infastructure\obj\Debug\net8.0\Infastructure.AssemblyInfo.cs
+E:\ERP_Admin_portal\Domain\Infastructure\obj\Debug\net8.0\Infastructure.csproj.CoreCompileInputs.cache
+E:\ERP_Admin_portal\Domain\Infastructure\obj\Debug\net8.0\Infastructure.dll
+E:\ERP_Admin_portal\Domain\Infastructure\obj\Debug\net8.0\refint\Infastructure.dll
+E:\ERP_Admin_portal\Domain\Infastructure\obj\Debug\net8.0\Infastructure.pdb
+E:\ERP_Admin_portal\Domain\Infastructure\obj\Debug\net8.0\ref\Infastructure.dll

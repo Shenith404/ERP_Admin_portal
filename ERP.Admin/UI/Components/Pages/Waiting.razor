@@ -1,0 +1,25 @@
+﻿@page "/waiting"
+
+<style>
+    .center-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh; /* Set the container to full height of the viewport */
+    }
+
+    .center-container2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 10vh;
+    }
+</style>
+
+
+<div class="center-container">
+    <div>
+        <MudProgressCircular Color="Color.Primary" Style="height: 70px; width: 70px;" Indeterminate="true" />
+        <div class="center-container2">Please Wait</div>
+    </div>
+</div>
