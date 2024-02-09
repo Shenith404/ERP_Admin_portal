@@ -1,0 +1,291 @@
+﻿@page "/profile"
+
+@using Domain.Entities
+@using Application.Users.Interfaces
+@using System.ComponentModel.DataAnnotations
+@using FluentValidation
+@using UI.ImageUploader
+@using Application.Users.UseCases
+@using Microsoft.AspNetCore.Authorization
+
+@attribute [Authorize]
+@rendermode InteractiveServer 
+
+
+@inject NavigationManager nav
+@inject IEditUserUseCase editUserUserCase
+@inject IGetUserByIdUseCase getUserByIdUseCase
+@inject IImageUploader imageUploader
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@inject IGetUserByEmailUseCase getUserByEmailUsercase
+
+
+
+
+
+
+
+
+
+<MudCard>
+    <MudAvatar  Style="height:120px; width:120px; font-size:2rem;" >
+                             <MudImage Src="@CurrenImageUrl" Alt="Mony the dog" Elevation="25"  Class="rounded-lg">
+       
+                             </MudImage>
+                        </MudAvatar>
+    <MudFileUpload style="margin:10px "  Accept=".png, .jpg ,.jpeg"  T="IBrowserFile" OnFilesChanged="OnChange">
+    <ButtonTemplate>
+        <MudIconButton Style="height:50px; width:50px; font-size:2rem;" HtmlTag="label"
+                       Color="Color.Dark"
+                       Icon="@Icons.Material.Filled.PhotoCamera"
+                       for="@context.Id">
+                       
+        </MudIconButton>
+    </ButtonTemplate>
+    </MudFileUpload>
+	<MudForm Model="@model" @ref="@form" Validation="@(userValidator.ValidateValue)" ValidationDelay="0">
+		<MudCardContent>
+				<MudTextField @bind-Value="model.RegNo"                              
+							  For="@(() => model.RegNo)"
+							  Immediate="true"
+							  Label="Register No" 
+                              Disabled="true"/>
+
+				<MudTextField @bind-Value="model.Email"
+							  For="@(() => model.Email)"
+							  Immediate="true"
+                               Disabled="true"
+							  Label="Email" />
+
+				<MudTextField @bind-Value="model.FirstName"
+							  For="@(() => model.FirstName)"
+							  Immediate="true"
+							  Label="FirstName" />
+
+				<MudTextField @bind-Value="model.Address1"
+							  For="@(() => model.Address1)"
+							  Immediate="true"
+							  Label="Address1" />
+
+				<MudTextField @bind-Value="model.Address2"
+							  For="@(() => model.Address2)"
+							  Immediate="true"
+							  Label="Address2" />
+
+		
+        </MudCardContent>
+
+	</MudForm>
+    <MudCardActions>
+
+
+        
+        <MudButton Disabled="@_processing" OnClick="@(async () => await Submit())" Class="ml-auto" Variant="Variant.Filled" Color="Color.Primary">
+            @if (_processing)
+            {
+                <MudProgressCircular Class="ms-n1" Size="Size.Small" Indeterminate="true"/>
+                <MudText Class="ms-2">Processing</MudText>
+            }
+            else
+            {
+                <MudText>Update</MudText>
+            }
+</MudButton>
+    </MudCardActions>
+</MudCard>
+
+
+
+
+
+
+<h1>@message</h1>
+
+
+
+
+@code {
+
+
+
+
+    List<ImageFile> filesBase64 = new List<ImageFile>();
+    List<string> imageList = new List<string>();
+    string message = "InputFile";
+    bool isDisabled = false;
+    private string? CurrenImageUrl { get; set; }
+    private bool IsImageValid { get; set; } = true;
+   
+    private bool _processing { get; set; } = false;
+
+    MudForm form;
+
+    OrderModelFluentValidator userValidator = new OrderModelFluentValidator();
+
+
+    User model = new User();
+
+
+    private AuthenticationState authenticationState;
+
+    protected override async Task OnInitializedAsync()
+    {
+
+        authenticationState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+
+        var user = authenticationState.User;
+        var userIdentity = user.Identity;
+        string email = user.Identity.Name;
+
+        model = await getUserByEmailUsercase.ExecuteAsync(email);
+
+        CurrenImageUrl = model.ImageUrl;
+    }
+
+
+    
+    
+
+
+    // get image
+    async Task OnChange(InputFileChangeEventArgs e)
+    {
+        var files = e.GetMultipleFiles();
+        foreach (var file in files)
+        {
+            if (file.Size < 1024 * 1024)
+            {
+                var buf = new byte[file.Size];
+                using (var stream = file.OpenReadStream())
+                {
+                    await stream.ReadAsync(buf);
+                }
+                filesBase64.Add(new ImageFile { base64data = Convert.ToBase64String(buf), contentType = file.ContentType, fileName = file.Name });
+                foreach (var item in filesBase64)
+                {
+                    CurrenImageUrl = $"data:{item.contentType};base64,{item.base64data}" ;
+                }
+                IsImageValid = true;
+                message = "image Added";
+
+            }
+            else
+            {
+                IsImageValid = false;
+                message = "image size should be less than 1MB";
+                CurrenImageUrl = "";
+            }
+        }
+        // message = "Click UPLOAD to continue";
+    }
+
+
+
+
+    //Save the Image
+    async Task Upload()
+    {
+        isDisabled = true;
+        imageList = await imageUploader.Post(filesBase64.ToArray());
+        isDisabled = false;
+        message = $"{filesBase64.Count} files uploaded";
+        filesBase64.Clear();
+        IsImageValid = true;
+
+    }
+
+
+    
+
+
+
+
+    //Save User
+
+    private async Task Submit()
+    {  _processing = true;
+
+        try
+        {
+            await form.Validate();
+
+            if (form.IsValid && IsImageValid)
+            {
+              
+                
+                await Upload();
+                foreach(var imageName in imageList)
+                {
+                    model.ImageUrl = $"/Images/{imageList.First()}";
+                }
+
+                await editUserUserCase.ExcuteAsync(model);
+                _processing = false;
+                nav.NavigateTo("/");
+            }
+        }
+        catch
+        {
+
+        }
+        _processing = false;
+    }
+
+    //Validation 
+
+    public class OrderModelFluentValidator : AbstractValidator<User>
+    {
+        public OrderModelFluentValidator()
+        {
+            RuleFor(x => x.RegNo)
+                .NotEmpty()
+                .Length(1,100);
+
+            RuleFor(x => x.Email)
+                .Cascade(CascadeMode.Stop)
+                .NotEmpty()
+                .EmailAddress()
+                .MustAsync(async (value, cancellationToken) => await IsUniqueAsync(value));
+
+            RuleFor(x => x.FirstName)
+                .NotEmpty()
+                .Length(1, 100);
+
+
+            RuleFor(x => x.LastName)
+                .NotEmpty()
+                .Length(1,100);
+
+            RuleFor(x => x.Address1)
+                .NotEmpty()
+                .Length(1,100);
+
+            RuleFor(x => x.Address2)
+                .NotEmpty()
+                .Length(1,100);
+
+        }
+
+        private async Task<bool> IsUniqueAsync(string email)
+        {
+            // Simulates a long running http call
+            await Task.Delay(2000);
+            return email.ToLower() != "test@test.com";
+        }
+
+        public Func<object, string, Task<IEnumerable<string>>> ValidateValue => async (model, propertyName) =>
+        {
+            var result = await ValidateAsync(ValidationContext<User>.CreateWithOptions((User)model, x => x.IncludeProperties(propertyName)));
+            if (result.IsValid)
+                return Array.Empty<string>();
+            return result.Errors.Select(e => e.ErrorMessage);
+        };
+    }
+
+
+
+   
+
+	
+}
+

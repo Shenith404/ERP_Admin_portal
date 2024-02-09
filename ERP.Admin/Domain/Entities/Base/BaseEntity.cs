@@ -11,8 +11,8 @@ namespace Domain.Entities.Base
     public class BaseEntity
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public Guid Id { get; set; }
+      //  [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public string Id { get; set; }
 
         [Required]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -23,6 +23,6 @@ namespace Domain.Entities.Base
         public DateTime? UpdatedOn { get; set; }
 
         [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
-        public DateTime LastAccessed { get; set; }
+        public DateTime ?LastAccessed { get; set; }
     }
 }

@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\AuthenticateUsers\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AuthenticateUsers.bundle.scp.css",
+      "PackagePath": "staticwebassets\\AuthenticateUsers.bundle.scp.css"
+    },
+    {
+      "Id": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\AuthenticateUsers\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\AuthenticateUsers\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\AuthenticateUsers\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\AuthenticateUsers\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.AuthenticateUsers.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.AuthenticateUsers.props",
+      "PackagePath": "build\\AuthenticateUsers.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.AuthenticateUsers.props",
+      "PackagePath": "buildMultiTargeting\\AuthenticateUsers.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.AuthenticateUsers.props",
+      "PackagePath": "buildTransitive\\AuthenticateUsers.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

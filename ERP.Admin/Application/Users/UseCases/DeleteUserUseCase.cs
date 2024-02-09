@@ -17,7 +17,7 @@ namespace Application.Users.UseCases
             _userRepository = userRepository;
         }
 
-        public async Task ExecuteAsync(Guid userId)
+        public async Task ExecuteAsync(string userId)
         {
             await _userRepository.DeleteUserAsync(userId);
         }

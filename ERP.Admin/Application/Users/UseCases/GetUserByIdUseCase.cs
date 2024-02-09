@@ -18,7 +18,7 @@ namespace Application.Users.UseCases
             this._userRepository = userRepository;
         }
 
-        public async Task<User> ExecuteAsync(Guid userId)
+        public async Task<User> ExecuteAsync(string userId)
         {
             return await _userRepository.GetUserById(userId);
         }

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\ERP_Admin_portal\\ERP.Admin\\Domain\\Domain.csproj",
+      "projectUniqueName": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "E:\\ERP_Admin_portal\\ERP.Admin\\Domain\\Domain.csproj",
+      "projectPath": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\Domain\\Domain.csproj",
       "packagesPath": "C:\\Users\\SHENITH\\.nuget\\packages\\",
-      "outputPath": "E:\\ERP_Admin_portal\\ERP.Admin\\Domain\\obj\\",
+      "outputPath": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\SHENITH\\AppData\\Roaming\\NuGet\\NuGet.Config",

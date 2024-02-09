@@ -2334,11 +2334,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\ERP_Admin_portal\\ERP.Admin\\ERP.Admin.Pgsql\\ERP.Admin.Pgsql.csproj",
+      "projectUniqueName": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.Admin.Pgsql\\ERP.Admin.Pgsql.csproj",
       "projectName": "ERP.Admin.Pgsql",
-      "projectPath": "E:\\ERP_Admin_portal\\ERP.Admin\\ERP.Admin.Pgsql\\ERP.Admin.Pgsql.csproj",
+      "projectPath": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.Admin.Pgsql\\ERP.Admin.Pgsql.csproj",
       "packagesPath": "C:\\Users\\SHENITH\\.nuget\\packages\\",
-      "outputPath": "E:\\ERP_Admin_portal\\ERP.Admin\\ERP.Admin.Pgsql\\obj\\",
+      "outputPath": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.Admin.Pgsql\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\SHENITH\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2355,8 +2355,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "E:\\ERP_Admin_portal\\ERP.Admin\\Application\\Application.csproj": {
-              "projectPath": "E:\\ERP_Admin_portal\\ERP.Admin\\Application\\Application.csproj"
+            "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\Application\\Application.csproj": {
+              "projectPath": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\Application\\Application.csproj"
             }
           }
         }

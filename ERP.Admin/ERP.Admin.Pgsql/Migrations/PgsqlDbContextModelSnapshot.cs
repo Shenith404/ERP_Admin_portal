@@ -24,9 +24,8 @@ namespace ERP.Admin.Pgsql.Migrations
 
             modelBuilder.Entity("Domain.Entities.User", b =>
                 {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
+                    b.Property<string>("Id")
+                        .HasColumnType("text");
 
                     b.Property<string>("Address1")
                         .HasColumnType("text");
@@ -58,7 +57,7 @@ namespace ERP.Admin.Pgsql.Migrations
                     b.Property<string>("ImageUrl")
                         .HasColumnType("text");
 
-                    b.Property<DateTime>("LastAccessed")
+                    b.Property<DateTime?>("LastAccessed")
                         .ValueGeneratedOnAddOrUpdate()
                         .HasColumnType("timestamp with time zone");
 

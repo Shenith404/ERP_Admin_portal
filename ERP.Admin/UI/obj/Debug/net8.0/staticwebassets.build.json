@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "bvtpt2WGhNsN+D6DDJPELy2toDLR3fjiHa+o1oE1Y14=",
+  "Hash": "iMsvmPlMnPesQTXdqDVSiDrb523U9V3bHJwNVAsRmXA=",
   "Source": "UI",
   "BasePath": "_content/UI",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "UI\\wwwroot",
       "Source": "UI",
-      "ContentRoot": "E:\\ERP_Admin_portal\\ERP.Admin\\UI\\wwwroot\\",
+      "ContentRoot": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\UI\\wwwroot\\",
       "BasePath": "_content/UI",
       "Pattern": "**"
     }
@@ -55,10 +55,10 @@
       "OriginalItemSpec": "C:\\Users\\SHENITH\\.nuget\\packages\\mudblazor\\6.11.2\\staticwebassets\\MudBlazor.min.js"
     },
     {
-      "Identity": "E:\\ERP_Admin_portal\\ERP.Admin\\UI\\obj\\Debug\\net8.0\\scopedcss\\bundle\\UI.styles.css",
+      "Identity": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\UI\\obj\\Debug\\net8.0\\scopedcss\\bundle\\UI.styles.css",
       "SourceId": "UI",
       "SourceType": "Computed",
-      "ContentRoot": "E:\\ERP_Admin_portal\\ERP.Admin\\UI\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\UI\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/UI",
       "RelativePath": "UI.styles.css",
       "AssetKind": "All",
@@ -71,13 +71,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "E:\\ERP_Admin_portal\\ERP.Admin\\UI\\obj\\Debug\\net8.0\\scopedcss\\bundle\\UI.styles.css"
+      "OriginalItemSpec": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\UI\\obj\\Debug\\net8.0\\scopedcss\\bundle\\UI.styles.css"
     },
     {
-      "Identity": "E:\\ERP_Admin_portal\\ERP.Admin\\UI\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\UI.bundle.scp.css",
+      "Identity": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\UI\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\UI.bundle.scp.css",
       "SourceId": "UI",
       "SourceType": "Computed",
-      "ContentRoot": "E:\\ERP_Admin_portal\\ERP.Admin\\UI\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\UI\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/UI",
       "RelativePath": "UI.bundle.scp.css",
       "AssetKind": "All",
@@ -90,13 +90,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "E:\\ERP_Admin_portal\\ERP.Admin\\UI\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\UI.bundle.scp.css"
+      "OriginalItemSpec": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\UI\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\UI.bundle.scp.css"
     },
     {
-      "Identity": "E:\\ERP_Admin_portal\\ERP.Admin\\UI\\wwwroot\\app.css",
+      "Identity": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\UI\\wwwroot\\app.css",
       "SourceId": "UI",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ERP_Admin_portal\\ERP.Admin\\UI\\wwwroot\\",
+      "ContentRoot": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\UI\\wwwroot\\",
       "BasePath": "_content/UI",
       "RelativePath": "app.css",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\app.css"
     },
     {
-      "Identity": "E:\\ERP_Admin_portal\\ERP.Admin\\UI\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Identity": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\UI\\wwwroot\\bootstrap\\bootstrap.min.css",
       "SourceId": "UI",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ERP_Admin_portal\\ERP.Admin\\UI\\wwwroot\\",
+      "ContentRoot": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\UI\\wwwroot\\",
       "BasePath": "_content/UI",
       "RelativePath": "bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "E:\\ERP_Admin_portal\\ERP.Admin\\UI\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\UI\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "UI",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ERP_Admin_portal\\ERP.Admin\\UI\\wwwroot\\",
+      "ContentRoot": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\UI\\wwwroot\\",
       "BasePath": "_content/UI",
       "RelativePath": "bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "E:\\ERP_Admin_portal\\ERP.Admin\\UI\\wwwroot\\favicon.png",
+      "Identity": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\UI\\wwwroot\\favicon.png",
       "SourceId": "UI",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ERP_Admin_portal\\ERP.Admin\\UI\\wwwroot\\",
+      "ContentRoot": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\UI\\wwwroot\\",
       "BasePath": "_content/UI",
       "RelativePath": "favicon.png",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.png"
     },
     {
-      "Identity": "E:\\ERP_Admin_portal\\ERP.Admin\\UI\\wwwroot\\Images\\1bd733beb09144e9926eea0b00116352-WhatsApp Image 2023-12-27 at 18.33.20.jpeg",
+      "Identity": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\UI\\wwwroot\\Images\\1bd733beb09144e9926eea0b00116352-WhatsApp Image 2023-12-27 at 18.33.20.jpeg",
       "SourceId": "UI",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ERP_Admin_portal\\ERP.Admin\\UI\\wwwroot\\",
+      "ContentRoot": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\UI\\wwwroot\\",
       "BasePath": "_content/UI",
       "RelativePath": "Images/1bd733beb09144e9926eea0b00116352-WhatsApp Image 2023-12-27 at 18.33.20.jpeg",
       "AssetKind": "All",
@@ -188,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\1bd733beb09144e9926eea0b00116352-WhatsApp Image 2023-12-27 at 18.33.20.jpeg"
     },
     {
-      "Identity": "E:\\ERP_Admin_portal\\ERP.Admin\\UI\\wwwroot\\Images\\38e3eb965489413c9360c8cd0ce31559-google.png",
+      "Identity": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\UI\\wwwroot\\Images\\38e3eb965489413c9360c8cd0ce31559-google.png",
       "SourceId": "UI",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ERP_Admin_portal\\ERP.Admin\\UI\\wwwroot\\",
+      "ContentRoot": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\UI\\wwwroot\\",
       "BasePath": "_content/UI",
       "RelativePath": "Images/38e3eb965489413c9360c8cd0ce31559-google.png",
       "AssetKind": "All",
@@ -207,10 +207,29 @@
       "OriginalItemSpec": "wwwroot\\Images\\38e3eb965489413c9360c8cd0ce31559-google.png"
     },
     {
-      "Identity": "E:\\ERP_Admin_portal\\ERP.Admin\\UI\\wwwroot\\Images\\92022de81dd34ed29d69495ccd4b33dc-WhatsApp Image 2024-01-03 at 20.53.12.jpeg",
+      "Identity": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\UI\\wwwroot\\Images\\8e95dbe6e5664d84a7b061c413848535-WhatsApp Image 2023-12-27 at 18.33.20.jpeg",
       "SourceId": "UI",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\ERP_Admin_portal\\ERP.Admin\\UI\\wwwroot\\",
+      "ContentRoot": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\UI\\wwwroot\\",
+      "BasePath": "_content/UI",
+      "RelativePath": "Images/8e95dbe6e5664d84a7b061c413848535-WhatsApp Image 2023-12-27 at 18.33.20.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\8e95dbe6e5664d84a7b061c413848535-WhatsApp Image 2023-12-27 at 18.33.20.jpeg"
+    },
+    {
+      "Identity": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\UI\\wwwroot\\Images\\92022de81dd34ed29d69495ccd4b33dc-WhatsApp Image 2024-01-03 at 20.53.12.jpeg",
+      "SourceId": "UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\UI\\wwwroot\\",
       "BasePath": "_content/UI",
       "RelativePath": "Images/92022de81dd34ed29d69495ccd4b33dc-WhatsApp Image 2024-01-03 at 20.53.12.jpeg",
       "AssetKind": "All",
@@ -224,6 +243,44 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\92022de81dd34ed29d69495ccd4b33dc-WhatsApp Image 2024-01-03 at 20.53.12.jpeg"
+    },
+    {
+      "Identity": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\UI\\wwwroot\\Images\\b844ecaad78a42a897f74bb9e54b27d5-1.png",
+      "SourceId": "UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\UI\\wwwroot\\",
+      "BasePath": "_content/UI",
+      "RelativePath": "Images/b844ecaad78a42a897f74bb9e54b27d5-1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\b844ecaad78a42a897f74bb9e54b27d5-1.png"
+    },
+    {
+      "Identity": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\UI\\wwwroot\\Images\\be017bf0525b4c45922e40efc2b439d7-2-25.jpg",
+      "SourceId": "UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\UI\\wwwroot\\",
+      "BasePath": "_content/UI",
+      "RelativePath": "Images/be017bf0525b4c45922e40efc2b439d7-2-25.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\be017bf0525b4c45922e40efc2b439d7-2-25.jpg"
     }
   ]
 }

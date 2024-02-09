@@ -32,7 +32,7 @@ namespace ERP.Admin.Pgsql
         }
 
 
-        public async Task DeleteUserAsync(Guid id)
+        public async Task DeleteUserAsync(string id)
         {
             using var _context = _dbContextFactory.CreateDbContext();
             User? user = await _context.Users.FirstOrDefaultAsync(x => x.Id == id);
@@ -41,6 +41,7 @@ namespace ERP.Admin.Pgsql
             {
                 _context.Users.Remove(user);
                 _context.SaveChanges();
+               
             }
 
 
@@ -58,10 +59,23 @@ namespace ERP.Admin.Pgsql
             return await _context.Users.ToListAsync();
         }
 
+        public async Task<User> GetUserByEmail(string email)
+        {
+            using var _context = _dbContextFactory.CreateDbContext();
+            User? user = await _context.Users.FirstOrDefaultAsync(x => x.Email == email);
 
+            if (user != null)
+            {
+                return user;
 
+            }
+            else
+            {
+                return null;
+            }
+        }
 
-        public async Task<User> GetUserById(Guid id)
+        public async Task<User> GetUserById(string id)
         {
 
             using var _context = _dbContextFactory.CreateDbContext();
