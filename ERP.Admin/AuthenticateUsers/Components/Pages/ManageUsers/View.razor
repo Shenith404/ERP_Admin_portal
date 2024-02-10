@@ -81,9 +81,23 @@
 </MudTable>
 
 
+ @*Edit Daialog *@
 
+<MudDialog @bind-IsVisible="visible" Options="dialogOptions">
+    
+    <DialogContent>
+         <div class="d-flex justify-content-end">
+            <MudButton OnClick="CloseDialog">x</MudButton>
+        </div>
+       
+        <AuthenticateUsers.Components.Pages.ManageUsers.Edit id="@id"/>
+    </DialogContent>
+    
+</MudDialog>
 
-
+@code {
+    
+}
 
 
 
@@ -93,7 +107,12 @@
     public string searchString = "";
     public User ?selectedUser = new User();
     private bool isLoading = false;
+    private bool visible;
+    private int rating;
+    private string id;
+    void CloseDialog() => visible = false;
 
+    private DialogOptions dialogOptions = new() { MaxWidth = MaxWidth.Medium, FullWidth = true ,CloseButton = true};
 
 
     protected override async Task OnInitializedAsync()
@@ -115,7 +134,10 @@
     // Navigate to Edit page
     async  void NavigateToEdit(User user)
     {
-        nav.NavigateTo($"/edit-user/{user.Id}");
+        id = user.Id;
+        visible = true;
+
+        
 
     }
 

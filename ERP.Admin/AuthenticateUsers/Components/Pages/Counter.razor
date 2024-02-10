@@ -1,4 +1,6 @@
 ﻿@page "/counter"
+@inject IDialogService DialogService
+
 @rendermode InteractiveServer
 
 <PageTitle>Counter</PageTitle>
@@ -15,5 +17,21 @@
     private void IncrementCount()
     {
         currentCount++;
+    }
+}
+
+
+
+
+@inject ISnackbar Snackbar
+
+<MudButton Variant="Variant.Filled" Color="Color.Primary" @onclick="show">
+    Open Snackbar
+</MudButton>
+@code{
+    public void show(){
+        Snackbar.Clear();
+        Snackbar.Configuration.PositionClass = Defaults.Classes.Position.TopRight;
+        Snackbar.Add("message", Severity.Success);
     }
 }

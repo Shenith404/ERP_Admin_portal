@@ -1,5 +1,6 @@
-﻿@using Domain.Entities
+﻿
 @page "/add-user"
+@using Domain.Entities
 @using Application.Users.Interfaces
 @using System.ComponentModel.DataAnnotations
 @using FluentValidation
@@ -83,10 +84,7 @@
         await Task.Delay(2000);
         _processing = false;
     }
-}
 
-@code {
-   
     private void OnClick()
     {
         Snackbar.Add

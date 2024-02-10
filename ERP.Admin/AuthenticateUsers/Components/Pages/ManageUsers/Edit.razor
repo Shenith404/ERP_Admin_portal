@@ -1,4 +1,4 @@
-﻿@page "/edit-user/"
+﻿
 
 @using Domain.Entities
 @using Application.Users.Interfaces
@@ -11,7 +11,7 @@
 
 @rendermode InteractiveServer 
 
-
+@inject ISnackbar Snackbar
 @inject NavigationManager nav
 @inject IEditUserUseCase editUserUserCase
 @inject IGetUserByIdUseCase getUserByIdUseCase
@@ -20,13 +20,7 @@
 
 
 
-
-
-
-
-
-
-<MudCard>
+<MudCard Elevation="0">
     <MudAvatar  Style="height:120px; width:120px; font-size:2rem;" >
                              <MudImage Src="@CurrenImageUrl" Alt="Mony the dog" Elevation="25"  Class="rounded-lg">
        
@@ -53,7 +47,8 @@
 				<MudTextField @bind-Value="model.Email"
 							  For="@(() => model.Email)"
 							  Immediate="true"
-							  Label="Email" />
+							  Label="Email"
+                              Disabled="true"/>
 
 				<MudTextField @bind-Value="model.FirstName"
 							  For="@(() => model.FirstName)"
@@ -221,8 +216,11 @@
 
                 await editUserUserCase.ExcuteAsync(model);
                 _processing = false;
+                Snackbar.Clear();
+                Snackbar.Configuration.PositionClass = Defaults.Classes.Position.TopRight;
+                Snackbar.Add("User Updated",MudBlazor.Severity.Success);
                 
-                nav.NavigateTo("/");
+                    
             }
         }
         catch
@@ -231,6 +229,8 @@
         }
         _processing = false;
     }
+
+   
 
     //Validation 
 
