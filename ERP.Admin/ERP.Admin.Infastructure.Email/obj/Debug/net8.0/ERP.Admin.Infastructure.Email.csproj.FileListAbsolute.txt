@@ -1,0 +1,13 @@
+E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.Admin.Infastructure.Email\bin\Debug\net8.0\ERP.Admin.Infastructure.Email.deps.json
+E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.Admin.Infastructure.Email\bin\Debug\net8.0\ERP.Admin.Infastructure.Email.dll
+E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.Admin.Infastructure.Email\bin\Debug\net8.0\ERP.Admin.Infastructure.Email.pdb
+E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.Admin.Infastructure.Email\obj\Debug\net8.0\ERP.Admin.Infastructure.Email.csproj.AssemblyReference.cache
+E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.Admin.Infastructure.Email\obj\Debug\net8.0\ERP.Admin.Infastructure.Email.GeneratedMSBuildEditorConfig.editorconfig
+E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.Admin.Infastructure.Email\obj\Debug\net8.0\ERP.Admin.Infastructure.Email.AssemblyInfoInputs.cache
+E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.Admin.Infastructure.Email\obj\Debug\net8.0\ERP.Admin.Infastructure.Email.AssemblyInfo.cs
+E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.Admin.Infastructure.Email\obj\Debug\net8.0\ERP.Admin.Infastructure.Email.csproj.CoreCompileInputs.cache
+E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.Admin.Infastructure.Email\obj\Debug\net8.0\ERP.Admin.Infastructure.Email.sourcelink.json
+E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.Admin.Infastructure.Email\obj\Debug\net8.0\ERP.Admin.Infastructure.Email.dll
+E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.Admin.Infastructure.Email\obj\Debug\net8.0\refint\ERP.Admin.Infastructure.Email.dll
+E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.Admin.Infastructure.Email\obj\Debug\net8.0\ERP.Admin.Infastructure.Email.pdb
+E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.Admin.Infastructure.Email\obj\Debug\net8.0\ref\ERP.Admin.Infastructure.Email.dll

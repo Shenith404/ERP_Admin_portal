@@ -4,6 +4,7 @@ using Application.Users.UseCases;
 using AuthenticateUsers.Components;
 using AuthenticateUsers.Components.Account;
 using AuthenticateUsers.Data;
+using ERP.Admin.Infastructure.Email.EmailSender;
 using ERP.Admin.Pgsql;
 using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Identity;
@@ -71,6 +72,7 @@ builder.Services.AddScoped<IImageUploader, ImageUploader>();
 builder.Services.AddScoped<IGetUsersByNameUseCase
     , GetUsersByNameUseCase>();
 builder.Services.AddScoped<IGetUserByEmailUseCase, GetUserByEmailUseCase>();
+builder.Services.AddScoped<IVerificationEmailSender, VerificationEmailSender>();
 
 var app = builder.Build();
 

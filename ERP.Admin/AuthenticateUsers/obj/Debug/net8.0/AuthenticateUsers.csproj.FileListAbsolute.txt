@@ -155,3 +155,8 @@ E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\AuthenticateUsers\bin\Debug\net8.
 E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\AuthenticateUsers\bin\Debug\net8.0\Application.pdb
 E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\AuthenticateUsers\bin\Debug\net8.0\ERP.Admin.Pgsql.pdb
 E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\AuthenticateUsers\bin\Debug\net8.0\Domain.pdb
+E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\AuthenticateUsers\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\AuthenticateUsers\bin\Debug\net8.0\MailKit.dll
+E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\AuthenticateUsers\bin\Debug\net8.0\MimeKit.dll
+E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\AuthenticateUsers\bin\Debug\net8.0\ERP.Admin.Infastructure.Email.dll
+E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\AuthenticateUsers\bin\Debug\net8.0\ERP.Admin.Infastructure.Email.pdb

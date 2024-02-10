@@ -35,6 +35,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Application\Application.csproj" />
+    <ProjectReference Include="..\ERP.Admin.Infastructure.Email\ERP.Admin.Infastructure.Email.csproj" />
     <ProjectReference Include="..\ERP.Admin.Pgsql\ERP.Admin.Pgsql.csproj" />
   </ItemGroup>
 

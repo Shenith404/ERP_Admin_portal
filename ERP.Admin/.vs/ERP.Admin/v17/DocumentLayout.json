@@ -3,6 +3,42 @@
   "WorkspaceRootPath": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8DA65581-9604-4C5C-A4B1-1F9FEC77DB74}|AuthenticateUsers\\AuthenticateUsers.csproj|e:\\erp_admin_portal\\erp_admin_portal\\erp.admin\\authenticateusers\\components\\account\\pages\\forgotpassword.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8DA65581-9604-4C5C-A4B1-1F9FEC77DB74}|AuthenticateUsers\\AuthenticateUsers.csproj|solutionrelative:authenticateusers\\components\\account\\pages\\forgotpassword.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DA65581-9604-4C5C-A4B1-1F9FEC77DB74}|AuthenticateUsers\\AuthenticateUsers.csproj|e:\\erp_admin_portal\\erp_admin_portal\\erp.admin\\authenticateusers\\components\\account\\pages\\forgotpasswordconfirmation.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8DA65581-9604-4C5C-A4B1-1F9FEC77DB74}|AuthenticateUsers\\AuthenticateUsers.csproj|solutionrelative:authenticateusers\\components\\account\\pages\\forgotpasswordconfirmation.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DA65581-9604-4C5C-A4B1-1F9FEC77DB74}|AuthenticateUsers\\AuthenticateUsers.csproj|e:\\erp_admin_portal\\erp_admin_portal\\erp.admin\\authenticateusers\\components\\account\\pages\\confirmemailchange.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8DA65581-9604-4C5C-A4B1-1F9FEC77DB74}|AuthenticateUsers\\AuthenticateUsers.csproj|solutionrelative:authenticateusers\\components\\account\\pages\\confirmemailchange.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DA65581-9604-4C5C-A4B1-1F9FEC77DB74}|AuthenticateUsers\\AuthenticateUsers.csproj|e:\\erp_admin_portal\\erp_admin_portal\\erp.admin\\authenticateusers\\components\\account\\pages\\confirmemail.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8DA65581-9604-4C5C-A4B1-1F9FEC77DB74}|AuthenticateUsers\\AuthenticateUsers.csproj|solutionrelative:authenticateusers\\components\\account\\pages\\confirmemail.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DA65581-9604-4C5C-A4B1-1F9FEC77DB74}|AuthenticateUsers\\AuthenticateUsers.csproj|e:\\erp_admin_portal\\erp_admin_portal\\erp.admin\\authenticateusers\\components\\account\\pages\\registerconfirmation.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8DA65581-9604-4C5C-A4B1-1F9FEC77DB74}|AuthenticateUsers\\AuthenticateUsers.csproj|solutionrelative:authenticateusers\\components\\account\\pages\\registerconfirmation.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DA65581-9604-4C5C-A4B1-1F9FEC77DB74}|AuthenticateUsers\\AuthenticateUsers.csproj|e:\\erp_admin_portal\\erp_admin_portal\\erp.admin\\authenticateusers\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DA65581-9604-4C5C-A4B1-1F9FEC77DB74}|AuthenticateUsers\\AuthenticateUsers.csproj|solutionrelative:authenticateusers\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADF6662B-578A-4FFF-9D43-1D63F5F46638}|ERP.Admin.Infastructure.Email\\ERP.Admin.Infastructure.Email.csproj|e:\\erp_admin_portal\\erp_admin_portal\\erp.admin\\erp.admin.infastructure.email\\emailsender\\verificationemailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADF6662B-578A-4FFF-9D43-1D63F5F46638}|ERP.Admin.Infastructure.Email\\ERP.Admin.Infastructure.Email.csproj|solutionrelative:erp.admin.infastructure.email\\emailsender\\verificationemailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADF6662B-578A-4FFF-9D43-1D63F5F46638}|ERP.Admin.Infastructure.Email\\ERP.Admin.Infastructure.Email.csproj|e:\\erp_admin_portal\\erp_admin_portal\\erp.admin\\erp.admin.infastructure.email\\emailsender\\iverificationemailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADF6662B-578A-4FFF-9D43-1D63F5F46638}|ERP.Admin.Infastructure.Email\\ERP.Admin.Infastructure.Email.csproj|solutionrelative:erp.admin.infastructure.email\\emailsender\\iverificationemailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADF6662B-578A-4FFF-9D43-1D63F5F46638}|ERP.Admin.Infastructure.Email\\ERP.Admin.Infastructure.Email.csproj|e:\\erp_admin_portal\\erp_admin_portal\\erp.admin\\erp.admin.infastructure.email\\erp.admin.infastructure.email.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{ADF6662B-578A-4FFF-9D43-1D63F5F46638}|ERP.Admin.Infastructure.Email\\ERP.Admin.Infastructure.Email.csproj|solutionrelative:erp.admin.infastructure.email\\erp.admin.infastructure.email.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8DA65581-9604-4C5C-A4B1-1F9FEC77DB74}|AuthenticateUsers\\AuthenticateUsers.csproj|e:\\erp_admin_portal\\erp_admin_portal\\erp.admin\\authenticateusers\\components\\account\\pages\\register.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{8DA65581-9604-4C5C-A4B1-1F9FEC77DB74}|AuthenticateUsers\\AuthenticateUsers.csproj|solutionrelative:authenticateusers\\components\\account\\pages\\register.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -23,10 +59,6 @@
       "RelativeMoniker": "D:0:0:{8DA65581-9604-4C5C-A4B1-1F9FEC77DB74}|AuthenticateUsers\\AuthenticateUsers.csproj|solutionrelative:authenticateusers\\components\\pages\\manageusers\\view.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8DA65581-9604-4C5C-A4B1-1F9FEC77DB74}|AuthenticateUsers\\AuthenticateUsers.csproj|e:\\erp_admin_portal\\erp_admin_portal\\erp.admin\\authenticateusers\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DA65581-9604-4C5C-A4B1-1F9FEC77DB74}|AuthenticateUsers\\AuthenticateUsers.csproj|solutionrelative:authenticateusers\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8DA65581-9604-4C5C-A4B1-1F9FEC77DB74}|AuthenticateUsers\\AuthenticateUsers.csproj|e:\\erp_admin_portal\\erp_admin_portal\\erp.admin\\authenticateusers\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{8DA65581-9604-4C5C-A4B1-1F9FEC77DB74}|AuthenticateUsers\\AuthenticateUsers.csproj|solutionrelative:authenticateusers\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -42,8 +74,99 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ForgotPassword.razor",
+              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\AuthenticateUsers\\Components\\Account\\Pages\\ForgotPassword.razor",
+              "RelativeDocumentMoniker": "AuthenticateUsers\\Components\\Account\\Pages\\ForgotPassword.razor",
+              "ToolTip": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\AuthenticateUsers\\Components\\Account\\Pages\\ForgotPassword.razor",
+              "RelativeToolTip": "AuthenticateUsers\\Components\\Account\\Pages\\ForgotPassword.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-10T20:31:49.059Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ForgotPasswordConfirmation.razor",
+              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\AuthenticateUsers\\Components\\Account\\Pages\\ForgotPasswordConfirmation.razor",
+              "RelativeDocumentMoniker": "AuthenticateUsers\\Components\\Account\\Pages\\ForgotPasswordConfirmation.razor",
+              "ToolTip": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\AuthenticateUsers\\Components\\Account\\Pages\\ForgotPasswordConfirmation.razor",
+              "RelativeToolTip": "AuthenticateUsers\\Components\\Account\\Pages\\ForgotPasswordConfirmation.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-10T20:31:44.475Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ConfirmEmailChange.razor",
+              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\AuthenticateUsers\\Components\\Account\\Pages\\ConfirmEmailChange.razor",
+              "RelativeDocumentMoniker": "AuthenticateUsers\\Components\\Account\\Pages\\ConfirmEmailChange.razor",
+              "ToolTip": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\AuthenticateUsers\\Components\\Account\\Pages\\ConfirmEmailChange.razor",
+              "RelativeToolTip": "AuthenticateUsers\\Components\\Account\\Pages\\ConfirmEmailChange.razor",
+              "ViewState": "AQIAADwAAAAAAAAAAAAAAEQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-10T20:31:32.576Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ConfirmEmail.razor",
+              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\AuthenticateUsers\\Components\\Account\\Pages\\ConfirmEmail.razor",
+              "RelativeDocumentMoniker": "AuthenticateUsers\\Components\\Account\\Pages\\ConfirmEmail.razor",
+              "ToolTip": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\AuthenticateUsers\\Components\\Account\\Pages\\ConfirmEmail.razor",
+              "RelativeToolTip": "AuthenticateUsers\\Components\\Account\\Pages\\ConfirmEmail.razor",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-10T20:30:40.285Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "VerificationEmailSender.cs",
+              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.Admin.Infastructure.Email\\EmailSender\\VerificationEmailSender.cs",
+              "RelativeDocumentMoniker": "ERP.Admin.Infastructure.Email\\EmailSender\\VerificationEmailSender.cs",
+              "ToolTip": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.Admin.Infastructure.Email\\EmailSender\\VerificationEmailSender.cs",
+              "RelativeToolTip": "ERP.Admin.Infastructure.Email\\EmailSender\\VerificationEmailSender.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAA0wAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-10T20:12:32.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IVerificationEmailSender.cs",
+              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.Admin.Infastructure.Email\\EmailSender\\IVerificationEmailSender.cs",
+              "RelativeDocumentMoniker": "ERP.Admin.Infastructure.Email\\EmailSender\\IVerificationEmailSender.cs",
+              "ToolTip": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.Admin.Infastructure.Email\\EmailSender\\IVerificationEmailSender.cs",
+              "RelativeToolTip": "ERP.Admin.Infastructure.Email\\EmailSender\\IVerificationEmailSender.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-10T20:11:42.596Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ERP.Admin.Infastructure.Email",
+              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.Admin.Infastructure.Email\\ERP.Admin.Infastructure.Email.csproj",
+              "RelativeDocumentMoniker": "ERP.Admin.Infastructure.Email\\ERP.Admin.Infastructure.Email.csproj",
+              "ToolTip": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.Admin.Infastructure.Email\\ERP.Admin.Infastructure.Email.csproj",
+              "RelativeToolTip": "ERP.Admin.Infastructure.Email\\ERP.Admin.Infastructure.Email.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-02-10T20:10:40.105Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -54,13 +177,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
+              "Title": "RegisterConfirmation.razor",
+              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\AuthenticateUsers\\Components\\Account\\Pages\\RegisterConfirmation.razor",
+              "RelativeDocumentMoniker": "AuthenticateUsers\\Components\\Account\\Pages\\RegisterConfirmation.razor",
+              "ToolTip": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\AuthenticateUsers\\Components\\Account\\Pages\\RegisterConfirmation.razor",
+              "RelativeToolTip": "AuthenticateUsers\\Components\\Account\\Pages\\RegisterConfirmation.razor",
+              "ViewState": "AQIAAC4AAAAAAAAAAAA3wEMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-10T07:12:45.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Register.razor",
               "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\AuthenticateUsers\\Components\\Account\\Pages\\Register.razor",
               "RelativeDocumentMoniker": "AuthenticateUsers\\Components\\Account\\Pages\\Register.razor",
               "ToolTip": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\AuthenticateUsers\\Components\\Account\\Pages\\Register.razor",
               "RelativeToolTip": "AuthenticateUsers\\Components\\Account\\Pages\\Register.razor",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABkAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAMBSwBkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-02-09T19:09:35.108Z",
               "EditorCaption": ""
@@ -73,13 +209,14 @@
               "RelativeDocumentMoniker": "AuthenticateUsers\\Program.cs",
               "ToolTip": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\AuthenticateUsers\\Program.cs",
               "RelativeToolTip": "AuthenticateUsers\\Program.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAB0AAAAAAAAA",
+              "ViewState": "AQIAADoAAAAAAAAAAAAAAEoAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-09T18:31:02.922Z"
+              "WhenOpened": "2024-02-09T18:31:02.922Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 15,
               "Title": "Dialog.razor",
               "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\AuthenticateUsers\\Components\\Pages\\Dialog.razor",
               "RelativeDocumentMoniker": "AuthenticateUsers\\Components\\Pages\\Dialog.razor",
@@ -87,23 +224,25 @@
               "RelativeToolTip": "AuthenticateUsers\\Components\\Pages\\Dialog.razor",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-02-09T17:24:47.945Z"
+              "WhenOpened": "2024-02-09T17:24:47.945Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 12,
               "Title": "Counter.razor",
               "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\AuthenticateUsers\\Components\\Pages\\Counter.razor",
               "RelativeDocumentMoniker": "AuthenticateUsers\\Components\\Pages\\Counter.razor",
               "ToolTip": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\AuthenticateUsers\\Components\\Pages\\Counter.razor",
               "RelativeToolTip": "AuthenticateUsers\\Components\\Pages\\Counter.razor",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAAB8AAAADAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAMBSwB8AAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-02-09T17:21:45.341Z"
+              "WhenOpened": "2024-02-09T17:21:45.341Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 14,
               "Title": "MainLayout.razor",
               "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\AuthenticateUsers\\Components\\Layout\\MainLayout.razor",
               "RelativeDocumentMoniker": "AuthenticateUsers\\Components\\Layout\\MainLayout.razor",
@@ -111,11 +250,12 @@
               "RelativeToolTip": "AuthenticateUsers\\Components\\Layout\\MainLayout.razor",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-02-09T17:14:05.509Z"
+              "WhenOpened": "2024-02-09T17:14:05.509Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 13,
               "Title": "View.razor",
               "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\AuthenticateUsers\\Components\\Pages\\ManageUsers\\View.razor",
               "RelativeDocumentMoniker": "AuthenticateUsers\\Components\\Pages\\ManageUsers\\View.razor",
@@ -123,31 +263,34 @@
               "RelativeToolTip": "AuthenticateUsers\\Components\\Pages\\ManageUsers\\View.razor",
               "ViewState": "AQIAAEYAAAAAAAAAAAAqwFoAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-02-09T17:12:41.428Z"
+              "WhenOpened": "2024-02-09T17:12:41.428Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 10,
               "Title": "Edit.razor",
               "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\AuthenticateUsers\\Components\\Pages\\ManageUsers\\Edit.razor",
               "RelativeDocumentMoniker": "AuthenticateUsers\\Components\\Pages\\ManageUsers\\Edit.razor",
               "ToolTip": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\AuthenticateUsers\\Components\\Pages\\ManageUsers\\Edit.razor",
               "RelativeToolTip": "AuthenticateUsers\\Components\\Pages\\ManageUsers\\Edit.razor",
-              "ViewState": "AQIAANUAAAAAAAAAAAAAANwAAABGAAAA",
+              "ViewState": "AQIAANIAAAAAAAAAAMBSwNwAAABGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-02-09T17:12:04.78Z"
+              "WhenOpened": "2024-02-09T17:12:04.78Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 11,
               "Title": "Add.razor",
               "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\AuthenticateUsers\\Components\\Pages\\ManageUsers\\Add.razor",
               "RelativeDocumentMoniker": "AuthenticateUsers\\Components\\Pages\\ManageUsers\\Add.razor",
               "ToolTip": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\AuthenticateUsers\\Components\\Pages\\ManageUsers\\Add.razor",
               "RelativeToolTip": "AuthenticateUsers\\Components\\Pages\\ManageUsers\\Add.razor",
-              "ViewState": "AQIAAIEAAAAAAAAAAAAAAFYAAAAAAAAA",
+              "ViewState": "AQIAAH4AAAAAAAAAAMBSwFYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-02-09T17:11:06.382Z"
+              "WhenOpened": "2024-02-09T17:11:06.382Z",
+              "EditorCaption": ""
             }
           ]
         }
