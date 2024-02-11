@@ -23,7 +23,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ERP.Admin.Pgsql", "ERP.Admi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthenticateUsers", "AuthenticateUsers\AuthenticateUsers.csproj", "{8DA65581-9604-4C5C-A4B1-1F9FEC77DB74}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERP.Admin.Infastructure.Email", "ERP.Admin.Infastructure.Email\ERP.Admin.Infastructure.Email.csproj", "{ADF6662B-578A-4FFF-9D43-1D63F5F46638}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ERP.Admin.Infastructure.Email", "ERP.Admin.Infastructure.Email\ERP.Admin.Infastructure.Email.csproj", "{ADF6662B-578A-4FFF-9D43-1D63F5F46638}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

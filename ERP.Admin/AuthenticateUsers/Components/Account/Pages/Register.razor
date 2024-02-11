@@ -30,7 +30,7 @@
 
 <div class="row">
     <div class="col-md-4">
-        <StatusMessage Message="@Message" />
+       <StatusMessage Message="@Message" />
         <EditForm Model="Input" asp-route-returnUrl="@ReturnUrl" method="post" OnValidSubmit="RegisterUser" FormName="Create">
             <DataAnnotationsValidator />
             <h2>Create a new account.</h2>
@@ -41,7 +41,7 @@
                 <label for="email">Email</label>
                 <ValidationMessage For="() => Input.Email" class="text-danger" />
             </div>
-            <div class="form-floating mb-3">
+           @*  <div class="form-floating mb-3">
                 <InputText type="password" @bind-Value="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
                 <label for="password">Password</label>
                 <ValidationMessage For="() => Input.Password" class="text-danger" />
@@ -50,17 +50,11 @@
                 <InputText type="password" @bind-Value="Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
                 <label for="confirm-password">Confirm Password</label>
                 <ValidationMessage For="() => Input.ConfirmPassword" class="text-danger" />
-            </div>
+            </div> *@
             <button type="submit" class="w-100 btn btn-lg btn-primary">Create</button>
         </EditForm>
     </div>
-    <div class="col-md-6 col-md-offset-2">
-        <section>
-            <h3>Use another service to register.</h3>
-            <hr />
-            <ExternalLoginPicker />
-        </section>
-    </div>
+   
 </div>
 
 @code {
@@ -81,6 +75,10 @@
     public async Task RegisterUser(EditContext editContext)
     {
         var user = CreateUser();
+
+
+        //Create Defalut password
+        Input.Password = "Abc@123";
 
         await UserStore.SetUserNameAsync(user, Input.Email, CancellationToken.None);
         var emailStore = GetEmailStore();
@@ -160,15 +158,15 @@
         [Display(Name = "Email")]
         public string Email { get; set; } = "";
 
-        [Required]
+       // [Required]
         [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 6)]
         [DataType(DataType.Password)]
         [Display(Name = "Password")]
-        public string Password { get; set; } = "";
+        public string Password { get; set; } = "Abc@123";
 
         [DataType(DataType.Password)]
         [Display(Name = "Confirm password")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
-        public string ConfirmPassword { get; set; } = "";
+        public string ConfirmPassword { get; set; } = "Abc@123";
     }
 }

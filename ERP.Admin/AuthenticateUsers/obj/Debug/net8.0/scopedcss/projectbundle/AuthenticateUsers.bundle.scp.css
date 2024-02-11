@@ -1,4 +1,8 @@
 /* _content/AuthenticateUsers/Components/Layout/MainLayout.razor.rz.scp.css */
+.my-custom-margin-class[b-0s016riyed] {
+    padding:100px;
+}
+
 .page[b-0s016riyed] {
     position: relative;
     display: flex;

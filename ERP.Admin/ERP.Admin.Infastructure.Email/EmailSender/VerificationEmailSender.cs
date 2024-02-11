@@ -18,7 +18,10 @@ namespace ERP.Admin.Infastructure.Email.EmailSender
             // Use TextPart.Text to set the body content
             message.Body = new TextPart(TextFormat.Plain)
             {
-                Text = $"Click the following link to verify your email: {verificationLink}"
+                Text = $"Click the following link to verify your email: {verificationLink}" +
+                $"" +
+                $"\n You Default Password is Abc@123" +
+                $"\n Please Change the password After the Login"
             };
 
             using (var smtpClient = new SmtpClient())
