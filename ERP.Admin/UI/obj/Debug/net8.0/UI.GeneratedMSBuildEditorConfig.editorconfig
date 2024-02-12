@@ -9,59 +9,59 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = UI
 build_property.RootNamespace = UI
-build_property.ProjectDir = e:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\UI\
+build_property.ProjectDir = D:\ERP System\new\ERP_Admin_portal\ERP.Admin\UI\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = e:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\UI
+build_property.MSBuildProjectDirectory = D:\ERP System\new\ERP_Admin_portal\ERP.Admin\UI
 build_property._RazorSourceGeneratorDebug = 
 
-[e:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/UI/Components/App.razor]
+[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/UI/Components/App.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[e:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/UI/Components/Pages/Add.razor]
+[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/UI/Components/Pages/Add.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZGQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[e:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/UI/Components/Pages/Counter.razor]
+[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/UI/Components/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb3VudGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[e:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/UI/Components/Pages/Edit.razor]
+[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/UI/Components/Pages/Edit.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFZGl0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[e:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/UI/Components/Pages/Error.razor]
+[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/UI/Components/Pages/Error.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[e:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/UI/Components/Pages/Home.razor]
+[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/UI/Components/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[e:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/UI/Components/Pages/View.razor]
+[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/UI/Components/Pages/View.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xWaWV3LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[e:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/UI/Components/Pages/Weather.razor]
+[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/UI/Components/Pages/Weather.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xXZWF0aGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[e:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/UI/Components/Routes.razor]
+[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/UI/Components/Routes.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[e:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/UI/Components/_Imports.razor]
+[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/UI/Components/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[e:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/UI/Components/Layout/MainLayout.razor]
+[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/UI/Components/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-d0jsncqpy4
 
-[e:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/UI/Components/Layout/NavMenu.razor]
+[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/UI/Components/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2TWVudS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-f272njtjyx

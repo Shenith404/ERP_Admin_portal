@@ -13,6 +13,9 @@ namespace Application.Interface
         Task<IEnumerable<UserLoginInfo>> GetAllInfoAsync();
         Task<IEnumerable<UserLoginInfo>> GetAljlInfoAsync();
         Task<IEnumerable<UserLoginInfo>> GetAlgugjgjhgjlInfoAsync();
+        Task<IEnumerable<UserLoginInfo>> GetAlgugjdgjhgjlInfoAsync();
+        Task<IEnumerable<UserLoginInfo>> GetAlgugjdsgjhgjlInfoAsync();
+
 
     }
 }
