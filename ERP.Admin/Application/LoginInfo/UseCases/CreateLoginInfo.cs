@@ -18,7 +18,7 @@ namespace Application.LoginInfo.UseCases
             _userInfoRepository = userInfoRepository;
         }
 
-        public async Task<UserLoginInfo> executeAsync(UserLoginInfo userLoginInfo)
+        public async Task<Domain.Entities.LoginInfo> executeAsync(Domain.Entities.LoginInfo userLoginInfo)
         {
 
             return await _userInfoRepository.CreateUserLoginInfoAsync(userLoginInfo);

@@ -1,0 +1,103 @@
+﻿@page "/loginInfo-list"
+@using Domain.Entities
+@using Application.LoginInfo.Interfaces
+@using Microsoft.AspNetCore.Identity
+@using AuthenticateUsers.Data
+@using Application.LoginInfo.Interfaces
+
+@inject NavigationManager nav
+@inject IGetAllInfosUseCase getAllInfros
+@inject UserManager<ApplicationUser> UserManager
+@inject ISnackbar Snackbar
+@using Microsoft.AspNetCore.Authorization
+
+@attribute [Authorize]
+@rendermode InteractiveServer
+
+
+@if (isLoading)
+{
+    <style>
+        .center-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* Set the container to full height of the viewport */
+        }
+
+        .center-container2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 10vh;
+        }
+    </style>
+
+    <div class="center-container">
+        <div>
+            <MudProgressCircular Color="Color.Primary" Style="height: 70px; width: 70px;" Indeterminate="true" />
+            <div class="center-container2">Please Wait</div>
+        </div>
+    </div>
+}
+
+<MudTable Items="@LoginInfos" Filter="new Func<LoginInfo, bool>(FilterFunc)"
+          SortLabel="Sort By">
+    <ToolBarContent>
+        <MudText Typo="Typo.h6">All Login Informations</MudText>
+        <MudSpacer />
+        <MudTextField @bind-Value="searchString" Placeholder="Search" Adornment="Adornment.Start" AdornmentIcon="@Icons.Material.Filled.Search" IconSize="Size.Medium" Class="mt-0"></MudTextField>
+    </ToolBarContent>
+
+    <HeaderContent>
+        <MudTh><MudTableSortLabel  SortBy="new Func<LoginInfo, object>(x => x.UserEmail)">User Email</MudTableSortLabel></MudTh>
+        <MudTh><MudTableSortLabel SortBy="new Func<LoginInfo, object>(x => x.Ip)">IP</MudTableSortLabel></MudTh>
+        <MudTh><MudTableSortLabel InitialDirection="SortDirection.Ascending" SortBy="new Func<LoginInfo, object>(x => x.Intime)">In Time</MudTableSortLabel></MudTh>
+        <MudTh><MudTableSortLabel SortBy="new Func<LoginInfo, object>(x => x.OutTime)">Out Time</MudTableSortLabel></MudTh>
+    </HeaderContent>
+    <RowTemplate>
+        <MudTd DataLabel="User Email">@context.UserEmail</MudTd>
+        <MudTd DataLabel="IP">@context.Ip</MudTd>
+        <MudTd DataLabel="In Time">@context.Intime</MudTd>
+        <MudTd DataLabel="Out Time">@context.OutTime</MudTd>
+    </RowTemplate>
+
+    <PagerContent>
+        <MudTablePager />
+    </PagerContent>
+</MudTable>
+
+@code {
+    private List<LoginInfo>? LoginInfos { get; set; } = new List<LoginInfo>();
+    public string searchString = "";
+    private bool isLoading = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            isLoading = true;
+            await Task.Delay(500);
+
+            // Assuming getAllInfros.ExecuteAsync returns a list of LoginInfo
+            LoginInfos = (await getAllInfros.ExecuteAsync()).ToList();
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+
+    private bool FilterFunc(LoginInfo loginInfo)
+    {
+        if (string.IsNullOrWhiteSpace(searchString))
+            return true;
+        if (loginInfo.UserEmail.Contains(searchString, StringComparison.OrdinalIgnoreCase))
+            return true;
+        if (loginInfo.Ip.Contains(searchString, StringComparison.OrdinalIgnoreCase))
+            return true;
+        // You can add similar checks for Intime and OutTime if needed
+
+        return false;
+    }
+}

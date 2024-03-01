@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ERP System\\new\\ERP_Admin_portal\\ERP.Admin\\ERP.Admin.Pgsql\\ERP.Admin.Pgsql.csproj": {}
+    "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.Admin.Pgsql\\ERP.Admin.Pgsql.csproj": {}
   },
   "projects": {
-    "D:\\ERP System\\new\\ERP_Admin_portal\\ERP.Admin\\Application\\Application.csproj": {
+    "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ERP System\\new\\ERP_Admin_portal\\ERP.Admin\\Application\\Application.csproj",
+        "projectUniqueName": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "D:\\ERP System\\new\\ERP_Admin_portal\\ERP.Admin\\Application\\Application.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "D:\\ERP System\\new\\ERP_Admin_portal\\ERP.Admin\\Application\\obj\\",
+        "projectPath": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\SHENITH\\.nuget\\packages\\",
+        "outputPath": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\Application\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\SHENITH\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,15 +22,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\ERP System\\new\\ERP_Admin_portal\\ERP.Admin\\Domain\\Domain.csproj": {
-                "projectPath": "D:\\ERP System\\new\\ERP_Admin_portal\\ERP.Admin\\Domain\\Domain.csproj"
+              "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\Domain\\Domain.csproj": {
+                "projectPath": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\Domain\\Domain.csproj"
               }
             }
           }
@@ -43,6 +38,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -68,21 +68,17 @@
         }
       }
     },
-    "D:\\ERP System\\new\\ERP_Admin_portal\\ERP.Admin\\Domain\\Domain.csproj": {
+    "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ERP System\\new\\ERP_Admin_portal\\ERP.Admin\\Domain\\Domain.csproj",
+        "projectUniqueName": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "D:\\ERP System\\new\\ERP_Admin_portal\\ERP.Admin\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "D:\\ERP System\\new\\ERP_Admin_portal\\ERP.Admin\\Domain\\obj\\",
+        "projectPath": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\SHENITH\\.nuget\\packages\\",
+        "outputPath": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\Domain\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\SHENITH\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -90,7 +86,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -103,6 +98,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -128,21 +128,17 @@
         }
       }
     },
-    "D:\\ERP System\\new\\ERP_Admin_portal\\ERP.Admin\\ERP.Admin.Pgsql\\ERP.Admin.Pgsql.csproj": {
+    "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.Admin.Pgsql\\ERP.Admin.Pgsql.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ERP System\\new\\ERP_Admin_portal\\ERP.Admin\\ERP.Admin.Pgsql\\ERP.Admin.Pgsql.csproj",
+        "projectUniqueName": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.Admin.Pgsql\\ERP.Admin.Pgsql.csproj",
         "projectName": "ERP.Admin.Pgsql",
-        "projectPath": "D:\\ERP System\\new\\ERP_Admin_portal\\ERP.Admin\\ERP.Admin.Pgsql\\ERP.Admin.Pgsql.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "D:\\ERP System\\new\\ERP_Admin_portal\\ERP.Admin\\ERP.Admin.Pgsql\\obj\\",
+        "projectPath": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.Admin.Pgsql\\ERP.Admin.Pgsql.csproj",
+        "packagesPath": "C:\\Users\\SHENITH\\.nuget\\packages\\",
+        "outputPath": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.Admin.Pgsql\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\SHENITH\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -150,15 +146,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\ERP System\\new\\ERP_Admin_portal\\ERP.Admin\\Application\\Application.csproj": {
-                "projectPath": "D:\\ERP System\\new\\ERP_Admin_portal\\ERP.Admin\\Application\\Application.csproj"
+              "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\Application\\Application.csproj": {
+                "projectPath": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\Application\\Application.csproj"
               }
             }
           }
@@ -167,6 +162,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {

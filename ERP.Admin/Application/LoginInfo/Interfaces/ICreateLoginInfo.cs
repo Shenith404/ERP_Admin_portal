@@ -4,6 +4,6 @@ namespace Application.LoginInfo.Interfaces
 {
     public interface ICreateLoginInfo
     {
-        Task<UserLoginInfo> executeAsync(UserLoginInfo userLoginInfo);
+        Task<Domain.Entities.LoginInfo> executeAsync(Domain.Entities.LoginInfo userLoginInfo);
     }
 }

@@ -16,6 +16,10 @@ namespace ERP.Admin.Pgsql
 
 
         // Tables
+        
+        // User Database
         public DbSet<User> Users { get; set; }
+
+        public DbSet<LoginInfo> UserLoginInfos { get; set; }
     }
 }

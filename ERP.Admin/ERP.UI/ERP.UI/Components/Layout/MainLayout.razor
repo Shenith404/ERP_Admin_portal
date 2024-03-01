@@ -1,0 +1,64 @@
+﻿
+@inherits LayoutComponentBase
+<MudThemeProvider @bind-IsDarkMode="@themeOn"/>
+<MudDialogProvider FullWidth="true"
+                   MaxWidth="MaxWidth.ExtraSmall"
+                   CloseButton="true"
+                   DisableBackdropClick="true"
+                   NoHeader="true"
+                   Position="DialogPosition.Center"
+                   CloseOnEscapeKey="true" />
+<MudSnackbarProvider/>
+
+
+
+
+
+    <MudLayout>
+        
+                <MudAppBar Elevation="1" Color="Color.Default">
+                    <MudIconButton Icon="@Icons.Material.Filled.Menu"
+                                   Color="Color.Inherit"
+                                   Edge="Edge.Start" OnClick="@((e) => DrawerToggle())" />
+
+                    <MudText Typo="Typo.h5" Class="px-4">Faculty of Engineering</MudText>
+
+                    <MudSpacer />
+           
+                       <AuthorizeView>
+                            <NotAuthorized>
+                                <MudButton StartIcon="@Icons.Material.Filled.Login" Href="/account/login"
+                                           Color="Color.Inherit"> Login </MudButton>
+                            </NotAuthorized>
+
+                        </AuthorizeView>
+           
+          
+                    <MudSwitch @bind-Checked="@themeOn" Label="DarkMode" Color="Color.Inherit" />
+                </MudAppBar>
+
+                <AuthorizeView>
+                    <Authorized>
+                        <MudDrawer @bind-Open="_drawerOpen" ClipMode="DrawerClipMode.Always" Elevation="2">
+                            <NavMenu/>
+                        </MudDrawer>
+                    </Authorized>
+                </AuthorizeView>
+                <MudMainContent >
+                   <div style="margin:10px">
+                        @Body
+                   </div>
+                    
+                </MudMainContent>
+  
+    </MudLayout>
+   
+
+@code {
+    bool _drawerOpen = true;
+    bool themeOn = false;
+    void DrawerToggle()
+    {
+        _drawerOpen = !_drawerOpen;
+    }
+}

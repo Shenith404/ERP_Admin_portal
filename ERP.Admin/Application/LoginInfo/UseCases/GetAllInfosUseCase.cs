@@ -18,7 +18,7 @@ namespace Application.LoginInfo.UseCases
             _userInfoRepository = userInfoRepository;
         }
 
-        public async Task<IEnumerable<UserLoginInfo>> ExecuteAsync()
+        public async Task<IEnumerable<Domain.Entities.LoginInfo>> ExecuteAsync()
         {
             return await _userInfoRepository.GetAllInfoAsync();
         }

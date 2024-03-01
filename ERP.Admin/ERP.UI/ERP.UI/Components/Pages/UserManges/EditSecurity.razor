@@ -1,0 +1,250 @@
+﻿
+
+@using Domain.Entities
+@using Application.Users.Interfaces
+@using System.ComponentModel.DataAnnotations
+@using FluentValidation
+@using UI.Components.ImageUploader;
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Identity
+@using ERP.UI.Data
+@using System.ComponentModel.DataAnnotations
+@using Application.Users.UseCases
+
+@attribute [Authorize]
+
+@rendermode InteractiveServer 
+
+@inject ISnackbar Snackbar
+@inject NavigationManager nav
+@inject UserManager<ApplicationUser> UserManager
+@inject IDeleteUserUseCase deleteUserUsecase
+
+
+
+
+
+
+<MudCard Elevation="0">
+    <MudForm>
+        <MudText Typo="Typo.h5">Lock User</MudText>
+        <MudCardContent>
+            <MudSwitch @bind-Value="@LockoutEnabled" Label="Lockout Enabled" Color="Color.Info" />  <MudText Typo="Typo.caption">
+                The LockoutEnabled property indicates that the lockout is enabled for a user. If you set this property value to true, it does not mean that the user is locked out; it only means that the user could be locked out.
+              
+            </MudText>
+
+            @if (IsUserLocked)
+            {
+
+                <MudAlert Severity="MudBlazor.Severity.Error">This User is Locked</MudAlert>
+            }
+            else
+            {
+                <MudAlert Severity="MudBlazor.Severity.Success">This User is Not Locked yet</MudAlert>
+
+            }
+
+            <MudSelect T="string" Disabled="@(!LockoutEnabled)" @bind-Value="@LockoutEnd" Label="LockOut End" Variant="Variant.Filled" AnchorOrigin="Origin.BottomCenter">
+                    <MudSelectItem Value="@("None")" />
+                    <MudSelectItem Value="@("After 10 Minutes")" />
+                    <MudSelectItem Value="@("After 1 Hour")" />
+                    <MudSelectItem Value="@("After 1 Day")" />
+                    <MudSelectItem Value="@("After 1 Month")" />
+                    <MudSelectItem Value="@("Forever")" />
+
+       
+            </MudSelect>
+            <MudText Typo="Typo.subtitle1">Lockout End at @CurrentEndTime Utc</MudText>
+
+            <MudText Typo="Typo.caption">
+                The LockoutEnd indicates when the lockout ends.
+                So, by using these the above properties together, you can lock out a user for a specific amount of time.
+
+            </MudText>
+
+
+        </MudCardContent>
+
+        <MudText Typo="Typo.h5"> User Role</MudText>
+        <MudCardContent>
+
+
+            <MudText Typo="Typo.h6"> Now user is </MudText>
+
+            <MudSelect T="string" @bind-Value="@Role" Label="Change Roles" Variant="Variant.Filled" AnchorOrigin="Origin.BottomCenter">
+                <MudSelectItem Value="@("Admin")" />
+                <MudSelectItem Value="@("Staff")" />
+                <MudSelectItem Value="@("Lecture")" />
+                <MudSelectItem Value="@("Regular")" />
+
+            </MudSelect>
+
+           
+
+
+        </MudCardContent>
+        <MudText Typo="Typo.h5"> Delete this User</MudText>
+
+        <MudButton Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.Delete" OnClick="@(async () => await Delete())" Color="Color.Error">Delete</MudButton>
+       
+    </MudForm>
+    <MudCardActions>
+         <MudButton Disabled="@_processing" OnClick="@(async () => await Submit())" Class="ml-auto" Variant="Variant.Filled" Color="Color.Primary">
+            @if (_processing)
+            {
+                <MudProgressCircular Class="ms-n1" Size="Size.Small" Indeterminate="true" />
+                <MudText Class="ms-2">Processing</MudText>
+            }
+            else
+            {
+                <MudText>Update</MudText>
+            }
+        </MudButton>
+    </MudCardActions>
+</MudCard>
+@code {
+    [Parameter]
+    public ApplicationUser ApplicationUser { get; set; }
+
+    public bool LockoutEnabled { get; set; } 
+    public bool IsUserLocked { get; set; } 
+    public string LockoutEnd { get; set; } = string.Empty;
+    public string Role { get; set; } = string.Empty;
+    public IList<string> ?Roles { get; set; } 
+    public DateTimeOffset? CurrentEndTime { get; set; }
+    private bool _processing { get; set; } = false;
+
+
+    //get values
+    private async void getDetails()
+    {
+        LockoutEnabled = await UserManager.GetLockoutEnabledAsync(ApplicationUser);
+        CurrentEndTime = await UserManager.GetLockoutEndDateAsync(ApplicationUser);
+        IsUserLocked = await UserManager.IsLockedOutAsync(ApplicationUser);
+        Roles = await UserManager.GetRolesAsync(ApplicationUser);
+    }
+
+
+    protected override async Task OnInitializedAsync()
+    {
+
+        try
+        {
+            getDetails();
+
+        }
+        catch
+        {
+
+        }
+
+    }
+
+    //Delete User
+
+    private async Task Delete()
+    {
+        //delete sqllite users
+        try
+        {
+
+            //from Sqllite
+            if (ApplicationUser != null)
+            {
+                ApplicationUser applicationUser = await UserManager.FindByEmailAsync(ApplicationUser.Email);
+                await UserManager.DeleteAsync(applicationUser);
+            }
+
+            //from pgsql
+            await deleteUserUsecase.ExecuteAsync(ApplicationUser.Id);
+
+
+
+
+           // Snackbar.Clear();
+            Snackbar.Configuration.PositionClass = Defaults.Classes.Position.TopRight;
+            Snackbar.Add("User Deleted", MudBlazor.Severity.Success);
+
+            // Refresh the page
+            nav.NavigateTo(nav.Uri, forceLoad: true);
+
+        }
+        catch
+        {
+
+        }
+
+
+    }
+
+
+
+    //Save User
+
+    private async Task Submit()
+    {  _processing = true;
+
+        try
+        {
+
+            //seave lockoutEnabled
+            await UserManager.SetLockoutEnabledAsync(ApplicationUser, LockoutEnabled);
+
+            if (LockoutEnd.Equals("None"))
+            {
+                await UserManager.SetLockoutEndDateAsync(ApplicationUser, null);
+            }
+            else
+            {
+                await UserManager.SetLockoutEndDateAsync(ApplicationUser, setEndtime());
+            }
+
+
+
+            _processing = false;
+            Snackbar.Clear();
+            Snackbar.Configuration.PositionClass = Defaults.Classes.Position.TopRight;
+            Snackbar.Add("User Updated",MudBlazor.Severity.Success);
+            StateHasChanged();
+            getDetails();
+
+
+        }
+        catch
+        {
+
+        }
+        _processing = false;
+    }
+
+
+   DateTimeOffset setEndtime()
+{
+    switch (LockoutEnd)
+    {
+        case "After 10 Minutes":
+            return DateTimeOffset.Now.AddMinutes(10);
+            
+        case "After 1 Hour":
+            return DateTimeOffset.Now.AddHours(1);
+
+        case "After 1 Day":
+            return DateTimeOffset.Now.AddDays(1);
+
+        case "After 1 Month":
+            return DateTimeOffset.Now.AddMonths(1);
+
+        case "Forever":
+            return DateTimeOffset.MaxValue;
+
+        default:
+            throw new ArgumentException("Invalid LockoutEnd value");
+    }
+}
+
+
+
+
+
+}
