@@ -70,9 +70,19 @@
         <MudCardContent>
 
 
-            <MudText Typo="Typo.h6"> Now user is </MudText>
+            User Role is
+            @foreach(var s in Roles)
+            {
+             <MudElement HtmlTag="a"
+            Class="ms-1"
+            Style="color:red;font-weight:bold;"
+            >
+                @s,
+            </MudElement>
 
-            <MudSelect T="string" @bind-Value="@Role" Label="Change Roles" Variant="Variant.Filled" AnchorOrigin="Origin.BottomCenter">
+            }
+
+            <MudSelect T="string" @bind-Value="@Role" Label="Change Role" Variant="Variant.Filled" AnchorOrigin="Origin.BottomCenter">
                 <MudSelectItem Value="@("Admin")" />
                 <MudSelectItem Value="@("Staff")" />
                 <MudSelectItem Value="@("Lecture")" />
@@ -111,18 +121,21 @@
     public bool IsUserLocked { get; set; } 
     public string LockoutEnd { get; set; } = string.Empty;
     public string Role { get; set; } = string.Empty;
-    public IList<string> ?Roles { get; set; } 
+    public List<string>? Roles { get; set; } = new List<string>();
     public DateTimeOffset? CurrentEndTime { get; set; }
     private bool _processing { get; set; } = false;
 
 
     //get values
-    private async void getDetails()
+    private async Task GetDetails()
     {
         LockoutEnabled = await UserManager.GetLockoutEnabledAsync(ApplicationUser);
         CurrentEndTime = await UserManager.GetLockoutEndDateAsync(ApplicationUser);
         IsUserLocked = await UserManager.IsLockedOutAsync(ApplicationUser);
-        Roles = await UserManager.GetRolesAsync(ApplicationUser);
+        Roles = new List<string>(await UserManager.GetRolesAsync(ApplicationUser));
+
+
+
     }
 
 
@@ -131,7 +144,7 @@
 
         try
         {
-            getDetails();
+            await GetDetails();
 
         }
         catch
@@ -162,7 +175,7 @@
 
 
 
-           // Snackbar.Clear();
+            // Snackbar.Clear();
             Snackbar.Configuration.PositionClass = Defaults.Classes.Position.TopRight;
             Snackbar.Add("User Deleted", MudBlazor.Severity.Success);
 
@@ -188,32 +201,51 @@
         try
         {
 
-            //seave lockoutEnabled
+            //set lockoutEnabled
             await UserManager.SetLockoutEnabledAsync(ApplicationUser, LockoutEnabled);
-
-            if (LockoutEnd.Equals("None"))
+            //set LockoutEndTime Utc
+            if (!LockoutEnd.Equals(string.Empty))
             {
-                await UserManager.SetLockoutEndDateAsync(ApplicationUser, null);
+                if (LockoutEnd.Equals("None"))
+                {
+                    await UserManager.SetLockoutEndDateAsync(ApplicationUser, null);
+                }
+                else
+                {
+                    await UserManager.SetLockoutEndDateAsync(ApplicationUser, setEndtime());
+                }
             }
-            else
-            {
-                await UserManager.SetLockoutEndDateAsync(ApplicationUser, setEndtime());
+
+
+            //set role
+
+            if(!Role.Equals(string.Empty)) {
+
+                //Remove current Roles
+                if (Roles != null)
+                {
+                     await UserManager.RemoveFromRolesAsync(ApplicationUser, Roles);
+                }
+
+                //Add New Role
+                await UserManager.AddToRoleAsync(ApplicationUser, Role);
             }
 
+            Console.WriteLine(Role);
 
-
+            await GetDetails();
             _processing = false;
             Snackbar.Clear();
             Snackbar.Configuration.PositionClass = Defaults.Classes.Position.TopRight;
             Snackbar.Add("User Updated",MudBlazor.Severity.Success);
-            StateHasChanged();
-            getDetails();
+
+
 
 
         }
-        catch
+        catch(Exception e)
         {
-
+            Console.WriteLine(e.ToString());
         }
         _processing = false;
     }

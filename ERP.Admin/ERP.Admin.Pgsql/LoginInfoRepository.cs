@@ -23,8 +23,8 @@ namespace ERP.Admin.Pgsql
             try
             {
                 await using var _context = _dbContextFactory.CreateDbContext();
-                 _context.UserLoginInfos.Add(userLoginInfo);
-                 _context.SaveChanges();
+                await _context.UserLoginInfos.AddAsync(userLoginInfo);
+                await _context.SaveChangesAsync();
                 Console.WriteLine("loginInfro1");
                 return userLoginInfo;
 

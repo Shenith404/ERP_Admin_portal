@@ -421,6 +421,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "DeviceDetector.NET": {
+              "target": "Package",
+              "version": "[6.3.1, )"
+            },
             "FluentValidation": {
               "target": "Package",
               "version": "[11.9.0, )"
@@ -452,6 +456,10 @@
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[8.0.2, )"
+            },
+            "Wangkanai.Detection": {
+              "target": "Package",
+              "version": "[6.11.4, )"
             }
           },
           "imports": [

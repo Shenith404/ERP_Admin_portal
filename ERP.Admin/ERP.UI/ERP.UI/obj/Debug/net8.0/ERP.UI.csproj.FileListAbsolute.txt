@@ -178,3 +178,11 @@ E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.UI\ERP.UI\obj\Debug\net8.0\re
 E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.UI\ERP.UI\obj\Debug\net8.0\ERP.UI.pdb
 E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.UI\ERP.UI\obj\Debug\net8.0\ERP.UI.genruntimeconfig.cache
 E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.UI\ERP.UI\obj\Debug\net8.0\ref\ERP.UI.dll
+E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.UI\ERP.UI\bin\Debug\net8.0\DeviceDetector.NET.dll
+E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.UI\ERP.UI\bin\Debug\net8.0\JetBrains.Annotations.dll
+E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.UI\ERP.UI\bin\Debug\net8.0\LiteDB.dll
+E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.UI\ERP.UI\bin\Debug\net8.0\Newtonsoft.Json.dll
+E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.UI\ERP.UI\bin\Debug\net8.0\Wangkanai.Detection.dll
+E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.UI\ERP.UI\bin\Debug\net8.0\Wangkanai.Hosting.dll
+E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.UI\ERP.UI\bin\Debug\net8.0\Wangkanai.System.dll
+E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.UI\ERP.UI\bin\Debug\net8.0\YamlDotNet.dll

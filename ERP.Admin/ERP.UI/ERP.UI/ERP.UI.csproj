@@ -12,6 +12,7 @@
     <ProjectReference Include="..\..\ERP.Admin.Infastructure.Email\ERP.Admin.Infastructure.Email.csproj" />
     <ProjectReference Include="..\..\ERP.Admin.Pgsql\ERP.Admin.Pgsql.csproj" />
     <ProjectReference Include="..\ERP.UI.Client\ERP.UI.Client.csproj" />
+    <PackageReference Include="DeviceDetector.NET" Version="6.3.1" />
     <PackageReference Include="FluentValidation" Version="11.9.0" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="8.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="8.0.0" />
@@ -20,6 +21,7 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.0" />
     <PackageReference Include="MudBlazor" Version="6.16.0" />
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.2" />
+    <PackageReference Include="Wangkanai.Detection" Version="6.11.4" />
   </ItemGroup>
 
 </Project>

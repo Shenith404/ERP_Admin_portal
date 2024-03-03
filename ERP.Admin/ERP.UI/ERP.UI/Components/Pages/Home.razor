@@ -1,7 +1,37 @@
 ﻿@page "/"
+@using Wangkanai.Detection.Services
+@using Microsoft.AspNetCore.Authorization
+@inject ISnackbar SnackbarService
+@inject IDetectionService DetectionService 
 
 <PageTitle>Home</PageTitle>
 
 <h1>Hello, world!</h1>
 
 Welcome to your new app.
+
+<MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="@OnClick">Show a RenderFragment snackbar</MudButton>
+
+@code {
+    [Inject] public IDetectionService detectionService { get; set; }  <!-- Inject IDetectionService -->
+
+    private void OnClick()
+    {
+        var device = detectionService.Browser.ToString();
+        var os = detectionService.Platform;
+        
+        Console.WriteLine(detectionService.Engine.Name);
+
+        SnackbarService.Add(
+            @<div>
+                <h3>Hi from a RenderFragment</h3>
+                <ul>
+                    <li>Here's a regular item</li>
+                    <li>Here's a <strong>bold item</strong></li>
+                    <li>Here's an <em>italicized item</em></li>
+                </ul>
+            </div>
+        );
+    }
+}
+

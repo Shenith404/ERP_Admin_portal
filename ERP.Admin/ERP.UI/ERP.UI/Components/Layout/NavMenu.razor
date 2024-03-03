@@ -7,7 +7,7 @@
 @layout ERP.UI.Components.Layout.MainLayout
 @inherits LayoutComponentBase
 
-@attribute [Authorize]
+@attribute [Authorize(Roles = "Admin")]
 
 
 <MudPaper Width="250px" Height="100vh" Elevation="1" Class="py-3">

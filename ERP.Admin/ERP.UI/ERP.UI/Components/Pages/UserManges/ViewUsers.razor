@@ -13,7 +13,7 @@
 @inject ISnackbar Snackbar
 @using Microsoft.AspNetCore.Authorization
 
-@attribute [Authorize]
+@attribute [Authorize(Roles = "Admin")]
 @rendermode InteractiveServer
 
 
@@ -135,7 +135,9 @@
     
     <DialogContent>
          <div class="d-flex justify-content-end">
-            <MudButton OnClick="CloseDialog1">x</MudButton>
+            <MudFab OnClick="CloseDialog1" Color="Color.Primary"
+                    StartIcon="@Icons.Material.Filled.Close" Size="Size.Small" />
+      
         </div>
        
         <EditUser id="@id" />
@@ -152,7 +154,8 @@
     
     <DialogContent>
          <div class="d-flex justify-content-end">
-            <MudButton OnClick="CloseDialog2">x</MudButton>
+            <MudFab OnClick="CloseDialog2" Color="Color.Primary"
+                    StartIcon="@Icons.Material.Filled.Close" Size="Size.Small" />
         </div>
        
         <EditSecurity ApplicationUser="selectedUser"/>
@@ -182,6 +185,7 @@
     private DialogOptions dialogOptions2 = new() {MaxWidth = MaxWidth.Small, FullWidth = true,CloseButton = true};
 
 
+    
     protected override async Task OnInitializedAsync()
     {
         try

@@ -62,6 +62,8 @@ builder.Services.AddIdentityCore<ApplicationUser>(options => options.SignIn.Requ
 
 builder.Services.AddSingleton<IEmailSender<ApplicationUser>, IdentityNoOpEmailSender>();
 
+builder.Services.AddDetection();
+
 
 builder.Services.AddDbContextFactory<PgsqlDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("PgSqlConnection"),
