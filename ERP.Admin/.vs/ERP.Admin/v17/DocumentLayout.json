@@ -1,36 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{F8B8AA29-5786-4EE7-AA9E-63C57917EB0A}|ERP.UI\\ERP.UI\\ERP.UI.csproj|e:\\erp_admin_portal\\erp_admin_portal\\erp.admin\\erp.ui\\erp.ui\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F8B8AA29-5786-4EE7-AA9E-63C57917EB0A}|ERP.UI\\ERP.UI\\ERP.UI.csproj|solutionrelative:erp.ui\\erp.ui\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8B8AA29-5786-4EE7-AA9E-63C57917EB0A}|ERP.UI\\ERP.UI\\ERP.UI.csproj|e:\\erp_admin_portal\\erp_admin_portal\\erp.admin\\erp.ui\\erp.ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8B8AA29-5786-4EE7-AA9E-63C57917EB0A}|ERP.UI\\ERP.UI\\ERP.UI.csproj|solutionrelative:erp.ui\\erp.ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0883AE49-093C-44E4-8276-EBDAE1F7F310}|Domain\\Domain.csproj|e:\\erp_admin_portal\\erp_admin_portal\\erp.admin\\domain\\entities\\logininfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0883AE49-093C-44E4-8276-EBDAE1F7F310}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\logininfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8B8AA29-5786-4EE7-AA9E-63C57917EB0A}|ERP.UI\\ERP.UI\\ERP.UI.csproj|e:\\erp_admin_portal\\erp_admin_portal\\erp.admin\\erp.ui\\erp.ui\\components\\account\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F8B8AA29-5786-4EE7-AA9E-63C57917EB0A}|ERP.UI\\ERP.UI\\ERP.UI.csproj|solutionrelative:erp.ui\\erp.ui\\components\\account\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0CC2CA5C-9C27-4E16-BC0E-6C7CCEDC4ED1}|ERP.Admin.Pgsql\\ERP.Admin.Pgsql.csproj|e:\\erp_admin_portal\\erp_admin_portal\\erp.admin\\erp.admin.pgsql\\logininforepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CC2CA5C-9C27-4E16-BC0E-6C7CCEDC4ED1}|ERP.Admin.Pgsql\\ERP.Admin.Pgsql.csproj|solutionrelative:erp.admin.pgsql\\logininforepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0CC2CA5C-9C27-4E16-BC0E-6C7CCEDC4ED1}|ERP.Admin.Pgsql\\ERP.Admin.Pgsql.csproj|e:\\erp_admin_portal\\erp_admin_portal\\erp.admin\\erp.admin.pgsql\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CC2CA5C-9C27-4E16-BC0E-6C7CCEDC4ED1}|ERP.Admin.Pgsql\\ERP.Admin.Pgsql.csproj|solutionrelative:erp.admin.pgsql\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0CC2CA5C-9C27-4E16-BC0E-6C7CCEDC4ED1}|ERP.Admin.Pgsql\\ERP.Admin.Pgsql.csproj|e:\\erp_admin_portal\\erp_admin_portal\\erp.admin\\erp.admin.pgsql\\pgsqldbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CC2CA5C-9C27-4E16-BC0E-6C7CCEDC4ED1}|ERP.Admin.Pgsql\\ERP.Admin.Pgsql.csproj|solutionrelative:erp.admin.pgsql\\pgsqldbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -38,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -47,97 +18,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Home.razor",
-              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.UI\\ERP.UI\\Components\\Pages\\Home.razor",
-              "RelativeDocumentMoniker": "ERP.UI\\ERP.UI\\Components\\Pages\\Home.razor",
-              "ToolTip": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.UI\\ERP.UI\\Components\\Pages\\Home.razor",
-              "RelativeToolTip": "ERP.UI\\ERP.UI\\Components\\Pages\\Home.razor",
-              "ViewState": "AQIAABAAAAAAAAAAAAAAABcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-02T09:31:52.827Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LoginInfo.cs",
-              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\Domain\\Entities\\LoginInfo.cs",
-              "RelativeDocumentMoniker": "Domain\\Entities\\LoginInfo.cs",
-              "ToolTip": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\Domain\\Entities\\LoginInfo.cs",
-              "RelativeToolTip": "Domain\\Entities\\LoginInfo.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAwAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-02T07:08:00.393Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "LoginInfoRepository.cs",
-              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.Admin.Pgsql\\LoginInfoRepository.cs",
-              "RelativeDocumentMoniker": "ERP.Admin.Pgsql\\LoginInfoRepository.cs",
-              "ToolTip": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.Admin.Pgsql\\LoginInfoRepository.cs",
-              "RelativeToolTip": "ERP.Admin.Pgsql\\LoginInfoRepository.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-02T07:03:16.371Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.Admin.Pgsql\\UserRepository.cs",
-              "RelativeDocumentMoniker": "ERP.Admin.Pgsql\\UserRepository.cs",
-              "ToolTip": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.Admin.Pgsql\\UserRepository.cs",
-              "RelativeToolTip": "ERP.Admin.Pgsql\\UserRepository.cs",
-              "ViewState": "AQIAAIIAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-02T07:03:03.589Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "PgsqlDbContext.cs",
-              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.Admin.Pgsql\\PgsqlDbContext.cs",
-              "RelativeDocumentMoniker": "ERP.Admin.Pgsql\\PgsqlDbContext.cs",
-              "ToolTip": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.Admin.Pgsql\\PgsqlDbContext.cs",
-              "RelativeToolTip": "ERP.Admin.Pgsql\\PgsqlDbContext.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAgAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-02T07:02:54.862Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Login.razor",
-              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.UI\\ERP.UI\\Components\\Account\\Pages\\Login.razor",
-              "RelativeDocumentMoniker": "ERP.UI\\ERP.UI\\Components\\Account\\Pages\\Login.razor",
-              "ToolTip": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.UI\\ERP.UI\\Components\\Account\\Pages\\Login.razor",
-              "RelativeToolTip": "ERP.UI\\ERP.UI\\Components\\Account\\Pages\\Login.razor",
-              "ViewState": "AQIAAGAAAAAAAAAAAMBSwAcAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-02T06:52:54.862Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.UI\\ERP.UI\\Program.cs",
-              "RelativeDocumentMoniker": "ERP.UI\\ERP.UI\\Program.cs",
-              "ToolTip": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.UI\\ERP.UI\\Program.cs",
-              "RelativeToolTip": "ERP.UI\\ERP.UI\\Program.cs",
-              "ViewState": "AQIAADMAAAAAAAAAAAAAAD4AAABVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-02T06:48:14.89Z",
-              "EditorCaption": ""
             }
           ]
         }
