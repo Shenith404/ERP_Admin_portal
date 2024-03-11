@@ -17,9 +17,13 @@ Welcome to your new app.
 
     private void OnClick()
     {
-        var device = detectionService.Browser.ToString();
-        var os = detectionService.Platform;
-        
+        var browser = detectionService.Browser.Name;
+        var platform = detectionService.Platform.Name + " "  +detectionService.Platform.Version;
+       
+
+
+        Console.WriteLine(platform.ToString()  +" " + browser.ToString()+" ");
+
        
     }
 }

@@ -51,13 +51,17 @@
     <HeaderContent>
         <MudTh><MudTableSortLabel SortBy="new Func<LoginInfo, object>(x => x.UserEmail)">User Email</MudTableSortLabel></MudTh>
         <MudTh><MudTableSortLabel SortBy="new Func<LoginInfo, object>(x => x.Ip)">IP</MudTableSortLabel></MudTh>
-        <MudTh><MudTableSortLabel InitialDirection="SortDirection.Ascending" SortBy="new Func<LoginInfo, object>(x => x.Intime)">In Time</MudTableSortLabel></MudTh>
+        <MudTh><MudTableSortLabel InitialDirection="SortDirection.Descending" SortBy="new Func<LoginInfo, object>(x => x.Intime)">In Time</MudTableSortLabel></MudTh>
+        <MudTh><MudTableSortLabel SortBy="new Func<LoginInfo, object>(x => x.Browser)">Browser</MudTableSortLabel></MudTh>
+        <MudTh><MudTableSortLabel SortBy="new Func<LoginInfo, object>(x => x.Os)">Os</MudTableSortLabel></MudTh>
         <MudTh><MudTableSortLabel SortBy="new Func<LoginInfo, object>(x => x.OutTime)">Out Time</MudTableSortLabel></MudTh>
     </HeaderContent>
     <RowTemplate>
         <MudTd DataLabel="User Email">@context.UserEmail</MudTd>
         <MudTd DataLabel="IP">@context.Ip</MudTd>
         <MudTd DataLabel="In Time">@context.Intime</MudTd>
+        <MudTd DataLabel="Browser">@context.Browser</MudTd>
+        <MudTd DataLabel="Os">@context.Os</MudTd>
         <MudTd DataLabel="Out Time">@context.OutTime</MudTd>
     </RowTemplate>
 
@@ -94,6 +98,10 @@
         if (loginInfo.UserEmail.Contains(searchString, StringComparison.OrdinalIgnoreCase))
             return true;
         if (loginInfo.Ip.Contains(searchString, StringComparison.OrdinalIgnoreCase))
+            return true;
+        if (loginInfo.Browser.Contains(searchString, StringComparison.OrdinalIgnoreCase))
+            return true;
+        if (loginInfo.Os.Contains(searchString, StringComparison.OrdinalIgnoreCase))
             return true;
         // You can add similar checks for Intime and OutTime if needed
 

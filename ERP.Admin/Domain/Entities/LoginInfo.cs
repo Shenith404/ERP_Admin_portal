@@ -18,6 +18,13 @@ namespace Domain.Entities
 
         public string Ip { get; set; } = string.Empty;
 
+
+        public string Os { get; set; } = string.Empty;
+
+        public string Browser { get; set; } = string.Empty;
+
+        
+
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public DateTime? Intime { get; set; } = DateTime.UtcNow;
 
