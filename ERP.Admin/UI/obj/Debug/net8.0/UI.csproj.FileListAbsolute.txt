@@ -247,9 +247,9 @@ E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\UI\obj\Debug\net8.0\scopedcss\Com
 E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\UI\obj\Debug\net8.0\scopedcss\Components\Layout\NavMenu.razor.rz.scp.css
 E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\UI\obj\Debug\net8.0\scopedcss\bundle\UI.styles.css
 E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\UI\obj\Debug\net8.0\scopedcss\projectbundle\UI.bundle.scp.css
-E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\UI\obj\Debug\net8.0\UI.csproj.CopyComplete
 E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\UI\obj\Debug\net8.0\UI.dll
 E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\UI\obj\Debug\net8.0\refint\UI.dll
 E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\UI\obj\Debug\net8.0\UI.pdb
 E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\UI\obj\Debug\net8.0\UI.genruntimeconfig.cache
 E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\UI\obj\Debug\net8.0\ref\UI.dll
+E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\UI\obj\Debug\net8.0\UI.csproj.Up2Date

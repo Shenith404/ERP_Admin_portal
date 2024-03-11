@@ -154,9 +154,9 @@ E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\AuthenticateUsers\obj\Debug\net8.
 E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\AuthenticateUsers\obj\Debug\net8.0\scopedcss\Components\Layout\NavMenu.razor.rz.scp.css
 E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\AuthenticateUsers\obj\Debug\net8.0\scopedcss\bundle\AuthenticateUsers.styles.css
 E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\AuthenticateUsers\obj\Debug\net8.0\scopedcss\projectbundle\AuthenticateUsers.bundle.scp.css
-E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\AuthenticateUsers\obj\Debug\net8.0\AuthenticateUsers.csproj.CopyComplete
 E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\AuthenticateUsers\obj\Debug\net8.0\AuthenticateUsers.dll
 E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\AuthenticateUsers\obj\Debug\net8.0\refint\AuthenticateUsers.dll
 E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\AuthenticateUsers\obj\Debug\net8.0\AuthenticateUsers.pdb
 E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\AuthenticateUsers\obj\Debug\net8.0\AuthenticateUsers.genruntimeconfig.cache
 E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\AuthenticateUsers\obj\Debug\net8.0\ref\AuthenticateUsers.dll
+E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\AuthenticateUsers\obj\Debug\net8.0\Authenti.204FED14.Up2Date

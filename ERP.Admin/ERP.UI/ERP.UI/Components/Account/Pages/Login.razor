@@ -8,6 +8,7 @@
 @using Application.LoginInfo.Interfaces
 @using Domain.Entities
 @using Microsoft.AspNetCore.Http.Features
+@using Wangkanai.Detection.Services
 
 
 
@@ -17,6 +18,7 @@
 @inject NavigationManager NavigationManager
 @inject IdentityRedirectManager RedirectManager
 @inject ICreateLoginInfo createLoginInfo
+@inject IDetectionService DetectionService
 
 <PageTitle>Log in</PageTitle>
 
@@ -86,7 +88,7 @@
 
     LoginInfo loginInfo = new LoginInfo();
 
-   
+
 
     protected override async Task OnInitializedAsync()
     {
@@ -105,11 +107,11 @@
 
         if (result.ToString()=="Succeeded")
         {
-                     
-            await GetUserIpAddress(Input.Email);
+
+            await CreateUserRecord(Input.Email);
             Logger.LogInformation("User logged in.");
             RedirectManager.RedirectTo(ReturnUrl);
-            
+
         }
         else if (result.RequiresTwoFactor)
         {
@@ -145,23 +147,28 @@
 
     // Get the Ip Address
 
-   private async Task GetUserIpAddress(string email)
-{
-    try
+    private async Task CreateUserRecord(string email)
     {
-        string clientIpAddr = HttpContext.Features.Get<IHttpConnectionFeature>()?.RemoteIpAddress?.ToString();
-
-        if (!string.IsNullOrEmpty(clientIpAddr))
+        try
         {
-            LoginInfo loginInfo = new LoginInfo
+            string clientIpAddr = HttpContext.Features.Get<IHttpConnectionFeature>()?.RemoteIpAddress?.ToString();
+            var browser = DetectionService.Browser.Name;
+            var os = DetectionService.Platform.Name + " " + DetectionService.Platform.Version;
+
+            if (!string.IsNullOrEmpty(clientIpAddr))
             {
-                Ip = clientIpAddr,
-                UserEmail = email
+                LoginInfo loginInfo = new LoginInfo
+                    {
+                        Ip = clientIpAddr,
+                        UserEmail = email,
+                        Browser = browser.ToString(),
+                        Os =os.ToString()
             };
+               
+
 
             Console.WriteLine("LoginInfo: " + loginInfo.ToString());
 
-            // Assuming createLoginInfo.executeAsync returns a Task
             await createLoginInfo.executeAsync(loginInfo);
 
             Console.WriteLine("LoginInfo created successfully.");
