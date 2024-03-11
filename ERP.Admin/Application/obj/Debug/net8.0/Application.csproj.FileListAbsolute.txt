@@ -40,3 +40,19 @@ E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\Application\obj\Debug\net8.0\Appl
 E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\Application\obj\Debug\net8.0\refint\Application.dll
 E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\Application\obj\Debug\net8.0\Application.pdb
 E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\Application\obj\Debug\net8.0\ref\Application.dll
+D:\ERP System\new\ERP_Admin_portal\ERP.Admin\Application\bin\Debug\net8.0\Application.deps.json
+D:\ERP System\new\ERP_Admin_portal\ERP.Admin\Application\bin\Debug\net8.0\Application.dll
+D:\ERP System\new\ERP_Admin_portal\ERP.Admin\Application\bin\Debug\net8.0\Application.pdb
+D:\ERP System\new\ERP_Admin_portal\ERP.Admin\Application\bin\Debug\net8.0\Domain.dll
+D:\ERP System\new\ERP_Admin_portal\ERP.Admin\Application\bin\Debug\net8.0\Domain.pdb
+D:\ERP System\new\ERP_Admin_portal\ERP.Admin\Application\obj\Debug\net8.0\Application.csproj.AssemblyReference.cache
+D:\ERP System\new\ERP_Admin_portal\ERP.Admin\Application\obj\Debug\net8.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\ERP System\new\ERP_Admin_portal\ERP.Admin\Application\obj\Debug\net8.0\Application.AssemblyInfoInputs.cache
+D:\ERP System\new\ERP_Admin_portal\ERP.Admin\Application\obj\Debug\net8.0\Application.AssemblyInfo.cs
+D:\ERP System\new\ERP_Admin_portal\ERP.Admin\Application\obj\Debug\net8.0\Application.csproj.CoreCompileInputs.cache
+D:\ERP System\new\ERP_Admin_portal\ERP.Admin\Application\obj\Debug\net8.0\Application.sourcelink.json
+D:\ERP System\new\ERP_Admin_portal\ERP.Admin\Application\obj\Debug\net8.0\Application.csproj.CopyComplete
+D:\ERP System\new\ERP_Admin_portal\ERP.Admin\Application\obj\Debug\net8.0\Application.dll
+D:\ERP System\new\ERP_Admin_portal\ERP.Admin\Application\obj\Debug\net8.0\refint\Application.dll
+D:\ERP System\new\ERP_Admin_portal\ERP.Admin\Application\obj\Debug\net8.0\Application.pdb
+D:\ERP System\new\ERP_Admin_portal\ERP.Admin\Application\obj\Debug\net8.0\ref\Application.dll

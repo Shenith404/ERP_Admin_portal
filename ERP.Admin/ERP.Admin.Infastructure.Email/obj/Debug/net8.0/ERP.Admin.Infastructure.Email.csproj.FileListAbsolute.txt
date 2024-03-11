@@ -11,3 +11,16 @@ E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.Admin.Infastructure.Email\obj
 E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.Admin.Infastructure.Email\obj\Debug\net8.0\refint\ERP.Admin.Infastructure.Email.dll
 E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.Admin.Infastructure.Email\obj\Debug\net8.0\ERP.Admin.Infastructure.Email.pdb
 E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.Admin.Infastructure.Email\obj\Debug\net8.0\ref\ERP.Admin.Infastructure.Email.dll
+D:\ERP System\new\ERP_Admin_portal\ERP.Admin\ERP.Admin.Infastructure.Email\bin\Debug\net8.0\ERP.Admin.Infastructure.Email.deps.json
+D:\ERP System\new\ERP_Admin_portal\ERP.Admin\ERP.Admin.Infastructure.Email\bin\Debug\net8.0\ERP.Admin.Infastructure.Email.dll
+D:\ERP System\new\ERP_Admin_portal\ERP.Admin\ERP.Admin.Infastructure.Email\bin\Debug\net8.0\ERP.Admin.Infastructure.Email.pdb
+D:\ERP System\new\ERP_Admin_portal\ERP.Admin\ERP.Admin.Infastructure.Email\obj\Debug\net8.0\ERP.Admin.Infastructure.Email.csproj.AssemblyReference.cache
+D:\ERP System\new\ERP_Admin_portal\ERP.Admin\ERP.Admin.Infastructure.Email\obj\Debug\net8.0\ERP.Admin.Infastructure.Email.GeneratedMSBuildEditorConfig.editorconfig
+D:\ERP System\new\ERP_Admin_portal\ERP.Admin\ERP.Admin.Infastructure.Email\obj\Debug\net8.0\ERP.Admin.Infastructure.Email.AssemblyInfoInputs.cache
+D:\ERP System\new\ERP_Admin_portal\ERP.Admin\ERP.Admin.Infastructure.Email\obj\Debug\net8.0\ERP.Admin.Infastructure.Email.AssemblyInfo.cs
+D:\ERP System\new\ERP_Admin_portal\ERP.Admin\ERP.Admin.Infastructure.Email\obj\Debug\net8.0\ERP.Admin.Infastructure.Email.csproj.CoreCompileInputs.cache
+D:\ERP System\new\ERP_Admin_portal\ERP.Admin\ERP.Admin.Infastructure.Email\obj\Debug\net8.0\ERP.Admin.Infastructure.Email.sourcelink.json
+D:\ERP System\new\ERP_Admin_portal\ERP.Admin\ERP.Admin.Infastructure.Email\obj\Debug\net8.0\ERP.Admin.Infastructure.Email.dll
+D:\ERP System\new\ERP_Admin_portal\ERP.Admin\ERP.Admin.Infastructure.Email\obj\Debug\net8.0\refint\ERP.Admin.Infastructure.Email.dll
+D:\ERP System\new\ERP_Admin_portal\ERP.Admin\ERP.Admin.Infastructure.Email\obj\Debug\net8.0\ERP.Admin.Infastructure.Email.pdb
+D:\ERP System\new\ERP_Admin_portal\ERP.Admin\ERP.Admin.Infastructure.Email\obj\Debug\net8.0\ref\ERP.Admin.Infastructure.Email.dll

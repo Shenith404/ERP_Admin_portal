@@ -37,3 +37,23 @@ E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.Admin.Pgsql\obj\Debug\net8.0\
 E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.Admin.Pgsql\obj\Debug\net8.0\ERP.Admin.Pgsql.pdb
 E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.Admin.Pgsql\obj\Debug\net8.0\ERP.Admin.Pgsql.genruntimeconfig.cache
 E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.Admin.Pgsql\obj\Debug\net8.0\ref\ERP.Admin.Pgsql.dll
+D:\ERP System\new\ERP_Admin_portal\ERP.Admin\ERP.Admin.Pgsql\bin\Debug\net8.0\ERP.Admin.Pgsql.deps.json
+D:\ERP System\new\ERP_Admin_portal\ERP.Admin\ERP.Admin.Pgsql\bin\Debug\net8.0\ERP.Admin.Pgsql.runtimeconfig.json
+D:\ERP System\new\ERP_Admin_portal\ERP.Admin\ERP.Admin.Pgsql\bin\Debug\net8.0\ERP.Admin.Pgsql.dll
+D:\ERP System\new\ERP_Admin_portal\ERP.Admin\ERP.Admin.Pgsql\bin\Debug\net8.0\ERP.Admin.Pgsql.pdb
+D:\ERP System\new\ERP_Admin_portal\ERP.Admin\ERP.Admin.Pgsql\bin\Debug\net8.0\Application.dll
+D:\ERP System\new\ERP_Admin_portal\ERP.Admin\ERP.Admin.Pgsql\bin\Debug\net8.0\Domain.dll
+D:\ERP System\new\ERP_Admin_portal\ERP.Admin\ERP.Admin.Pgsql\bin\Debug\net8.0\Application.pdb
+D:\ERP System\new\ERP_Admin_portal\ERP.Admin\ERP.Admin.Pgsql\bin\Debug\net8.0\Domain.pdb
+D:\ERP System\new\ERP_Admin_portal\ERP.Admin\ERP.Admin.Pgsql\obj\Debug\net8.0\ERP.Admin.Pgsql.csproj.AssemblyReference.cache
+D:\ERP System\new\ERP_Admin_portal\ERP.Admin\ERP.Admin.Pgsql\obj\Debug\net8.0\ERP.Admin.Pgsql.GeneratedMSBuildEditorConfig.editorconfig
+D:\ERP System\new\ERP_Admin_portal\ERP.Admin\ERP.Admin.Pgsql\obj\Debug\net8.0\ERP.Admin.Pgsql.AssemblyInfoInputs.cache
+D:\ERP System\new\ERP_Admin_portal\ERP.Admin\ERP.Admin.Pgsql\obj\Debug\net8.0\ERP.Admin.Pgsql.AssemblyInfo.cs
+D:\ERP System\new\ERP_Admin_portal\ERP.Admin\ERP.Admin.Pgsql\obj\Debug\net8.0\ERP.Admin.Pgsql.csproj.CoreCompileInputs.cache
+D:\ERP System\new\ERP_Admin_portal\ERP.Admin\ERP.Admin.Pgsql\obj\Debug\net8.0\ERP.Admin.Pgsql.sourcelink.json
+D:\ERP System\new\ERP_Admin_portal\ERP.Admin\ERP.Admin.Pgsql\obj\Debug\net8.0\ERP.Admin.Pgsql.csproj.CopyComplete
+D:\ERP System\new\ERP_Admin_portal\ERP.Admin\ERP.Admin.Pgsql\obj\Debug\net8.0\ERP.Admin.Pgsql.dll
+D:\ERP System\new\ERP_Admin_portal\ERP.Admin\ERP.Admin.Pgsql\obj\Debug\net8.0\refint\ERP.Admin.Pgsql.dll
+D:\ERP System\new\ERP_Admin_portal\ERP.Admin\ERP.Admin.Pgsql\obj\Debug\net8.0\ERP.Admin.Pgsql.pdb
+D:\ERP System\new\ERP_Admin_portal\ERP.Admin\ERP.Admin.Pgsql\obj\Debug\net8.0\ERP.Admin.Pgsql.genruntimeconfig.cache
+D:\ERP System\new\ERP_Admin_portal\ERP.Admin\ERP.Admin.Pgsql\obj\Debug\net8.0\ref\ERP.Admin.Pgsql.dll
