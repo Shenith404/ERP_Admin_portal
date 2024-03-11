@@ -1,0 +1,277 @@
+﻿@page "/users-list"
+@using Domain.Entities
+@using Application.Users.Interfaces
+@using Microsoft.AspNetCore.Identity
+@using ERP.UI.Data
+
+
+
+@inject NavigationManager nav
+@inject IGetUsersByNameUseCase getUserByNameUseCase
+@inject IDeleteUserUseCase deleteUserUsecase
+@inject UserManager<ApplicationUser> UserManager
+@inject ISnackbar Snackbar
+@using Microsoft.AspNetCore.Authorization
+
+@attribute [Authorize(Roles = "Admin")]
+@rendermode InteractiveServer
+
+
+ @if (isLoading)
+{
+    <style>
+        .center-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh; /* Set the container to full height of the viewport */
+        }
+
+        .center-container2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 10vh;
+        }
+    </style>
+
+
+    <div class="center-container">
+        <div>
+            <MudProgressCircular Color="Color.Primary" Style="height: 70px; width: 70px;" Indeterminate="true" />
+            <div class="center-container2">Please Wait</div>
+        </div>
+    </div>
+}
+
+@*         
+<MudTable Items="@Users" Filter="new Func<User,bool>(FilterFunc)"
+          SortLabel="Sort By">
+    <ToolBarContent>
+        <MudText Typo="Typo.h6">All Users</MudText>
+        <MudSpacer />
+        <MudTextField @bind-Value="searchString" Placeholder="Search" Adornment="Adornment.Start" AdornmentIcon="@Icons.Material.Filled.Search" IconSize="Size.Medium" Class="mt-0"></MudTextField>
+    </ToolBarContent>
+
+    <HeaderContent>
+        <MudTh><MudTableSortLabel InitialDirection="SortDirection.Ascending" SortBy="new Func<User, object>(x=>x.RegNo)">RegNo</MudTableSortLabel></MudTh>
+        <MudTh><MudTableSortLabel SortBy="new Func<User, object>(x=>x.FirstName)">FirstName</MudTableSortLabel></MudTh>
+        <MudTh><MudTableSortLabel SortBy="new Func<User, object>(x=>x.LastName)">LastName</MudTableSortLabel></MudTh>
+        <MudTh><MudTableSortLabel SortBy="new Func<User, object>(x=>x.Email)">Email</MudTableSortLabel></MudTh>
+    </HeaderContent>
+    <RowTemplate>
+        <MudTd DataLabel="RegNo">@context.RegNo</MudTd>
+        <MudTd DataLabel="FirstName">@context.FirstName</MudTd>
+        <MudTd DataLabel="LastName">@context.LastName</MudTd>
+        <MudTd DataLabel="Email">@context.Email</MudTd>
+        <MudTd DataLabel=" ">
+            <MudFab OnClick="@(()=> NavigateToEdit(@context))" Color="Color.Primary"
+                    StartIcon="@Icons.Material.Filled.Edit" Size="Size.Small" />
+            <MudFab OnClick="@(()=> Delete(@context))" Color="Color.Secondary"
+                    StartIcon="@Icons.Material.Rounded.Delete" Size="Size.Small" />
+        </MudTd>
+    </RowTemplate>
+
+    <PagerContent>
+        <MudTablePager />
+    </PagerContent>
+    <EditButtonContent Context="button">
+        <MudIconButton Size="@Size.Small" Icon="@Icons.Material.Outlined.Edit" Class="pa-0" OnClick="@button.ButtonAction" Disabled="@button.ButtonDisabled" />
+    </EditButtonContent>
+</MudTable>
+
+ *@
+
+ <MudTable Items="@AppUsers" Filter="new Func<ApplicationUser,bool>(FilterFunc)"
+          SortLabel="Sort By">
+    <ToolBarContent>
+        <MudText Typo="Typo.h6">All Users</MudText>
+        <MudSpacer />
+        <MudTextField @bind-Value="searchString" Placeholder="Search" Adornment="Adornment.Start" AdornmentIcon="@Icons.Material.Filled.Search" IconSize="Size.Medium" Class="mt-0"></MudTextField>
+    </ToolBarContent>
+
+    <HeaderContent>
+        <MudTh><MudTableSortLabel InitialDirection="SortDirection.Ascending" SortBy="new Func<ApplicationUser, object>(x=>x.UserName)">UserName</MudTableSortLabel></MudTh>
+        <MudTh><MudTableSortLabel SortBy="new Func<ApplicationUser, object>(x=>x.Email)">Email</MudTableSortLabel></MudTh>
+        <MudTh><MudTableSortLabel SortBy="new Func<ApplicationUser, object>(x=>x.EmailConfirmed)">EmailConfirmed</MudTableSortLabel></MudTh>
+         <MudTh><MudTableSortLabel SortBy="new Func<ApplicationUser, object>(x=>x.LockoutEnabled)">LockoutEnabled</MudTableSortLabel></MudTh>
+         <MudTh><MudTableSortLabel SortBy="new Func<ApplicationUser, object>(x=>x.LockoutEnd)">LockoutEnd</MudTableSortLabel></MudTh>
+         <MudTh><MudTableSortLabel SortBy="new Func<ApplicationUser, object>(x=>x.AccessFailedCount)">AccessFailedCount</MudTableSortLabel></MudTh>
+
+    </HeaderContent>
+    <RowTemplate>
+        <MudTd DataLabel="UserName">@context.UserName</MudTd>
+        <MudTd DataLabel="Email">@context.Email</MudTd>
+        <MudTd DataLabel="EmailConfirmed">@context.EmailConfirmed</MudTd>
+        <MudTd DataLabel="LockoutEnabled">@context.LockoutEnabled</MudTd>
+        <MudTd DataLabel="LockoutEnd">@context.LockoutEnd</MudTd>
+        <MudTd DataLabel="AccessFailedCount">@context.AccessFailedCount</MudTd>
+        <MudTd DataLabel=" ">
+            <MudFab OnClick="@(()=> NavigateToEdit(@context))" Color="Color.Primary"
+                    StartIcon="@Icons.Material.Filled.Edit" Size="Size.Small" />
+           
+
+            <MudFab OnClick="@(()=> NavigateToEditSecurity(@context))" Color="Color.Secondary"
+                    StartIcon="@Icons.Material.Rounded.Security" Size="Size.Small" />
+        </MudTd>
+
+      
+    </RowTemplate>
+
+    <PagerContent>
+        <MudTablePager />
+    </PagerContent>
+    <EditButtonContent Context="button">
+        <MudIconButton Size="@Size.Small" Icon="@Icons.Material.Outlined.Edit" Class="pa-0" OnClick="@button.ButtonAction" Disabled="@button.ButtonDisabled" />
+    </EditButtonContent>
+</MudTable>
+
+
+
+
+ @*Edit Personal Details Daialog *@
+
+<MudDialog @bind-IsVisible="visiblePersonalDialog" Options="dialogOptions">
+    
+    <DialogContent>
+         <div class="d-flex justify-content-end">
+            <MudFab OnClick="CloseDialog1" Color="Color.Primary"
+                    StartIcon="@Icons.Material.Filled.Close" Size="Size.Small" />
+      
+        </div>
+       
+        <EditUser id="@id" />
+    </DialogContent>
+    
+</MudDialog>
+
+
+
+
+ @*Edit Security Details Daialog *@
+
+<MudDialog @bind-IsVisible="visibleSecurityDialog" Options="dialogOptions2">
+    
+    <DialogContent>
+         <div class="d-flex justify-content-end">
+            <MudFab OnClick="CloseDialog2" Color="Color.Primary"
+                    StartIcon="@Icons.Material.Filled.Close" Size="Size.Small" />
+        </div>
+       
+        <EditSecurity ApplicationUser="selectedUser"/>
+    </DialogContent>
+    
+</MudDialog>
+
+
+
+
+@code {
+    private List<User>? Users { get; set; } = new List<User>();
+
+    private List<ApplicationUser> AppUsers { get; set; } = new List<ApplicationUser>();
+
+    public string searchString = "";
+    public ApplicationUser selectedUser = new ApplicationUser();
+    private bool isLoading = false;
+    private bool visiblePersonalDialog;
+    private bool visibleSecurityDialog;
+    private int rating;
+    private string id;
+    void CloseDialog1() => visiblePersonalDialog=false;
+    void CloseDialog2() => visibleSecurityDialog=false;
+
+    private DialogOptions dialogOptions = new() { MaxWidth = MaxWidth.Medium, FullWidth = true ,CloseButton = true};
+    private DialogOptions dialogOptions2 = new() {MaxWidth = MaxWidth.Small, FullWidth = true,CloseButton = true};
+
+
+    
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            isLoading = true;
+            await Task.Delay(500);
+
+            Users = (await getUserByNameUseCase.ExecuteAsync("")).ToList();
+
+            IQueryable<ApplicationUser> Iqlist =  UserManager.Users;
+            AppUsers = Iqlist.ToList();
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+
+
+    // Navigate to Edit  Personal page
+    async  void NavigateToEdit(ApplicationUser user)
+    {
+        id = user.Id;
+        visiblePersonalDialog = true;
+        StateHasChanged();
+
+    }
+
+
+    // Navigate to Edit Security page
+    async  void NavigateToEditSecurity(ApplicationUser user)
+    {
+        selectedUser = user;
+        visibleSecurityDialog = true;
+        StateHasChanged();
+
+    }
+
+    //Delete User
+
+    private async void Delete(ApplicationUser user)
+    {
+        //delete sqllite users
+        try
+        {
+
+            //from Sqllite
+            if (user != null)
+            {
+                ApplicationUser applicationUser = await UserManager.FindByEmailAsync(user.Email);
+                await UserManager.DeleteAsync(applicationUser);
+            }
+
+            //from pgsql
+            await deleteUserUsecase.ExecuteAsync(user.Id);
+
+            IQueryable<ApplicationUser> Iqlist = UserManager.Users;
+            AppUsers = Iqlist.ToList();   
+             
+            StateHasChanged();
+            Snackbar.Clear();
+            Snackbar.Configuration.PositionClass = Defaults.Classes.Position.TopRight;
+            Snackbar.Add("User Deleted",MudBlazor.Severity.Success);
+
+        }
+        catch
+        {
+            
+        }
+        
+        
+    }
+
+
+    private bool FilterFunc(ApplicationUser user)
+    {
+        if (string.IsNullOrWhiteSpace(searchString))
+            return true;
+        if (user.UserName.Contains(searchString, StringComparison.OrdinalIgnoreCase))
+            return true;
+        if (user.Email.Contains(searchString, StringComparison.OrdinalIgnoreCase))
+            return true;
+      
+        
+        return false;
+    }
+
+
+}

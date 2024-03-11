@@ -1,0 +1,495 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.UI\\ERP.UI\\ERP.UI.csproj": {}
+  },
+  "projects": {
+    "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\Application\\Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\Application\\Application.csproj",
+        "projectName": "Application",
+        "projectPath": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\SHENITH\\.nuget\\packages\\",
+        "outputPath": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\SHENITH\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\Domain\\Domain.csproj": {
+                "projectPath": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\Domain\\Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\Domain\\Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\Domain\\Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\SHENITH\\.nuget\\packages\\",
+        "outputPath": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\SHENITH\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.Admin.Infastructure.Email\\ERP.Admin.Infastructure.Email.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.Admin.Infastructure.Email\\ERP.Admin.Infastructure.Email.csproj",
+        "projectName": "ERP.Admin.Infastructure.Email",
+        "projectPath": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.Admin.Infastructure.Email\\ERP.Admin.Infastructure.Email.csproj",
+        "packagesPath": "C:\\Users\\SHENITH\\.nuget\\packages\\",
+        "outputPath": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.Admin.Infastructure.Email\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\SHENITH\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.Admin.Pgsql\\ERP.Admin.Pgsql.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.Admin.Pgsql\\ERP.Admin.Pgsql.csproj",
+        "projectName": "ERP.Admin.Pgsql",
+        "projectPath": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.Admin.Pgsql\\ERP.Admin.Pgsql.csproj",
+        "packagesPath": "C:\\Users\\SHENITH\\.nuget\\packages\\",
+        "outputPath": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.Admin.Pgsql\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\SHENITH\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\Application\\Application.csproj": {
+                "projectPath": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\Application\\Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.UI\\ERP.UI.Client\\ERP.UI.Client.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.UI\\ERP.UI.Client\\ERP.UI.Client.csproj",
+        "projectName": "ERP.UI.Client",
+        "projectPath": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.UI\\ERP.UI.Client\\ERP.UI.Client.csproj",
+        "packagesPath": "C:\\Users\\SHENITH\\.nuget\\packages\\",
+        "outputPath": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.UI\\ERP.UI.Client\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\SHENITH\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.WebAssembly": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.Authentication": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.NET.ILLink.Tasks": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.2, )",
+              "autoReferenced": true
+            },
+            "Microsoft.NET.Sdk.WebAssembly.Pack": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.2, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
+              "version": "[8.0.2, 8.0.2]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "browser-wasm": {
+          "#import": []
+        }
+      }
+    },
+    "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.UI\\ERP.UI\\ERP.UI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.UI\\ERP.UI\\ERP.UI.csproj",
+        "projectName": "ERP.UI",
+        "projectPath": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.UI\\ERP.UI\\ERP.UI.csproj",
+        "packagesPath": "C:\\Users\\SHENITH\\.nuget\\packages\\",
+        "outputPath": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.UI\\ERP.UI\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\SHENITH\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\Application\\Application.csproj": {
+                "projectPath": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\Application\\Application.csproj"
+              },
+              "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.Admin.Infastructure.Email\\ERP.Admin.Infastructure.Email.csproj": {
+                "projectPath": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.Admin.Infastructure.Email\\ERP.Admin.Infastructure.Email.csproj"
+              },
+              "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.Admin.Pgsql\\ERP.Admin.Pgsql.csproj": {
+                "projectPath": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.Admin.Pgsql\\ERP.Admin.Pgsql.csproj"
+              },
+              "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.UI\\ERP.UI.Client\\ERP.UI.Client.csproj": {
+                "projectPath": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.UI\\ERP.UI.Client\\ERP.UI.Client.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "DeviceDetector.NET": {
+              "target": "Package",
+              "version": "[6.3.1, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.9.0, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.Server": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "MudBlazor": {
+              "target": "Package",
+              "version": "[6.16.0, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Wangkanai.Detection": {
+              "target": "Package",
+              "version": "[6.11.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

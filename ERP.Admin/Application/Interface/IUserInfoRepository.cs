@@ -9,12 +9,9 @@ namespace Application.Interface
 {
     public interface IUserInfoRepository
     {
-        Task<UserLoginInfo> CreateUserLoginInfoAsync(UserLoginInfo userLoginInfo);
-        Task<IEnumerable<UserLoginInfo>> GetAllInfoAsync();
-        Task<IEnumerable<UserLoginInfo>> GetAljlInfoAsync();
-        Task<IEnumerable<UserLoginInfo>> GetAlgugjgjhgjlInfoAsync();
-        Task<IEnumerable<UserLoginInfo>> GetAlgugjdgjhgjlInfoAsync();
-        Task<IEnumerable<UserLoginInfo>> GetAlgugjdsgjhgjlInfoAsync();
+        Task<Domain.Entities.LoginInfo> CreateUserLoginInfoAsync(Domain.Entities.LoginInfo userLoginInfo);
+        Task<IEnumerable<Domain.Entities.LoginInfo>> GetAllInfoAsync();
+      
 
 
     }

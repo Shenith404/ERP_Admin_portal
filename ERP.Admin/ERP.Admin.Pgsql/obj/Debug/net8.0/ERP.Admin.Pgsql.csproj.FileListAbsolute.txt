@@ -31,9 +31,9 @@ E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.Admin.Pgsql\obj\Debug\net8.0\
 E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.Admin.Pgsql\obj\Debug\net8.0\ERP.Admin.Pgsql.AssemblyInfo.cs
 E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.Admin.Pgsql\obj\Debug\net8.0\ERP.Admin.Pgsql.csproj.CoreCompileInputs.cache
 E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.Admin.Pgsql\obj\Debug\net8.0\ERP.Admin.Pgsql.sourcelink.json
-E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.Admin.Pgsql\obj\Debug\net8.0\ERP.Admin.Pgsql.csproj.CopyComplete
 E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.Admin.Pgsql\obj\Debug\net8.0\ERP.Admin.Pgsql.dll
 E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.Admin.Pgsql\obj\Debug\net8.0\refint\ERP.Admin.Pgsql.dll
 E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.Admin.Pgsql\obj\Debug\net8.0\ERP.Admin.Pgsql.pdb
 E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.Admin.Pgsql\obj\Debug\net8.0\ERP.Admin.Pgsql.genruntimeconfig.cache
 E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.Admin.Pgsql\obj\Debug\net8.0\ref\ERP.Admin.Pgsql.dll
+E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.Admin.Pgsql\obj\Debug\net8.0\ERP.Admi.7CC875B8.Up2Date

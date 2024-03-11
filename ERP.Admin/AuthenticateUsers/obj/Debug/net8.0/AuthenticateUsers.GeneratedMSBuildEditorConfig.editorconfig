@@ -9,243 +9,247 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = AuthenticateUsers
 build_property.RootNamespace = AuthenticateUsers
-build_property.ProjectDir = D:\ERP System\new\ERP_Admin_portal\ERP.Admin\AuthenticateUsers\
+build_property.ProjectDir = E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\AuthenticateUsers\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\ERP System\new\ERP_Admin_portal\ERP.Admin\AuthenticateUsers
+build_property.MSBuildProjectDirectory = E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\AuthenticateUsers
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Pages/ConfirmEmail.razor]
+[E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Pages/ConfirmEmail.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXENvbmZpcm1FbWFpbC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Pages/ConfirmEmailChange.razor]
+[E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Pages/ConfirmEmailChange.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXENvbmZpcm1FbWFpbENoYW5nZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Pages/ExternalLogin.razor]
+[E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Pages/ExternalLogin.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXEV4dGVybmFsTG9naW4ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Pages/ForgotPassword.razor]
+[E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Pages/ForgotPassword.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXEZvcmdvdFBhc3N3b3JkLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Pages/ForgotPasswordConfirmation.razor]
+[E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Pages/ForgotPasswordConfirmation.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXEZvcmdvdFBhc3N3b3JkQ29uZmlybWF0aW9uLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Pages/InvalidPasswordReset.razor]
+[E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Pages/InvalidPasswordReset.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXEludmFsaWRQYXNzd29yZFJlc2V0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Pages/InvalidUser.razor]
+[E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Pages/InvalidUser.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXEludmFsaWRVc2VyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Pages/Lockout.razor]
+[E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Pages/Lockout.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXExvY2tvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Pages/Login.razor]
+[E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Pages/Login.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXExvZ2luLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Pages/LoginWith2fa.razor]
+[E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Pages/LoginWith2fa.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXExvZ2luV2l0aDJmYS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Pages/LoginWithRecoveryCode.razor]
+[E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Pages/LoginWithRecoveryCode.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXExvZ2luV2l0aFJlY292ZXJ5Q29kZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Pages/Manage/ChangePassword.razor]
+[E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Pages/Manage/ChangePassword.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXE1hbmFnZVxDaGFuZ2VQYXNzd29yZC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Pages/Manage/DeletePersonalData.razor]
+[E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Pages/Manage/DeletePersonalData.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXE1hbmFnZVxEZWxldGVQZXJzb25hbERhdGEucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Pages/Manage/Disable2fa.razor]
+[E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Pages/Manage/Disable2fa.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXE1hbmFnZVxEaXNhYmxlMmZhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Pages/Manage/Email.razor]
+[E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Pages/Manage/Email.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXE1hbmFnZVxFbWFpbC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Pages/Manage/EnableAuthenticator.razor]
+[E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Pages/Manage/EnableAuthenticator.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXE1hbmFnZVxFbmFibGVBdXRoZW50aWNhdG9yLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Pages/Manage/ExternalLogins.razor]
+[E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Pages/Manage/ExternalLogins.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXE1hbmFnZVxFeHRlcm5hbExvZ2lucy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Pages/Manage/GenerateRecoveryCodes.razor]
+[E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Pages/Manage/GenerateRecoveryCodes.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXE1hbmFnZVxHZW5lcmF0ZVJlY292ZXJ5Q29kZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Pages/Manage/Index.razor]
+[E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Pages/Manage/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXE1hbmFnZVxJbmRleC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Pages/Manage/PersonalData.razor]
+[E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Pages/Manage/PersonalData.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXE1hbmFnZVxQZXJzb25hbERhdGEucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Pages/Manage/ResetAuthenticator.razor]
+[E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Pages/Manage/ResetAuthenticator.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXE1hbmFnZVxSZXNldEF1dGhlbnRpY2F0b3IucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Pages/Manage/SetPassword.razor]
+[E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Pages/Manage/SetPassword.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXE1hbmFnZVxTZXRQYXNzd29yZC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Pages/Manage/TwoFactorAuthentication.razor]
+[E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Pages/Manage/TwoFactorAuthentication.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXE1hbmFnZVxUd29GYWN0b3JBdXRoZW50aWNhdGlvbi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Pages/Manage/_Imports.razor]
+[E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Pages/Manage/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXE1hbmFnZVxfSW1wb3J0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Pages/Register.razor]
+[E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Pages/Register.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXFJlZ2lzdGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Pages/RegisterConfirmation.razor]
+[E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Pages/RegisterConfirmation.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXFJlZ2lzdGVyQ29uZmlybWF0aW9uLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Pages/ResendEmailConfirmation.razor]
+[E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Pages/ResendEmailConfirmation.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXFJlc2VuZEVtYWlsQ29uZmlybWF0aW9uLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Pages/ResetPassword.razor]
+[E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Pages/ResetPassword.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXFJlc2V0UGFzc3dvcmQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Pages/ResetPasswordConfirmation.razor]
+[E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Pages/ResetPasswordConfirmation.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXFJlc2V0UGFzc3dvcmRDb25maXJtYXRpb24ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Pages/_Imports.razor]
+[E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Pages/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXF9JbXBvcnRzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Shared/AccountLayout.razor]
+[E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Shared/AccountLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFNoYXJlZFxBY2NvdW50TGF5b3V0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Shared/ExternalLoginPicker.razor]
+[E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Shared/ExternalLoginPicker.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFNoYXJlZFxFeHRlcm5hbExvZ2luUGlja2VyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Shared/ManageLayout.razor]
+[E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Shared/ManageLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFNoYXJlZFxNYW5hZ2VMYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Shared/ManageNavMenu.razor]
+[E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Shared/ManageNavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFNoYXJlZFxNYW5hZ2VOYXZNZW51LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Shared/RedirectToLogin.razor]
+[E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Shared/RedirectToLogin.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFNoYXJlZFxSZWRpcmVjdFRvTG9naW4ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Shared/ShowRecoveryCodes.razor]
+[E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Shared/ShowRecoveryCodes.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFNoYXJlZFxTaG93UmVjb3ZlcnlDb2Rlcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Shared/StatusMessage.razor]
+[E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Account/Shared/StatusMessage.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFNoYXJlZFxTdGF0dXNNZXNzYWdlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/App.razor]
+[E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/App.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Pages/Auth.razor]
+[E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Pages/Auth.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBdXRoLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Pages/Counter.razor]
+[E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb3VudGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Pages/Dashbord.razor]
+[E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Pages/Dashbord.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xEYXNoYm9yZC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Pages/Dialog.razor]
+[E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Pages/Dialog.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xEaWFsb2cucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Pages/Error.razor]
+[E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Pages/Error.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Pages/Home.razor]
+[E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Pages/ManageUsers/Add.razor]
+[E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Pages/LoginInfo/LoginInfoView.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xMb2dpbkluZm9cTG9naW5JbmZvVmlldy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Pages/ManageUsers/Add.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xNYW5hZ2VVc2Vyc1xBZGQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Pages/ManageUsers/Edit.razor]
+[E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Pages/ManageUsers/Edit.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xNYW5hZ2VVc2Vyc1xFZGl0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Pages/ManageUsers/ManageUsers.razor]
+[E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Pages/ManageUsers/ManageUsers.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xNYW5hZ2VVc2Vyc1xNYW5hZ2VVc2Vycy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Pages/ManageUsers/RegisterPage.razor]
+[E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Pages/ManageUsers/RegisterPage.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xNYW5hZ2VVc2Vyc1xSZWdpc3RlclBhZ2UucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Pages/ManageUsers/View.razor]
+[E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Pages/ManageUsers/View.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xNYW5hZ2VVc2Vyc1xWaWV3LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Pages/MangeRoles/Add.razor]
+[E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Pages/MangeRoles/Add.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xNYW5nZVJvbGVzXEFkZC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Pages/MangeRoles/ManageRoles.razor]
+[E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Pages/MangeRoles/ManageRoles.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xNYW5nZVJvbGVzXE1hbmFnZVJvbGVzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Pages/MangeRoles/View.razor]
+[E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Pages/MangeRoles/View.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xNYW5nZVJvbGVzXFZpZXcucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Pages/ProfileVIew.razor]
+[E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Pages/ProfileVIew.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQcm9maWxlVklldy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Pages/Weather.razor]
+[E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Pages/Weather.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xXZWF0aGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Routes.razor]
+[E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Routes.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/_Imports.razor]
+[E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Layout/MainLayout.razor]
+[E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-0s016riyed
 
-[D:/ERP System/new/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Layout/NavMenu.razor]
+[E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/AuthenticateUsers/Components/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2TWVudS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-pcsc27uiwq

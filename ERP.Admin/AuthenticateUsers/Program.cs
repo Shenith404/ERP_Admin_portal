@@ -1,4 +1,6 @@
 using Application.Interface;
+using Application.LoginInfo.Interfaces;
+using Application.LoginInfo.UseCases;
 using Application.Users.Interfaces;
 using Application.Users.UseCases;
 using AuthenticateUsers.Components;
@@ -73,6 +75,10 @@ builder.Services.AddScoped<IGetUsersByNameUseCase
     , GetUsersByNameUseCase>();
 builder.Services.AddScoped<IGetUserByEmailUseCase, GetUserByEmailUseCase>();
 builder.Services.AddScoped<IVerificationEmailSender, VerificationEmailSender>();
+builder.Services.AddScoped<IUserInfoRepository, LoginInfoRepository>();
+builder.Services.AddScoped<ICreateLoginInfo,CreateLoginInfo>();
+builder.Services.AddScoped<IGetAllInfosUseCase, GetAllInfosUseCase>();
+
 
 var app = builder.Build();
 

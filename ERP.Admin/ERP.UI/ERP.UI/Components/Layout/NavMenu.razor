@@ -1,0 +1,90 @@
+﻿@rendermode InteractiveServer
+
+@using Domain.Entities
+@using Application.Users.UseCases
+@using Microsoft.AspNetCore.Authorization
+@inject NavigationManager NavigationManager
+@layout ERP.UI.Components.Layout.MainLayout
+@inherits LayoutComponentBase
+
+@attribute [Authorize(Roles = "Admin")]
+
+
+<MudPaper Width="250px" Height="100vh" Elevation="1" Class="py-3">
+
+    <MudNavMenu Color="Color.Info">
+        <MudText Typo="Typo.h6" Class="px-4">ERP System</MudText>
+        <MudText Typo="Typo.body2" Class="px-4 mud-text-secondary">@name</MudText>
+        <MudNavGroup Title="User Management" Icon="@Icons.Material.Filled.ManageAccounts" Expanded="true">
+            <MudNavLink Href="/users-list" Icon="@Icons.Material.Filled.List">All Users</MudNavLink>
+            <MudNavLink Href="/Create-user" Icon="@Icons.Material.Filled.Create">Create User</MudNavLink>
+        </MudNavGroup>
+
+        <MudNavGroup Title="Role Management" Icon="@Icons.Material.Filled.SupervisorAccount" Expanded="true">
+            <MudNavLink Href="/Account/Manage/DeletePersonalData" Icon="@Icons.Material.Filled.List">All Roles</MudNavLink>
+            <MudNavLink Href="/Account/Register" Icon="@Icons.Material.Filled.Create">Create Role</MudNavLink>
+        </MudNavGroup>
+        <MudNavLink Href="/loginInfo-list" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Info">User Login Infos</MudNavLink>
+        <MudNavLink Href="/Counter" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Storage">Servers</MudNavLink>
+
+
+        <MudNavGroup Title="Settings" Icon="@Icons.Material.Filled.Settings" Expanded="true">
+            <MudNavLink Href="/users">Users</MudNavLink>
+            <MudNavLink Href="/security">Security</MudNavLink>
+        </MudNavGroup>
+
+        <MudNavLink Icon="@Icons.Material.Filled.ManageAccounts" Href="/Account/Manage">My Account</MudNavLink>
+    </MudNavMenu>
+
+
+    <form action="Account/Logout" method="post">
+        <AntiforgeryToken />
+        <input type="hidden" name="ReturnUrl" value="@currentUrl" />
+        <button type="submit">
+            <MudNavLink>Logout</MudNavLink>
+
+        </button>
+    </form>
+
+</MudPaper>
+
+
+
+
+
+@code {
+
+    private string? currentUrl;
+
+    private string name;
+    private string email;
+    private Guid id;
+
+    protected override void OnInitialized()
+    {
+        currentUrl = NavigationManager.ToBaseRelativePath(NavigationManager.Uri);
+        NavigationManager.LocationChanged += OnLocationChanged;
+    }
+
+    private void OnLocationChanged(object? sender, LocationChangedEventArgs e)
+    {
+        currentUrl = NavigationManager.ToBaseRelativePath(e.Location);
+        StateHasChanged();
+    }
+
+    public void Dispose()
+    {
+        NavigationManager.LocationChanged -= OnLocationChanged;
+    }
+
+
+
+
+
+
+
+
+
+
+
+}

@@ -1,0 +1,39 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = ERP.UI.Client
+build_property.RootNamespace = ERP.UI.Client
+build_property.ProjectDir = E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.UI\ERP.UI.Client\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = false
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.UI\ERP.UI.Client
+build_property._RazorSourceGeneratorDebug = 
+
+[E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/ERP.UI/ERP.UI.Client/Pages/Auth.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/ERP.UI/ERP.UI.Client/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/ERP.UI/ERP.UI.Client/RedirectToLogin.razor]
+build_metadata.AdditionalFiles.TargetPath = UmVkaXJlY3RUb0xvZ2luLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/ERP.UI/ERP.UI.Client/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
