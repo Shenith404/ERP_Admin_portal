@@ -172,7 +172,6 @@ E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.UI\ERP.UI\obj\Debug\net8.0\sc
 E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.UI\ERP.UI\obj\Debug\net8.0\scopedcss\Components\Layout\NavMenu.razor.rz.scp.css
 E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.UI\ERP.UI\obj\Debug\net8.0\scopedcss\bundle\ERP.UI.styles.css
 E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.UI\ERP.UI\obj\Debug\net8.0\scopedcss\projectbundle\ERP.UI.bundle.scp.css
-E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.UI\ERP.UI\obj\Debug\net8.0\ERP.UI.csproj.CopyComplete
 E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.UI\ERP.UI\obj\Debug\net8.0\ERP.UI.dll
 E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.UI\ERP.UI\obj\Debug\net8.0\refint\ERP.UI.dll
 E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.UI\ERP.UI\obj\Debug\net8.0\ERP.UI.pdb
@@ -186,3 +185,4 @@ E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.UI\ERP.UI\bin\Debug\net8.0\Wa
 E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.UI\ERP.UI\bin\Debug\net8.0\Wangkanai.Hosting.dll
 E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.UI\ERP.UI\bin\Debug\net8.0\Wangkanai.System.dll
 E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.UI\ERP.UI\bin\Debug\net8.0\YamlDotNet.dll
+E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.UI\ERP.UI\obj\Debug\net8.0\ERP.UI.csproj.Up2Date

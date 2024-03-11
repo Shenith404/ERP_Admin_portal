@@ -1,15 +1,15 @@
 {
   "mainAssemblyName": "ERP.UI.Client",
   "resources": {
-    "hash": "sha256-OoNArszP/cDTtkfLxzvVDqgSuIstgafgJQDrDOwc7LU=",
+    "hash": "sha256-ulI8yMpm2/C6kTO3QJd9Hvm1s5RczFPZWaeMluJ7zG8=",
     "jsModuleNative": {
-      "dotnet.native.8.0.0.jep3ic1fex.js": "sha256-LjLDIz9+J7uuiwMlQ4HbNx2BnSpphOtO2MwkoI28vdI="
+      "dotnet.native.8.0.2.kmk11wgthy.js": "sha256-gPMK16QWoJSTxorlZJqcVtbBRTniIQWlLsJN2O4cJHg="
     },
     "jsModuleRuntime": {
-      "dotnet.runtime.8.0.0.2glplkqptm.js": "sha256-WdSX3HQvnBYF0KJLZoOyHvTzMHetaob6PV0Kn2K+QXw="
+      "dotnet.runtime.8.0.2.4hnmoo0l6s.js": "sha256-54KSaoOArNfygQbV+r4B5y3ys53v2tnvFIyZcZiUmi0="
     },
     "wasmNative": {
-      "dotnet.native.wasm": "sha256-Vr6ZXKoP77zgabrMIxQ1GbOkrxfx5XGqHO0odLhUIMY="
+      "dotnet.native.wasm": "sha256-C2P+OTYZAJlmqo6rc4heqwvIVVsXIF8MAxC6WRe96Eg="
     },
     "icu": {
       "icudt_CJK.dat": "sha256-SZLtQnRc0JkwqHab0VUVP7T3uBPSeYzxzDnpxPpUnHk=",
@@ -210,10 +210,10 @@
       "mscorlib.wasm": "sha256-cDuLeL3OCtVtiid/dyex1MVgbuzDSRwZxKzuP2Dp4mg=",
       "netstandard.wasm": "sha256-A0h86SDieTMoU/wU2JTszWCsUmMuguDcbap0b0BzsmI=",
       "System.Private.CoreLib.wasm": "sha256-/0DNIm/T0C07X7Tuz5uR8JvVCoAfEE2MnfPUSjyS9xc=",
-      "ERP.UI.Client.wasm": "sha256-Xh/iU0x21r5ZoDimBBr+y5MdbPVlsZdiLYjjcwIbq9k="
+      "ERP.UI.Client.wasm": "sha256-QDI3WsnG9Lz5lpMmn5R3Do80SW+P0XrFssoF71yjQhg="
     },
     "pdb": {
-      "ERP.UI.Client.pdb": "sha256-grLnQkkaFecldMRgWKHlcti9Xddg6yeERTwOqnoZc1w="
+      "ERP.UI.Client.pdb": "sha256-SiArHrric3mmIHP8bSR3FSt+Vhi8F4oPmwC1JR0fnHc="
     }
   },
   "cacheBootResources": true,

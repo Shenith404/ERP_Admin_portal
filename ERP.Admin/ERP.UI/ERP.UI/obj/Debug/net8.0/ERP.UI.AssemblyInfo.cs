@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ERP.UI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+15b7c9b1c7ac0d498446cfb00f454f33ff6bd384")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b4dd1bf685dd5f8d0ff1d5474f84216d687f3eca")]
 [assembly: System.Reflection.AssemblyProductAttribute("ERP.UI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ERP.UI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
