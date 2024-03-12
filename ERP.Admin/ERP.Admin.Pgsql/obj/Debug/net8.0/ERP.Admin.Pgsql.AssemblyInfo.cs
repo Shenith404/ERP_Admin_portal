@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ERP.Admin.Pgsql")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4bdc38c7f95edc21b54925d4bab859d051c2854d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+26f8354f1e95d78448493d210072ed7f911f0437")]
 [assembly: System.Reflection.AssemblyProductAttribute("ERP.Admin.Pgsql")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ERP.Admin.Pgsql")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
