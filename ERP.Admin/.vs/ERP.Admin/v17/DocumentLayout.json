@@ -3,44 +3,8 @@
   "WorkspaceRootPath": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ADF6662B-578A-4FFF-9D43-1D63F5F46638}|ERP.Admin.Infastructure.Email\\ERP.Admin.Infastructure.Email.csproj|e:\\erp_admin_portal\\erp_admin_portal\\erp.admin\\erp.admin.infastructure.email\\emailsender\\verificationemailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ADF6662B-578A-4FFF-9D43-1D63F5F46638}|ERP.Admin.Infastructure.Email\\ERP.Admin.Infastructure.Email.csproj|solutionrelative:erp.admin.infastructure.email\\emailsender\\verificationemailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8B8AA29-5786-4EE7-AA9E-63C57917EB0A}|ERP.UI\\ERP.UI\\ERP.UI.csproj|e:\\erp_admin_portal\\erp_admin_portal\\erp.admin\\erp.ui\\erp.ui\\components\\account\\identitynoopemailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8B8AA29-5786-4EE7-AA9E-63C57917EB0A}|ERP.UI\\ERP.UI\\ERP.UI.csproj|solutionrelative:erp.ui\\erp.ui\\components\\account\\identitynoopemailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8B8AA29-5786-4EE7-AA9E-63C57917EB0A}|ERP.UI\\ERP.UI\\ERP.UI.csproj|e:\\erp_admin_portal\\erp_admin_portal\\erp.admin\\erp.ui\\erp.ui\\components\\account\\pages\\confirmemailchange.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F8B8AA29-5786-4EE7-AA9E-63C57917EB0A}|ERP.UI\\ERP.UI\\ERP.UI.csproj|solutionrelative:erp.ui\\erp.ui\\components\\account\\pages\\confirmemailchange.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0CC2CA5C-9C27-4E16-BC0E-6C7CCEDC4ED1}|ERP.Admin.Pgsql\\ERP.Admin.Pgsql.csproj|e:\\erp_admin_portal\\erp_admin_portal\\erp.admin\\erp.admin.pgsql\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CC2CA5C-9C27-4E16-BC0E-6C7CCEDC4ED1}|ERP.Admin.Pgsql\\ERP.Admin.Pgsql.csproj|solutionrelative:erp.admin.pgsql\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8B8AA29-5786-4EE7-AA9E-63C57917EB0A}|ERP.UI\\ERP.UI\\ERP.UI.csproj|e:\\erp_admin_portal\\erp_admin_portal\\erp.admin\\erp.ui\\erp.ui\\components\\pages\\usermanges\\edituser.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F8B8AA29-5786-4EE7-AA9E-63C57917EB0A}|ERP.UI\\ERP.UI\\ERP.UI.csproj|solutionrelative:erp.ui\\erp.ui\\components\\pages\\usermanges\\edituser.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8B8AA29-5786-4EE7-AA9E-63C57917EB0A}|ERP.UI\\ERP.UI\\ERP.UI.csproj|e:\\erp_admin_portal\\erp_admin_portal\\erp.admin\\erp.ui\\erp.ui\\components\\account\\pages\\confirmemail.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F8B8AA29-5786-4EE7-AA9E-63C57917EB0A}|ERP.UI\\ERP.UI\\ERP.UI.csproj|solutionrelative:erp.ui\\erp.ui\\components\\account\\pages\\confirmemail.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8B8AA29-5786-4EE7-AA9E-63C57917EB0A}|ERP.UI\\ERP.UI\\ERP.UI.csproj|e:\\erp_admin_portal\\erp_admin_portal\\erp.admin\\erp.ui\\erp.ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8B8AA29-5786-4EE7-AA9E-63C57917EB0A}|ERP.UI\\ERP.UI\\ERP.UI.csproj|solutionrelative:erp.ui\\erp.ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8B8AA29-5786-4EE7-AA9E-63C57917EB0A}|ERP.UI\\ERP.UI\\ERP.UI.csproj|e:\\erp_admin_portal\\erp_admin_portal\\erp.admin\\erp.ui\\erp.ui\\components\\account\\pages\\registerconfirmation.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F8B8AA29-5786-4EE7-AA9E-63C57917EB0A}|ERP.UI\\ERP.UI\\ERP.UI.csproj|solutionrelative:erp.ui\\erp.ui\\components\\account\\pages\\registerconfirmation.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8B8AA29-5786-4EE7-AA9E-63C57917EB0A}|ERP.UI\\ERP.UI\\ERP.UI.csproj|e:\\erp_admin_portal\\erp_admin_portal\\erp.admin\\erp.ui\\erp.ui\\components\\account\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F8B8AA29-5786-4EE7-AA9E-63C57917EB0A}|ERP.UI\\ERP.UI\\ERP.UI.csproj|solutionrelative:erp.ui\\erp.ui\\components\\account\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8B8AA29-5786-4EE7-AA9E-63C57917EB0A}|ERP.UI\\ERP.UI\\ERP.UI.csproj|e:\\erp_admin_portal\\erp_admin_portal\\erp.admin\\erp.ui\\erp.ui\\components\\account\\pages\\register.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F8B8AA29-5786-4EE7-AA9E-63C57917EB0A}|ERP.UI\\ERP.UI\\ERP.UI.csproj|solutionrelative:erp.ui\\erp.ui\\components\\account\\pages\\register.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F8B8AA29-5786-4EE7-AA9E-63C57917EB0A}|ERP.UI\\ERP.UI\\ERP.UI.csproj|e:\\erp_admin_portal\\erp_admin_portal\\erp.admin\\erp.ui\\erp.ui\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F8B8AA29-5786-4EE7-AA9E-63C57917EB0A}|ERP.UI\\ERP.UI\\ERP.UI.csproj|solutionrelative:erp.ui\\erp.ui\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,137 +14,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Login.razor",
-              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.UI\\ERP.UI\\Components\\Account\\Pages\\Login.razor",
-              "RelativeDocumentMoniker": "ERP.UI\\ERP.UI\\Components\\Account\\Pages\\Login.razor",
-              "ToolTip": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.UI\\ERP.UI\\Components\\Account\\Pages\\Login.razor",
-              "RelativeToolTip": "ERP.UI\\ERP.UI\\Components\\Account\\Pages\\Login.razor",
-              "ViewState": "AQIAAJMAAAAAAAAAAAAAAKQAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-11T08:43:05.549Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.Admin.Pgsql\\UserRepository.cs",
-              "RelativeDocumentMoniker": "ERP.Admin.Pgsql\\UserRepository.cs",
-              "ToolTip": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.Admin.Pgsql\\UserRepository.cs",
-              "RelativeToolTip": "ERP.Admin.Pgsql\\UserRepository.cs",
-              "ViewState": "AQIAAFUAAAAAAAAAAAAUwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-11T19:36:01.593Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "EditUser.razor",
-              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.UI\\ERP.UI\\Components\\Pages\\UserManges\\EditUser.razor",
-              "RelativeDocumentMoniker": "ERP.UI\\ERP.UI\\Components\\Pages\\UserManges\\EditUser.razor",
-              "ToolTip": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.UI\\ERP.UI\\Components\\Pages\\UserManges\\EditUser.razor",
-              "RelativeToolTip": "ERP.UI\\ERP.UI\\Components\\Pages\\UserManges\\EditUser.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-11T19:34:45.407Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ConfirmEmailChange.razor",
-              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.UI\\ERP.UI\\Components\\Account\\Pages\\ConfirmEmailChange.razor",
-              "RelativeDocumentMoniker": "ERP.UI\\ERP.UI\\Components\\Account\\Pages\\ConfirmEmailChange.razor",
-              "ToolTip": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.UI\\ERP.UI\\Components\\Account\\Pages\\ConfirmEmailChange.razor",
-              "RelativeToolTip": "ERP.UI\\ERP.UI\\Components\\Account\\Pages\\ConfirmEmailChange.razor",
-              "ViewState": "AQIAADYAAAAAAAAAAAAAAE4AAAA2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-11T18:58:43.718Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "VerificationEmailSender.cs",
-              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.Admin.Infastructure.Email\\EmailSender\\VerificationEmailSender.cs",
-              "RelativeDocumentMoniker": "ERP.Admin.Infastructure.Email\\EmailSender\\VerificationEmailSender.cs",
-              "ToolTip": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.Admin.Infastructure.Email\\EmailSender\\VerificationEmailSender.cs",
-              "RelativeToolTip": "ERP.Admin.Infastructure.Email\\EmailSender\\VerificationEmailSender.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAA0wBgAAAA1AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-11T18:27:32.689Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IdentityNoOpEmailSender.cs",
-              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.UI\\ERP.UI\\Components\\Account\\IdentityNoOpEmailSender.cs",
-              "RelativeDocumentMoniker": "ERP.UI\\ERP.UI\\Components\\Account\\IdentityNoOpEmailSender.cs",
-              "ToolTip": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.UI\\ERP.UI\\Components\\Account\\IdentityNoOpEmailSender.cs",
-              "RelativeToolTip": "ERP.UI\\ERP.UI\\Components\\Account\\IdentityNoOpEmailSender.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAABgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-11T13:52:40.333Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ConfirmEmail.razor",
-              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.UI\\ERP.UI\\Components\\Account\\Pages\\ConfirmEmail.razor",
-              "RelativeDocumentMoniker": "ERP.UI\\ERP.UI\\Components\\Account\\Pages\\ConfirmEmail.razor",
-              "ToolTip": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.UI\\ERP.UI\\Components\\Account\\Pages\\ConfirmEmail.razor",
-              "RelativeToolTip": "ERP.UI\\ERP.UI\\Components\\Account\\Pages\\ConfirmEmail.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.UI\\ERP.UI\\Components\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "ERP.UI\\ERP.UI\\Components\\Layout\\NavMenu.razor",
+              "ToolTip": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.UI\\ERP.UI\\Components\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "ERP.UI\\ERP.UI\\Components\\Layout\\NavMenu.razor",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-11T18:59:47.959Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.UI\\ERP.UI\\Program.cs",
-              "RelativeDocumentMoniker": "ERP.UI\\ERP.UI\\Program.cs",
-              "ToolTip": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.UI\\ERP.UI\\Program.cs",
-              "RelativeToolTip": "ERP.UI\\ERP.UI\\Program.cs",
-              "ViewState": "AQIAADMAAAAAAAAAAAAYwD4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-11T18:37:23.253Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "RegisterConfirmation.razor",
-              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.UI\\ERP.UI\\Components\\Account\\Pages\\RegisterConfirmation.razor",
-              "RelativeDocumentMoniker": "ERP.UI\\ERP.UI\\Components\\Account\\Pages\\RegisterConfirmation.razor",
-              "ToolTip": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.UI\\ERP.UI\\Components\\Account\\Pages\\RegisterConfirmation.razor",
-              "RelativeToolTip": "ERP.UI\\ERP.UI\\Components\\Account\\Pages\\RegisterConfirmation.razor",
-              "ViewState": "AQIAACcAAAAAAAAAAAAAAEAAAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-11T14:02:51.974Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Register.razor",
-              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.UI\\ERP.UI\\Components\\Account\\Pages\\Register.razor",
-              "RelativeDocumentMoniker": "ERP.UI\\ERP.UI\\Components\\Account\\Pages\\Register.razor",
-              "ToolTip": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.UI\\ERP.UI\\Components\\Account\\Pages\\Register.razor",
-              "RelativeToolTip": "ERP.UI\\ERP.UI\\Components\\Account\\Pages\\Register.razor",
-              "ViewState": "AQIAAJEAAAAAAAAAAAAAAH4AAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-11T11:19:02.508Z",
+              "WhenOpened": "2024-03-12T04:34:13.204Z",
               "EditorCaption": ""
             }
           ]
