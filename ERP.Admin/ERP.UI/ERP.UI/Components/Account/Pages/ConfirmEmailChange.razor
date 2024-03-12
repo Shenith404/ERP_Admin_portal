@@ -4,10 +4,16 @@
 @using Microsoft.AspNetCore.Identity
 @using Microsoft.AspNetCore.WebUtilities
 @using ERP.UI.Data
+@using Application.Users.Interfaces
+@using Domain.Entities
+
 
 @inject UserManager<ApplicationUser> UserManager
 @inject SignInManager<ApplicationUser> SignInManager
 @inject IdentityRedirectManager RedirectManager
+@inject IEditUserUseCase editUserUserCase
+@inject IGetUserByIdUseCase getUserByIdUseCase
+
 
 <PageTitle>Confirm email change</PageTitle>
 
@@ -63,6 +69,15 @@
         }
 
         await SignInManager.RefreshSignInAsync(user);
+
+
+        //update the pgsql email
+        User pgsqluser = await getUserByIdUseCase.ExecuteAsync(UserId);
+
+        pgsqluser.Email = user.Email;
+
+        await editUserUserCase.ExcuteAsync(pgsqluser);
+
         message = "Thank you for confirming your email change.";
     }
 }

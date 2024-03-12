@@ -3,24 +3,20 @@
   "WorkspaceRootPath": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F8B8AA29-5786-4EE7-AA9E-63C57917EB0A}|ERP.UI\\ERP.UI\\ERP.UI.csproj|e:\\erp_admin_portal\\erp_admin_portal\\erp.admin\\erp.ui\\erp.ui\\components\\pages\\logininfo\\logininfoview.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F8B8AA29-5786-4EE7-AA9E-63C57917EB0A}|ERP.UI\\ERP.UI\\ERP.UI.csproj|solutionrelative:erp.ui\\erp.ui\\components\\pages\\logininfo\\logininfoview.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F8B8AA29-5786-4EE7-AA9E-63C57917EB0A}|ERP.UI\\ERP.UI\\ERP.UI.csproj|e:\\erp_admin_portal\\erp_admin_portal\\erp.admin\\erp.ui\\erp.ui\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F8B8AA29-5786-4EE7-AA9E-63C57917EB0A}|ERP.UI\\ERP.UI\\ERP.UI.csproj|solutionrelative:erp.ui\\erp.ui\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8B8AA29-5786-4EE7-AA9E-63C57917EB0A}|ERP.UI\\ERP.UI\\ERP.UI.csproj|e:\\erp_admin_portal\\erp_admin_portal\\erp.admin\\erp.ui\\erp.ui\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F8B8AA29-5786-4EE7-AA9E-63C57917EB0A}|ERP.UI\\ERP.UI\\ERP.UI.csproj|solutionrelative:erp.ui\\erp.ui\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F8B8AA29-5786-4EE7-AA9E-63C57917EB0A}|ERP.UI\\ERP.UI\\ERP.UI.csproj|e:\\erp_admin_portal\\erp_admin_portal\\erp.admin\\erp.ui\\erp.ui\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F8B8AA29-5786-4EE7-AA9E-63C57917EB0A}|ERP.UI\\ERP.UI\\ERP.UI.csproj|solutionrelative:erp.ui\\erp.ui\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8B8AA29-5786-4EE7-AA9E-63C57917EB0A}|ERP.UI\\ERP.UI\\ERP.UI.csproj|e:\\erp_admin_portal\\erp_admin_portal\\erp.admin\\erp.ui\\erp.ui\\components\\account\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F8B8AA29-5786-4EE7-AA9E-63C57917EB0A}|ERP.UI\\ERP.UI\\ERP.UI.csproj|solutionrelative:erp.ui\\erp.ui\\components\\account\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.Admin.Pgsql\\Migrations\\20240311084117_updated-User-info.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ERP.Admin.Pgsql\\Migrations\\20240311084117_updated-User-info.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0883AE49-093C-44E4-8276-EBDAE1F7F310}|Domain\\Domain.csproj|e:\\erp_admin_portal\\erp_admin_portal\\erp.admin\\domain\\entities\\logininfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0883AE49-093C-44E4-8276-EBDAE1F7F310}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\logininfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F8B8AA29-5786-4EE7-AA9E-63C57917EB0A}|ERP.UI\\ERP.UI\\ERP.UI.csproj|e:\\erp_admin_portal\\erp_admin_portal\\erp.admin\\erp.ui\\erp.ui\\components\\pages\\profileview.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F8B8AA29-5786-4EE7-AA9E-63C57917EB0A}|ERP.UI\\ERP.UI\\ERP.UI.csproj|solutionrelative:erp.ui\\erp.ui\\components\\pages\\profileview.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,72 +26,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Login.razor",
-              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.UI\\ERP.UI\\Components\\Account\\Pages\\Login.razor",
-              "RelativeDocumentMoniker": "ERP.UI\\ERP.UI\\Components\\Account\\Pages\\Login.razor",
-              "ToolTip": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.UI\\ERP.UI\\Components\\Account\\Pages\\Login.razor",
-              "RelativeToolTip": "ERP.UI\\ERP.UI\\Components\\Account\\Pages\\Login.razor",
-              "ViewState": "AQIAAJMAAAAAAAAAAAAAAKQAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-11T08:43:05.549Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "LoginInfoView.razor",
-              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.UI\\ERP.UI\\Components\\Pages\\LoginInfo\\LoginInfoView.razor",
-              "RelativeDocumentMoniker": "ERP.UI\\ERP.UI\\Components\\Pages\\LoginInfo\\LoginInfoView.razor",
-              "ToolTip": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.UI\\ERP.UI\\Components\\Pages\\LoginInfo\\LoginInfoView.razor",
-              "RelativeToolTip": "ERP.UI\\ERP.UI\\Components\\Pages\\LoginInfo\\LoginInfoView.razor",
-              "ViewState": "AQIAACcAAAAAAAAAAAAAAD8AAAAxAAAA",
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.UI\\ERP.UI\\Components\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "ERP.UI\\ERP.UI\\Components\\Layout\\MainLayout.razor",
+              "ToolTip": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.UI\\ERP.UI\\Components\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "ERP.UI\\ERP.UI\\Components\\Layout\\MainLayout.razor",
+              "ViewState": "AQIAADYAAAAAAAAAAAAAADAAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-11T08:52:12.857Z",
+              "WhenOpened": "2024-03-12T06:14:40.325Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "20240311084117_updated-User-info.cs",
-              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.Admin.Pgsql\\Migrations\\20240311084117_updated-User-info.cs",
-              "RelativeDocumentMoniker": "ERP.Admin.Pgsql\\Migrations\\20240311084117_updated-User-info.cs",
-              "ToolTip": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.Admin.Pgsql\\Migrations\\20240311084117_updated-User-info.cs",
-              "RelativeToolTip": "ERP.Admin.Pgsql\\Migrations\\20240311084117_updated-User-info.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-11T08:41:18.105Z",
+              "Title": "ProfileView.razor",
+              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.UI\\ERP.UI\\Components\\Pages\\ProfileView.razor",
+              "RelativeDocumentMoniker": "ERP.UI\\ERP.UI\\Components\\Pages\\ProfileView.razor",
+              "ToolTip": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.UI\\ERP.UI\\Components\\Pages\\ProfileView.razor",
+              "RelativeToolTip": "ERP.UI\\ERP.UI\\Components\\Pages\\ProfileView.razor",
+              "ViewState": "AQIAAAgBAAAAAAAAAAAAAH8AAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-12T06:08:25.328Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "LoginInfo.cs",
-              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\Domain\\Entities\\LoginInfo.cs",
-              "RelativeDocumentMoniker": "Domain\\Entities\\LoginInfo.cs",
-              "ToolTip": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\Domain\\Entities\\LoginInfo.cs",
-              "RelativeToolTip": "Domain\\Entities\\LoginInfo.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAkwBgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-11T07:52:17.235Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Home.razor",
               "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.UI\\ERP.UI\\Components\\Pages\\Home.razor",
               "RelativeDocumentMoniker": "ERP.UI\\ERP.UI\\Components\\Pages\\Home.razor",
               "ToolTip": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.UI\\ERP.UI\\Components\\Pages\\Home.razor",
               "RelativeToolTip": "ERP.UI\\ERP.UI\\Components\\Pages\\Home.razor",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAB0AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-11T07:44:51.532Z",
+              "WhenOpened": "2024-03-12T06:08:19.977Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.UI\\ERP.UI\\Components\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "ERP.UI\\ERP.UI\\Components\\Layout\\NavMenu.razor",
+              "ToolTip": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.UI\\ERP.UI\\Components\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "ERP.UI\\ERP.UI\\Components\\Layout\\NavMenu.razor",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-12T04:34:13.204Z",
               "EditorCaption": ""
             }
           ]

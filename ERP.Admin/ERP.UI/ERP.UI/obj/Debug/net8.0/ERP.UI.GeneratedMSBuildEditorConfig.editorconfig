@@ -194,6 +194,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xVc2VyTWFuZ2VzXEVkaXRVc2VyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/ERP.UI/ERP.UI/Components/Pages/UserManges/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xVc2VyTWFuZ2VzXEhvbWUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/ERP.UI/ERP.UI/Components/Pages/UserManges/ViewUsers.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xVc2VyTWFuZ2VzXFZpZXdVc2Vycy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
