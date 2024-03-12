@@ -160,7 +160,6 @@ E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.UI\ERP.UI\obj\Debug\net8.0\ER
 E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.UI\ERP.UI\obj\Debug\net8.0\ERP.UI.AssemblyInfo.cs
 E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.UI\ERP.UI\obj\Debug\net8.0\ERP.UI.csproj.CoreCompileInputs.cache
 E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.UI\ERP.UI\obj\Debug\net8.0\ERP.UI.MvcApplicationPartsAssemblyInfo.cache
-E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.UI\ERP.UI\obj\Debug\net8.0\ERP.UI.sourcelink.json
 E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.UI\ERP.UI\obj\Debug\net8.0\staticwebassets.build.json
 E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.UI\ERP.UI\obj\Debug\net8.0\staticwebassets.development.json
 E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\ERP.UI\ERP.UI\obj\Debug\net8.0\staticwebassets\msbuild.ERP.UI.Microsoft.AspNetCore.StaticWebAssets.props

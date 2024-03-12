@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "ERP.UI.Client",
   "resources": {
-    "hash": "sha256-ulI8yMpm2/C6kTO3QJd9Hvm1s5RczFPZWaeMluJ7zG8=",
+    "hash": "sha256-o9CJHoxhCxIZye8PSOGn2e0jaGYWN79UfQp41+/I6+M=",
     "jsModuleNative": {
       "dotnet.native.8.0.2.kmk11wgthy.js": "sha256-gPMK16QWoJSTxorlZJqcVtbBRTniIQWlLsJN2O4cJHg="
     },
@@ -210,10 +210,10 @@
       "mscorlib.wasm": "sha256-cDuLeL3OCtVtiid/dyex1MVgbuzDSRwZxKzuP2Dp4mg=",
       "netstandard.wasm": "sha256-A0h86SDieTMoU/wU2JTszWCsUmMuguDcbap0b0BzsmI=",
       "System.Private.CoreLib.wasm": "sha256-/0DNIm/T0C07X7Tuz5uR8JvVCoAfEE2MnfPUSjyS9xc=",
-      "ERP.UI.Client.wasm": "sha256-QDI3WsnG9Lz5lpMmn5R3Do80SW+P0XrFssoF71yjQhg="
+      "ERP.UI.Client.wasm": "sha256-7BN9i0LMQ60xReSiyWsaf7sHTdRuRD9KpWoec5CijyA="
     },
     "pdb": {
-      "ERP.UI.Client.pdb": "sha256-SiArHrric3mmIHP8bSR3FSt+Vhi8F4oPmwC1JR0fnHc="
+      "ERP.UI.Client.pdb": "sha256-eZIC8HTeg09JjpGvkRJvhhmm5UVJqQ/E1vRwMzxegU0="
     }
   },
   "cacheBootResources": true,

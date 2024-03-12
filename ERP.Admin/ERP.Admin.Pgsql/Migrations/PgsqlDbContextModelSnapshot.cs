@@ -17,7 +17,7 @@ namespace ERP.Admin.Pgsql.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.0")
+                .HasAnnotation("ProductVersion", "8.0.2")
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
@@ -28,11 +28,19 @@ namespace ERP.Admin.Pgsql.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("text");
 
+                    b.Property<string>("Browser")
+                        .IsRequired()
+                        .HasColumnType("text");
+
                     b.Property<DateTime?>("Intime")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("Ip")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Os")
                         .IsRequired()
                         .HasColumnType("text");
 

@@ -465,7 +465,7 @@
             },
             "Wangkanai.Detection": {
               "target": "Package",
-              "version": "[6.11.4, )"
+              "version": "[8.12.0, )"
             }
           },
           "imports": [
