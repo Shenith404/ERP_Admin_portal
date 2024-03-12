@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ERP.Admin.Infastructure.Email")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4bdc38c7f95edc21b54925d4bab859d051c2854d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b385b8921621fe8bf24ee66d64633bec79b4338e")]
 [assembly: System.Reflection.AssemblyProductAttribute("ERP.Admin.Infastructure.Email")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ERP.Admin.Infastructure.Email")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
