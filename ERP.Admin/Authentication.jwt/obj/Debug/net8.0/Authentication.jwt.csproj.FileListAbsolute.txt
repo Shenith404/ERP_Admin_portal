@@ -1,0 +1,13 @@
+E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\Authentication.jwt\bin\Debug\net8.0\Authentication.jwt.deps.json
+E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\Authentication.jwt\bin\Debug\net8.0\Authentication.jwt.dll
+E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\Authentication.jwt\bin\Debug\net8.0\Authentication.jwt.pdb
+E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\Authentication.jwt\obj\Debug\net8.0\Authentication.jwt.csproj.AssemblyReference.cache
+E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\Authentication.jwt\obj\Debug\net8.0\Authentication.jwt.GeneratedMSBuildEditorConfig.editorconfig
+E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\Authentication.jwt\obj\Debug\net8.0\Authentication.jwt.AssemblyInfoInputs.cache
+E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\Authentication.jwt\obj\Debug\net8.0\Authentication.jwt.AssemblyInfo.cs
+E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\Authentication.jwt\obj\Debug\net8.0\Authentication.jwt.csproj.CoreCompileInputs.cache
+E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\Authentication.jwt\obj\Debug\net8.0\Authentication.jwt.sourcelink.json
+E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\Authentication.jwt\obj\Debug\net8.0\Authentication.jwt.dll
+E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\Authentication.jwt\obj\Debug\net8.0\refint\Authentication.jwt.dll
+E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\Authentication.jwt\obj\Debug\net8.0\Authentication.jwt.pdb
+E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\Authentication.jwt\obj\Debug\net8.0\ref\Authentication.jwt.dll
