@@ -1,8 +1,8 @@
 [
   {
     "ContainingType": "Authentication.Api.Controllers.AccountController",
-    "Method": "Authenticate",
-    "RelativePath": "api/Account",
+    "Method": "Login",
+    "RelativePath": "api/Account/Login",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -13,37 +13,23 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "ERP.Authentication.Jwt.DTOs.AuthenticationResponse",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "Authentication.Api.Controllers.AccountController",
-    "Method": "test",
-    "RelativePath": "api/Account/get",
-    "HttpMethod": "GET",
+    "Method": "Register",
+    "RelativePath": "api/Account/Register",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
+    "Parameters": [
       {
-        "Type": "System.String",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
+        "Name": "authenticationRequest",
+        "Type": "ERP.Authentication.Jwt.DTOs.AuthenticationRequest",
+        "IsRequired": true
       }
-    ]
+    ],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "Authentication.Api.Controllers.HomeController",

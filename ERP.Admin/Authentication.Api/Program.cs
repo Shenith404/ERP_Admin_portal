@@ -1,5 +1,8 @@
 using Authentication.DataService;
 using Authentication.jwt;
+using ERP.Authentication.Jwt;
+using ERP.Authentication.Jwt.Entity;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,8 +14,13 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton<JwtTokenHandler>();
+builder.Services.AddIdentityCore<BaseEntity>(options => options.SignIn.RequireConfirmedAccount = true)
+        .AddEntityFrameworkStores<AppDbContext>();
+
 
 builder.Services.AddDbContext<AppDbContext>(o => o.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddCustomJwtAuthenticaion();
 
 var app = builder.Build();
 
@@ -25,6 +33,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

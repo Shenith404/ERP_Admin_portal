@@ -17,15 +17,10 @@ namespace Authentication.jwt
         public const string JWT_SECURITY_KEY = "yyAhYj6LYNzoL8bRVKbuF2EfKMKN05WComWtIVa5AUSScmiNWBFam8jFcwvZ54lR";
 
       
-        private const int JWT_VALIDITY_MINS = 20;
-        private readonly List<UserAccount> _userAccounts;
+        private const int JWT_VALIDITY_MINS = 180;
         public JwtTokenHandler()
         {
-            _userAccounts = new List<UserAccount>()
-          {
-              new UserAccount() { UserName="admin", Password="admin", Role="Adminstrator" },
-              new UserAccount(){ UserName = "user", Password="user", Role="User" }
-          };
+         
         }
 
 
@@ -36,11 +31,11 @@ namespace Authentication.jwt
                 return null;
             }
 
-            var userAccount = _userAccounts.Where(x => x.UserName.Equals(request.UserName) && x.Password.Equals(request.Password))
+            /*var userAccount = _userAccounts.Where(x => x.UserName.Equals(request.UserName) && x.Password.Equals(request.Password))
                 .FirstOrDefault();
 
             if (userAccount == null)
-                return null;
+                return null;*/
 
             var tokenExpiryTimeStamp = DateTime.Now.AddMinutes(JWT_VALIDITY_MINS);
             var tokenKey = Encoding.ASCII.GetBytes(JWT_SECURITY_KEY);
@@ -49,7 +44,10 @@ namespace Authentication.jwt
                 new List<Claim>
                 {
                   new Claim(JwtRegisteredClaimNames.Name, request.UserName),
-                  new Claim(ClaimTypes.Role, userAccount.Role)
+                 // new Claim(ClaimTypes.Role, userAccount.Role)
+                 new Claim(JwtRegisteredClaimNames.Sub ,request.UserName),
+                 new Claim(JwtRegisteredClaimNames.Jti ,Guid.NewGuid().ToString()),
+                 new Claim(JwtRegisteredClaimNames.Iat,DateTime.Now.ToUniversalTime().ToString()),
                 });
 
 
