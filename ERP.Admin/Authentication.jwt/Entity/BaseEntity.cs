@@ -1,8 +1,10 @@
 ﻿
 
+using Microsoft.AspNetCore.Identity;
+
 namespace ERP.Authentication.Jwt.Entity;
 
-public class BaseEntity
+public class BaseEntity :IdentityUser<Guid>
 {
     public Guid Id { get; set; } = Guid.NewGuid();
     public DateTime AddedDate { get; set; } = DateTime.UtcNow;

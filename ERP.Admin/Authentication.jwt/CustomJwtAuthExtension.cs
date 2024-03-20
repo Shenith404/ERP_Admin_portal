@@ -27,6 +27,6 @@ namespace ERP.Authentication.Jwt
 
                 };
             });
-        }
+        } 
     }
 }
