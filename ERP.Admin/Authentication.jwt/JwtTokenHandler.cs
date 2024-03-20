@@ -1,5 +1,7 @@
-﻿using ERP.Authentication.Jwt.DTOs;
+﻿using Authentication.jwt.DTOs;
+using ERP.Authentication.Jwt.DTOs;
 using ERP.Authentication.Jwt.Entity;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using System;
@@ -18,13 +20,13 @@ namespace Authentication.jwt
 
       
         private const int JWT_VALIDITY_MINS = 180;
+
         public JwtTokenHandler()
         {
-         
+           
         }
 
-
-        public AuthenticationResponse? GenerateJwtToken(AuthenticationRequest request)
+        public  AuthenticationResponse? GenerateJwtToken(TokenRequest request)
         {
             if (string.IsNullOrWhiteSpace(request.UserName) || string.IsNullOrWhiteSpace(request.Password))
             {
@@ -39,12 +41,13 @@ namespace Authentication.jwt
 
             var tokenExpiryTimeStamp = DateTime.Now.AddMinutes(JWT_VALIDITY_MINS);
             var tokenKey = Encoding.ASCII.GetBytes(JWT_SECURITY_KEY);
+      
 
             var claimsIdentity = new ClaimsIdentity(
                 new List<Claim>
                 {
                   new Claim(JwtRegisteredClaimNames.Name, request.UserName),
-                 // new Claim(ClaimTypes.Role, userAccount.Role)
+                  new Claim(ClaimTypes.Role, request.Role),
                  new Claim(JwtRegisteredClaimNames.Sub ,request.UserName),
                  new Claim(JwtRegisteredClaimNames.Jti ,Guid.NewGuid().ToString()),
                  new Claim(JwtRegisteredClaimNames.Iat,DateTime.Now.ToUniversalTime().ToString()),

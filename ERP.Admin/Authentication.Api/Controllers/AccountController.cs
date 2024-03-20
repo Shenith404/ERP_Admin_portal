@@ -1,4 +1,5 @@
 ﻿using Authentication.jwt;
+using Authentication.jwt.DTOs;
 using ERP.Authentication.Jwt;
 using ERP.Authentication.Jwt.DTOs;
 using ERP.Authentication.Jwt.Entity;
@@ -49,7 +50,12 @@ namespace Authentication.Api.Controllers
                 }
                 //Generate token
 
-                var result = _jwtTokenHandler.GenerateJwtToken(authenticationRequest);
+                TokenRequest tokenRequest = new TokenRequest();
+                tokenRequest.UserName = authenticationRequest.UserName;
+                tokenRequest.Password = authenticationRequest.Password;
+                tokenRequest.Role = "Role";
+
+                var result = _jwtTokenHandler.GenerateJwtToken(tokenRequest);
 
                 return Ok(
                     new AuthenticationResponse
@@ -105,7 +111,12 @@ namespace Authentication.Api.Controllers
                 if (is_created.Succeeded)
                 {
                     //Generate token
-                    var result = _jwtTokenHandler.GenerateJwtToken(authenticationRequest);
+                    TokenRequest tokenRequest = new TokenRequest();
+                    tokenRequest.UserName = authenticationRequest.UserName;
+                    tokenRequest.Password = authenticationRequest.Password;
+                    tokenRequest.Role = "Role";
+
+                    var result = _jwtTokenHandler.GenerateJwtToken(tokenRequest);
 
                     return Ok(
                         new AuthenticationResponse
