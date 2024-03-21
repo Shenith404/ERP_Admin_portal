@@ -48,9 +48,9 @@ namespace Authentication.jwt
                 {
                   new Claim(JwtRegisteredClaimNames.Name, request.UserName),
                   new Claim(ClaimTypes.Role, request.Role),
-                 new Claim(JwtRegisteredClaimNames.Sub ,request.UserName),
-                 new Claim(JwtRegisteredClaimNames.Jti ,Guid.NewGuid().ToString()),
-                 new Claim(JwtRegisteredClaimNames.Iat,DateTime.Now.ToUniversalTime().ToString()),
+                  new Claim(JwtRegisteredClaimNames.Sub ,request.UserName),
+                  new Claim(JwtRegisteredClaimNames.Jti ,Guid.NewGuid().ToString()),
+                  new Claim(JwtRegisteredClaimNames.Iat,DateTime.Now.ToUniversalTime().ToString()),
                 });
 
 

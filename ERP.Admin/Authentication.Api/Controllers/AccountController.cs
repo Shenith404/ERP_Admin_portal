@@ -110,11 +110,15 @@ namespace Authentication.Api.Controllers
 
                 if (is_created.Succeeded)
                 {
-                    //Generate token
                     TokenRequest tokenRequest = new TokenRequest();
                     tokenRequest.UserName = authenticationRequest.UserName;
                     tokenRequest.Password = authenticationRequest.Password;
-                    tokenRequest.Role = "Role";
+                    tokenRequest.Role = "Reguler";
+
+                    //Default add Roles as Reguler
+                    var user = await _userManager.FindByEmailAsync(tokenRequest.UserName);
+                    await _userManager.AddToRoleAsync(user!, "Reguler");
+                    //Generate token
 
                     var result = _jwtTokenHandler.GenerateJwtToken(tokenRequest);
 
