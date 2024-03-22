@@ -16,11 +16,13 @@ namespace Authentication.Api.Controllers
     {
         private readonly JwtTokenHandler _jwtTokenHandler;
         private readonly UserManager<BaseEntity> _userManager;
+        private readonly RoleManager<IdentityRole<Guid>> _roleManager;
 
-        public AccountController(JwtTokenHandler jwtTokenHandler, UserManager<BaseEntity> userManager)
+        public AccountController(JwtTokenHandler jwtTokenHandler, UserManager<BaseEntity> userManager, RoleManager<IdentityRole<Guid>> roleManager)
         {
             _jwtTokenHandler = jwtTokenHandler;
             _userManager = userManager;
+            _roleManager = roleManager;
         }
 
         [HttpPost("Login")]
@@ -54,6 +56,16 @@ namespace Authentication.Api.Controllers
                 tokenRequest.UserName = authenticationRequest.UserName;
                 tokenRequest.Password = authenticationRequest.Password;
                 tokenRequest.Role = "Role";
+
+                //Get Role from database
+                //Default add Roles as Reguler
+                var user = await _userManager.FindByEmailAsync(tokenRequest.UserName);
+                Console.WriteLine("User name is " +user.UserName);
+                await _roleManager.CreateAsync(new IdentityRole<Guid>("Admin"));
+                await _userManager.AddToRoleAsync(user, "Admin");
+
+
+            
 
                 var result = _jwtTokenHandler.GenerateJwtToken(tokenRequest);
 
