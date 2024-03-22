@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Authentication.DataService
 {
-    public class AppDbContext :IdentityDbContext<UserModel,IdentityRole<Guid>,Guid>
+    public class AppDbContext :IdentityDbContext<UserModel>
     {
 
         public virtual DbSet<RefreshToken> RefreshTokens { get; set; }

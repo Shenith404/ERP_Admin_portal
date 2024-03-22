@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using Microsoft.IdentityModel.Tokens;
 
 namespace Authentication.Api.Controllers
 {
@@ -16,9 +17,9 @@ namespace Authentication.Api.Controllers
     {
         private readonly JwtTokenHandler _jwtTokenHandler;
         private readonly UserManager<UserModel> _userManager;
-        private readonly RoleManager<IdentityRole<Guid>> _roleManager;
+        private readonly RoleManager<IdentityRole> _roleManager;
 
-        public AccountController(JwtTokenHandler jwtTokenHandler, UserManager<UserModel> userManager, RoleManager<IdentityRole<Guid>> roleManager)
+        public AccountController(JwtTokenHandler jwtTokenHandler, UserManager<UserModel> userManager, RoleManager<IdentityRole> roleManager)
         {
             _jwtTokenHandler = jwtTokenHandler;
             _userManager = userManager;
@@ -93,24 +94,24 @@ namespace Authentication.Api.Controllers
 
 
 
-                
+                //Get user Role from database
+               
+                var roles= await _userManager.GetRolesAsync(existing_user);
+
+
                 //Generate token
 
                 TokenRequest tokenRequest = new TokenRequest();
                 tokenRequest.UserName = authenticationRequest.UserName;
-                tokenRequest.Password = authenticationRequest.Password;
-                tokenRequest.Role = "Role";
+                if(!roles.IsNullOrEmpty() )
+                {
+                    tokenRequest.Role = "Role";
+                }
+                tokenRequest.Role = roles[0];
+                tokenRequest.UserId = existing_user.Id;
 
-                //Get Role from database
-                //Default add Roles as Reguler
-                /*var user = await _userManager.FindByEmailAsync(tokenRequest.UserName);
-                Console.WriteLine("User name is " +user.UserName);
-                await _roleManager.CreateAsync(new IdentityRole<Guid>("Admin"));
-                await _userManager.AddToRoleAsync(user, "Admin");
-*/
-
-            
-
+              
+               
                 var result = _jwtTokenHandler.GenerateJwtToken(tokenRequest);
 
                 return Ok(
@@ -179,13 +180,22 @@ namespace Authentication.Api.Controllers
                 };  
 
                 var is_created =await _userManager.CreateAsync(new_user,authenticationRequest.Password);
+                var get_created_user = await _userManager.FindByEmailAsync(authenticationRequest.UserName);
+
+
+                // Add Default Role as Reguler
+  
+                await _roleManager.CreateAsync(new IdentityRole("Reguler"));
+                await _userManager.AddToRoleAsync(get_created_user, "Reguler");
+
+
 
                 if (is_created.Succeeded)
                 {
                     TokenRequest tokenRequest = new TokenRequest();
                     tokenRequest.UserName = authenticationRequest.UserName;
-                    tokenRequest.Password = authenticationRequest.Password;
                     tokenRequest.Role = "Reguler";
+                    tokenRequest.UserId= get_created_user.Id;
 
                     
                     //Generate token

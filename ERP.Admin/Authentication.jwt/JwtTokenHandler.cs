@@ -28,7 +28,7 @@ namespace Authentication.jwt
 
         public  AuthenticationResponse? GenerateJwtToken(TokenRequest request)
         {
-            if (string.IsNullOrWhiteSpace(request.UserName) || string.IsNullOrWhiteSpace(request.Password))
+            if (string.IsNullOrWhiteSpace(request.UserName) )
             {
                 return null;
             }
@@ -46,7 +46,7 @@ namespace Authentication.jwt
             var claimsIdentity = new ClaimsIdentity(
                 new List<Claim>
                 {
-                  
+                  new Claim("Id", request.UserId),
                   new Claim(JwtRegisteredClaimNames.Name, request.UserName),
                   new Claim(ClaimTypes.Role, request.Role),
                   new Claim(JwtRegisteredClaimNames.Sub ,request.UserName),

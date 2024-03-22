@@ -17,11 +17,11 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton<JwtTokenHandler>();
 
-builder.Services.AddIdentity<UserModel,IdentityRole<Guid>>(options => options.SignIn.RequireConfirmedAccount = true)
+builder.Services.AddIdentityCore<UserModel>(options => options.SignIn.RequireConfirmedAccount = true)
+    .AddRoles<IdentityRole>()
     .AddEntityFrameworkStores<AppDbContext>()
-    .AddDefaultTokenProviders()
-    .AddRoles<IdentityRole<Guid>>()
-    .AddApiEndpoints();
+    .AddDefaultTokenProviders();
+  
 
 
 builder.Services.AddDbContext<AppDbContext>(o => o.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
