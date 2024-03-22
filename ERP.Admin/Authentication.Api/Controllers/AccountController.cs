@@ -16,13 +16,18 @@ namespace Authentication.Api.Controllers
     {
         private readonly JwtTokenHandler _jwtTokenHandler;
         private readonly UserManager<BaseEntity> _userManager;
+        private readonly RoleManager<IdentityRole<Guid>> _roleManager;
 
-        public AccountController(JwtTokenHandler jwtTokenHandler, UserManager<BaseEntity> userManager)
+        public AccountController(JwtTokenHandler jwtTokenHandler, UserManager<BaseEntity> userManager, RoleManager<IdentityRole<Guid>> roleManager)
         {
             _jwtTokenHandler = jwtTokenHandler;
             _userManager = userManager;
+            _roleManager = roleManager;
         }
 
+
+
+        //Login User
         [HttpPost("Login")]
         public async Task<IActionResult> Login([FromBody] AuthenticationRequest authenticationRequest)
         {
@@ -38,6 +43,43 @@ namespace Authentication.Api.Controllers
                               Message = "Username is not Exist"
                           });
                  }
+
+               
+                //check is user deleted
+                if(existing_user.Status != 1)
+                {
+                    return BadRequest(
+                         new AuthenticationResponse()
+                         {
+                             Message = "This user is Deleted"
+                         });
+                }
+
+                //check is user Locked
+                var isLocked = await _userManager.IsLockedOutAsync(existing_user);
+                if (isLocked==true)
+                {
+                    return BadRequest(
+                         new AuthenticationResponse()
+                         {
+                             IsLocked=true,
+                             Message = "This user is Locked"
+                         });
+                }
+
+                //check is user Email is conformed
+                if (existing_user.EmailConfirmed ==false)
+                {
+                    return BadRequest(
+                         new AuthenticationResponse()
+                         {
+                             EmailConfirmed = await _userManager.IsEmailConfirmedAsync(existing_user),
+                             Message = "Your Email is not Confirmed"
+                         });
+                }
+
+
+
                 //check password is match
                 var isCorrect = await _userManager.CheckPasswordAsync(existing_user,authenticationRequest.Password);
                 if (isCorrect==false)
@@ -48,12 +90,26 @@ namespace Authentication.Api.Controllers
                           Message = "Password is Incorrect"
                       });
                 }
+
+
+
+                
                 //Generate token
 
                 TokenRequest tokenRequest = new TokenRequest();
                 tokenRequest.UserName = authenticationRequest.UserName;
                 tokenRequest.Password = authenticationRequest.Password;
                 tokenRequest.Role = "Role";
+
+                //Get Role from database
+                //Default add Roles as Reguler
+                /*var user = await _userManager.FindByEmailAsync(tokenRequest.UserName);
+                Console.WriteLine("User name is " +user.UserName);
+                await _roleManager.CreateAsync(new IdentityRole<Guid>("Admin"));
+                await _userManager.AddToRoleAsync(user, "Admin");
+*/
+
+            
 
                 var result = _jwtTokenHandler.GenerateJwtToken(tokenRequest);
 
@@ -63,7 +119,9 @@ namespace Authentication.Api.Controllers
                         JwtToken = result!.JwtToken,
                         ExpiresIn = result.ExpiresIn,
                         UserName = result.UserName,
-                        Message = "User Login Successfully"
+                        Message = "User Login Successfully",
+                        IsLocked =await _userManager.IsLockedOutAsync(existing_user),
+                        EmailConfirmed = await _userManager.IsEmailConfirmedAsync(existing_user),
 
                     });
 
@@ -77,6 +135,8 @@ namespace Authentication.Api.Controllers
               });
         }
 
+        //Register User
+
         [HttpPost]
         [Route("Register")]
         public async Task<IActionResult> Register([FromBody] AuthenticationRequest authenticationRequest)
@@ -84,12 +144,24 @@ namespace Authentication.Api.Controllers
             if(ModelState.IsValid)
             {
 
-                //Check Email is already taken
+                
                 var user_exist = await _userManager.FindByEmailAsync(authenticationRequest.UserName);
 
 
+                //Check Email is already taken
                 if (user_exist != null)
                 {
+
+                    //check added email is contain in deleted account
+                    if (user_exist.Status != 1)
+                    {
+                        return BadRequest(
+                             new AuthenticationResponse()
+                             {
+                                 Message = "You cant user this email"
+                             });
+                    }
+
                     return BadRequest(
                         new AuthenticationResponse()
                         {
@@ -110,11 +182,13 @@ namespace Authentication.Api.Controllers
 
                 if (is_created.Succeeded)
                 {
-                    //Generate token
                     TokenRequest tokenRequest = new TokenRequest();
                     tokenRequest.UserName = authenticationRequest.UserName;
                     tokenRequest.Password = authenticationRequest.Password;
-                    tokenRequest.Role = "Role";
+                    tokenRequest.Role = "Reguler";
+
+                    
+                    //Generate token
 
                     var result = _jwtTokenHandler.GenerateJwtToken(tokenRequest);
 
@@ -124,7 +198,9 @@ namespace Authentication.Api.Controllers
                             JwtToken=result!.JwtToken,
                             ExpiresIn=result.ExpiresIn,
                             UserName=result.UserName,
-                            Message="User Create Successfully"
+                            Message="User Create Successfully",
+                            IsLocked = await _userManager.IsLockedOutAsync(new_user),
+                            EmailConfirmed = await _userManager.IsEmailConfirmedAsync(new_user), 
 
                         });
 
@@ -142,6 +218,32 @@ namespace Authentication.Api.Controllers
                 });
 
         }
-             
+
+        [HttpPost("Security")]
+        public async Task<IActionResult> ChangeSecurity([FromBody] LockOutDetailsInfo lockOutDetailsInfo)
+        {
+            if(ModelState.IsValid) { 
+                var exist_user = await _userManager.FindByEmailAsync(lockOutDetailsInfo.Email);
+
+                if( exist_user != null)
+                {
+                   
+                    var result = await _userManager.SetLockoutEnabledAsync(exist_user,lockOutDetailsInfo.LockoutEnable);
+                    if(result.Succeeded) {
+                        return Ok();
+                    }
+                    
+
+                    
+
+                }
+
+
+            
+            }
+
+            return BadRequest();
+        }
     }
+
 }

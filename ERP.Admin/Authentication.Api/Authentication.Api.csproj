@@ -18,6 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\AuthenticateUsers\AuthenticateUsers.csproj" />
     <ProjectReference Include="..\Authentication.DataService\Authentication.DataService.csproj" />
     <ProjectReference Include="..\Authentication.jwt\Authentication.jwt.csproj" />
   </ItemGroup>
