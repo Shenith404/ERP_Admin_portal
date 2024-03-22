@@ -3,45 +3,19 @@
   "WorkspaceRootPath": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/mydb/True/SqlTable/dbo.AspNetUserRoles.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+      "AbsoluteMoniker": "D:0:0:{E031C244-6DC4-4257-9E21-491DCC38641D}|Authentication.Api\\Authentication.Api.csproj|e:\\erp_admin_portal\\erp_admin_portal\\erp.admin\\authentication.api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E031C244-6DC4-4257-9E21-491DCC38641D}|Authentication.Api\\Authentication.Api.csproj|solutionrelative:authentication.api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/mydb/True/SqlTable/dbo.AspNetUsers.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E031C244-6DC4-4257-9E21-491DCC38641D}|Authentication.Api\\Authentication.Api.csproj|e:\\erp_admin_portal\\erp_admin_portal\\erp.admin\\authentication.api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E031C244-6DC4-4257-9E21-491DCC38641D}|Authentication.Api\\Authentication.Api.csproj|solutionrelative:authentication.api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D73992CB-DA81-472E-A3DE-A95326FF15A7}|Authentication.jwt\\Authentication.jwt.csproj|e:\\erp_admin_portal\\erp_admin_portal\\erp.admin\\authentication.jwt\\dtos\\authenticationresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D73992CB-DA81-472E-A3DE-A95326FF15A7}|Authentication.jwt\\Authentication.jwt.csproj|solutionrelative:authentication.jwt\\dtos\\authenticationresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E031C244-6DC4-4257-9E21-491DCC38641D}|Authentication.Api\\Authentication.Api.csproj|e:\\erp_admin_portal\\erp_admin_portal\\erp.admin\\authentication.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E031C244-6DC4-4257-9E21-491DCC38641D}|Authentication.Api\\Authentication.Api.csproj|solutionrelative:authentication.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/mydb/True/SqlTable/dbo.AspNetRoles.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7F8EB0AB-153A-4DB7-A5A5-0E8210156BB7}|Authentication.DataService\\Authentication.DataService.csproj|e:\\erp_admin_portal\\erp_admin_portal\\erp.admin\\authentication.dataservice\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F8EB0AB-153A-4DB7-A5A5-0E8210156BB7}|Authentication.DataService\\Authentication.DataService.csproj|solutionrelative:authentication.dataservice\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8B8AA29-5786-4EE7-AA9E-63C57917EB0A}|ERP.UI\\ERP.UI\\ERP.UI.csproj|e:\\erp_admin_portal\\erp_admin_portal\\erp.admin\\erp.ui\\erp.ui\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8B8AA29-5786-4EE7-AA9E-63C57917EB0A}|ERP.UI\\ERP.UI\\ERP.UI.csproj|solutionrelative:erp.ui\\erp.ui\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8B8AA29-5786-4EE7-AA9E-63C57917EB0A}|ERP.UI\\ERP.UI\\ERP.UI.csproj|e:\\erp_admin_portal\\erp_admin_portal\\erp.admin\\erp.ui\\erp.ui\\data\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8B8AA29-5786-4EE7-AA9E-63C57917EB0A}|ERP.UI\\ERP.UI\\ERP.UI.csproj|solutionrelative:erp.ui\\erp.ui\\data\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D44E94C9-EC62-4E60-87B0-4234B0C94EB3}|ERP.UI\\ERP.UI.Client\\ERP.UI.Client.csproj|e:\\erp_admin_portal\\erp_admin_portal\\erp.admin\\erp.ui\\erp.ui.client\\userinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D44E94C9-EC62-4E60-87B0-4234B0C94EB3}|ERP.UI\\ERP.UI.Client\\ERP.UI.Client.csproj|solutionrelative:erp.ui\\erp.ui.client\\userinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D73992CB-DA81-472E-A3DE-A95326FF15A7}|Authentication.jwt\\Authentication.jwt.csproj|e:\\erp_admin_portal\\erp_admin_portal\\erp.admin\\authentication.jwt\\entity\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D73992CB-DA81-472E-A3DE-A95326FF15A7}|Authentication.jwt\\Authentication.jwt.csproj|solutionrelative:authentication.jwt\\entity\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D73992CB-DA81-472E-A3DE-A95326FF15A7}|Authentication.jwt\\Authentication.jwt.csproj|e:\\erp_admin_portal\\erp_admin_portal\\erp.admin\\authentication.jwt\\jwttokenhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D73992CB-DA81-472E-A3DE-A95326FF15A7}|Authentication.jwt\\Authentication.jwt.csproj|solutionrelative:authentication.jwt\\jwttokenhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D73992CB-DA81-472E-A3DE-A95326FF15A7}|Authentication.jwt\\Authentication.jwt.csproj|e:\\erp_admin_portal\\erp_admin_portal\\erp.admin\\authentication.jwt\\dtos\\lockoutdetailsinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D73992CB-DA81-472E-A3DE-A95326FF15A7}|Authentication.jwt\\Authentication.jwt.csproj|solutionrelative:authentication.jwt\\dtos\\lockoutdetailsinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -51,30 +25,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\Authentication.Api\\Program.cs",
-              "RelativeDocumentMoniker": "Authentication.Api\\Program.cs",
-              "ToolTip": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\Authentication.Api\\Program.cs",
-              "RelativeToolTip": "Authentication.Api\\Program.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAswBMAAAA6AAAA",
+              "Title": "LockOutDetailsInfo.cs",
+              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\Authentication.jwt\\DTOs\\LockOutDetailsInfo.cs",
+              "RelativeDocumentMoniker": "Authentication.jwt\\DTOs\\LockOutDetailsInfo.cs",
+              "ToolTip": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\Authentication.jwt\\DTOs\\LockOutDetailsInfo.cs",
+              "RelativeToolTip": "Authentication.jwt\\DTOs\\LockOutDetailsInfo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-20T19:55:33.277Z",
-              "IsPinned": true,
+              "WhenOpened": "2024-03-22T06:32:41.219Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "dbo.AspNetUserRoles [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/mydb/True/SqlTable/dbo.AspNetUserRoles.sql",
-              "ToolTip": "dbo.AspNetUserRoles [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-03-21T19:16:44.321Z",
+              "DocumentIndex": 2,
+              "Title": "AuthenticationResponse.cs",
+              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\Authentication.jwt\\DTOs\\AuthenticationResponse.cs",
+              "RelativeDocumentMoniker": "Authentication.jwt\\DTOs\\AuthenticationResponse.cs",
+              "ToolTip": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\Authentication.jwt\\DTOs\\AuthenticationResponse.cs",
+              "RelativeToolTip": "Authentication.jwt\\DTOs\\AuthenticationResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T06:05:35.024Z",
               "EditorCaption": ""
             },
             {
@@ -84,108 +60,20 @@
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/mydb/True/SqlTable/dbo.AspNetUsers.sql",
               "ToolTip": "dbo.AspNetUsers [Data]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-03-21T19:16:16.64Z",
+              "WhenOpened": "2024-03-22T06:04:21.64Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "dbo.AspNetRoles [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/mydb/True/SqlTable/dbo.AspNetRoles.sql",
-              "ToolTip": "dbo.AspNetRoles [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-03-21T19:15:40.361Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "UserInfo.cs",
-              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.UI\\ERP.UI.Client\\UserInfo.cs",
-              "RelativeDocumentMoniker": "ERP.UI\\ERP.UI.Client\\UserInfo.cs",
-              "ToolTip": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.UI\\ERP.UI.Client\\UserInfo.cs",
-              "RelativeToolTip": "ERP.UI\\ERP.UI.Client\\UserInfo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-20T20:20:11.958Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "AccountController.cs",
               "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\Authentication.Api\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "Authentication.Api\\Controllers\\AccountController.cs",
               "ToolTip": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\Authentication.Api\\Controllers\\AccountController.cs",
               "RelativeToolTip": "Authentication.Api\\Controllers\\AccountController.cs",
-              "ViewState": "AQIAADEAAAAAAAAAAAAUwEEAAAAAAAAA",
+              "ViewState": "AQIAAIUAAAAAAAAAAAA2wIwAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-20T19:47:11.366Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ApplicationUser.cs",
-              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.UI\\ERP.UI\\Data\\ApplicationUser.cs",
-              "RelativeDocumentMoniker": "ERP.UI\\ERP.UI\\Data\\ApplicationUser.cs",
-              "ToolTip": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.UI\\ERP.UI\\Data\\ApplicationUser.cs",
-              "RelativeToolTip": "ERP.UI\\ERP.UI\\Data\\ApplicationUser.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-20T20:20:31.3Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.UI\\ERP.UI\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "ERP.UI\\ERP.UI\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.UI\\ERP.UI\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "ERP.UI\\ERP.UI\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAB5AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-20T20:20:33.485Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "BaseEntity.cs",
-              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\Authentication.jwt\\Entity\\BaseEntity.cs",
-              "RelativeDocumentMoniker": "Authentication.jwt\\Entity\\BaseEntity.cs",
-              "ToolTip": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\Authentication.jwt\\Entity\\BaseEntity.cs",
-              "RelativeToolTip": "Authentication.jwt\\Entity\\BaseEntity.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-20T20:06:08.727Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\Authentication.DataService\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Authentication.DataService\\AppDbContext.cs",
-              "ToolTip": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\Authentication.DataService\\AppDbContext.cs",
-              "RelativeToolTip": "Authentication.DataService\\AppDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-20T20:21:06.783Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "JwtTokenHandler.cs",
-              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\Authentication.jwt\\JwtTokenHandler.cs",
-              "RelativeDocumentMoniker": "Authentication.jwt\\JwtTokenHandler.cs",
-              "ToolTip": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\Authentication.jwt\\JwtTokenHandler.cs",
-              "RelativeToolTip": "Authentication.jwt\\JwtTokenHandler.cs",
-              "ViewState": "AQIAACgAAAAAAAAAAAAUwDUAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-20T19:47:35.367Z",
+              "WhenOpened": "2024-03-22T06:03:26.395Z",
               "EditorCaption": ""
             }
           ]

@@ -32,6 +32,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Authentication.Api.Controllers.AccountController",
+    "Method": "ChangeSecurity",
+    "RelativePath": "api/Account/Security",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "lockOutDetailsInfo",
+        "Type": "Authentication.jwt.DTOs.LockOutDetailsInfo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Authentication.Api.Controllers.HomeController",
     "Method": "Index",
     "RelativePath": "api/Home",

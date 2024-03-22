@@ -16,9 +16,9 @@ namespace Authentication.jwt
 {
     public class JwtTokenHandler
     {
-        public const string JWT_SECURITY_KEY = "yyAhYj6LYNzoL8bRVKbuF2EfKMKN05WComWtIVa5AUSScmiNWBFam8jFcwvZ54lR";
+        string key = new ConfigurationBuilder().AddJsonFile("E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/Authentication.jwt/config.json").Build().GetSection("jwt")["secret"];
 
-      
+
         private const int JWT_VALIDITY_MINS = 180;
 
         public JwtTokenHandler()
@@ -40,7 +40,7 @@ namespace Authentication.jwt
                 return null;*/
 
             var tokenExpiryTimeStamp = DateTime.Now.AddMinutes(JWT_VALIDITY_MINS);
-            var tokenKey = Encoding.ASCII.GetBytes(JWT_SECURITY_KEY);
+            var tokenKey = Encoding.ASCII.GetBytes(key);
       
 
             var claimsIdentity = new ClaimsIdentity(
