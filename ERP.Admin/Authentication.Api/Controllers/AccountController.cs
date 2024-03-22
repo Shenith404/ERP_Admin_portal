@@ -15,10 +15,10 @@ namespace Authentication.Api.Controllers
     public class AccountController : ControllerBase
     {
         private readonly JwtTokenHandler _jwtTokenHandler;
-        private readonly UserManager<BaseEntity> _userManager;
+        private readonly UserManager<UserModel> _userManager;
         private readonly RoleManager<IdentityRole<Guid>> _roleManager;
 
-        public AccountController(JwtTokenHandler jwtTokenHandler, UserManager<BaseEntity> userManager, RoleManager<IdentityRole<Guid>> roleManager)
+        public AccountController(JwtTokenHandler jwtTokenHandler, UserManager<UserModel> userManager, RoleManager<IdentityRole<Guid>> roleManager)
         {
             _jwtTokenHandler = jwtTokenHandler;
             _userManager = userManager;
@@ -171,7 +171,7 @@ namespace Authentication.Api.Controllers
 
                 //Create User
 
-                var new_user = new BaseEntity()
+                var new_user = new UserModel()
                 {
                     Email = authenticationRequest.UserName,
                     UserName =authenticationRequest.UserName,

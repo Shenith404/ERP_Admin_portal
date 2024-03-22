@@ -19,4 +19,8 @@
     <ProjectReference Include="..\Authentication.jwt\Authentication.jwt.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+
 </Project>

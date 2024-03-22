@@ -14,6 +14,21 @@ namespace ERP.Authentication.Jwt
 
             string key = new ConfigurationBuilder().AddJsonFile("E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/Authentication.jwt/config.json").Build().GetSection("jwt")["secret"];
 
+            var tokenValidationParameters = new TokenValidationParameters
+            {
+                ValidateIssuerSigningKey = true,
+                ValidateIssuer = false,
+                ValidateAudience = false,
+                IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(key)),
+                ValidateLifetime = true,
+                RequireExpirationTime = false,
+
+            };
+
+            //Inject into ouy DI container  
+            services.AddSingleton(tokenValidationParameters);
+
+
             services.AddAuthentication(o =>
             {
                 o.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -22,14 +37,7 @@ namespace ERP.Authentication.Jwt
             {
                 o.RequireHttpsMetadata = false;
                 o.SaveToken = true;
-                o.TokenValidationParameters = new TokenValidationParameters
-                {
-                    ValidateIssuerSigningKey = true,
-                    ValidateIssuer = false,
-                    ValidateAudience = false,
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(key))
-
-                };
+                o.TokenValidationParameters = tokenValidationParameters;
             });
         } 
     }

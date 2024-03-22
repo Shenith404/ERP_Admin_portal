@@ -17,11 +17,11 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton<JwtTokenHandler>();
 
-builder.Services.AddIdentity<BaseEntity,IdentityRole<Guid>>(options => options.SignIn.RequireConfirmedAccount = true)
+builder.Services.AddIdentity<UserModel,IdentityRole<Guid>>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<AppDbContext>()
     .AddDefaultTokenProviders()
-    .AddRoles<IdentityRole<Guid>>();
-
+    .AddRoles<IdentityRole<Guid>>()
+    .AddApiEndpoints();
 
 
 builder.Services.AddDbContext<AppDbContext>(o => o.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
@@ -31,7 +31,6 @@ builder.Services.AddCustomJwtAuthenticaion();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-
 
 if (app.Environment.IsDevelopment())
 {

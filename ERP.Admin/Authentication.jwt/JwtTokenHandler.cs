@@ -19,7 +19,7 @@ namespace Authentication.jwt
         string key = new ConfigurationBuilder().AddJsonFile("E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/Authentication.jwt/config.json").Build().GetSection("jwt")["secret"];
 
 
-        private const int JWT_VALIDITY_MINS = 180;
+        private const int JWT_VALIDITY_MINS = 1;
 
         public JwtTokenHandler()
         {
@@ -46,6 +46,7 @@ namespace Authentication.jwt
             var claimsIdentity = new ClaimsIdentity(
                 new List<Claim>
                 {
+                  
                   new Claim(JwtRegisteredClaimNames.Name, request.UserName),
                   new Claim(ClaimTypes.Role, request.Role),
                   new Claim(JwtRegisteredClaimNames.Sub ,request.UserName),

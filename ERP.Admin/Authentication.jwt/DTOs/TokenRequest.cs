@@ -9,6 +9,8 @@ namespace Authentication.jwt.DTOs
 {
     public class TokenRequest
     {
+    
+
         [Required]
         public string UserName { get; set; }
         [Required]
