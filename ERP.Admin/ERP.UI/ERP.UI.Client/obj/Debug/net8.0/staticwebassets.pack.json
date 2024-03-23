@@ -1,19 +1,19 @@
 {
   "Files": [
     {
-      "Id": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.UI\\ERP.UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "Id": "D:\\Projects\\ERP_Admin\\ERP_Admin_portal\\ERP.Admin\\ERP.UI\\ERP.UI.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
     },
     {
-      "Id": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.UI\\ERP.UI.Client\\obj\\Debug\\net8.0\\compressed\\fbyai88v25.gz",
+      "Id": "D:\\Projects\\ERP_Admin\\ERP_Admin_portal\\ERP.Admin\\ERP.UI\\ERP.UI.Client\\obj\\Debug\\net8.0\\compressed\\xao5b29z6t.gz",
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
     },
     {
-      "Id": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.UI\\ERP.UI.Client\\wwwroot\\appsettings.Development.json",
+      "Id": "D:\\Projects\\ERP_Admin\\ERP_Admin_portal\\ERP.Admin\\ERP.UI\\ERP.UI.Client\\wwwroot\\appsettings.Development.json",
       "PackagePath": "staticwebassets\\appsettings.Development.json"
     },
     {
-      "Id": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\ERP.UI\\ERP.UI.Client\\wwwroot\\appsettings.json",
+      "Id": "D:\\Projects\\ERP_Admin\\ERP_Admin_portal\\ERP.Admin\\ERP.UI\\ERP.UI.Client\\wwwroot\\appsettings.json",
       "PackagePath": "staticwebassets\\appsettings.json"
     },
     {
