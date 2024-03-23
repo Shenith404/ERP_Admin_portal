@@ -30,5 +30,46 @@ namespace Authentication.DataService.Repository
                 return new List<RefreshToken>();
             }
         }
+
+        public async Task<RefreshToken> GetByRefreshToken(string refreshToken)
+        {
+            try
+            {
+                return await dbSet.Where(x => x.Token.ToLower() == refreshToken.ToLower())
+                    .AsNoTracking()
+                    .FirstOrDefaultAsync();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "{Repo} All mothod has generated Error", typeof(RefreshTokenRepository));
+
+                return null;
+            }
+        }
+
+        public async Task<bool> MarkRefreshTokenAsUser(RefreshToken refreshToken)
+        {
+            try
+            {
+                var result = await dbSet.Where(x => x.Id == refreshToken.Id)
+                    .AsNoTracking()
+                    .FirstOrDefaultAsync();
+
+
+                if(result == null) return false;
+
+                result.IsUsed = refreshToken.IsUsed;
+
+                return true;
+
+
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "{Repo} All mothod has generated Error", typeof(RefreshTokenRepository));
+
+                return false;
+            }
+        }
     }
 }

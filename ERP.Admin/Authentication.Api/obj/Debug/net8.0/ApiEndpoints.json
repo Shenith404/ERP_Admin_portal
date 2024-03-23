@@ -17,6 +17,22 @@
   },
   {
     "ContainingType": "Authentication.Api.Controllers.AccountController",
+    "Method": "RefreshToken",
+    "RelativePath": "api/Account/RefreshToken",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tokenInfoDTO",
+        "Type": "Authentication.Core.DTOs.TokenInfoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Authentication.Api.Controllers.AccountController",
     "Method": "Register",
     "RelativePath": "api/Account/Register",
     "HttpMethod": "POST",

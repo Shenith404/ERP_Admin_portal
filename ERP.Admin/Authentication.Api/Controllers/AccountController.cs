@@ -146,7 +146,7 @@ namespace Authentication.Api.Controllers
         }
 
         //Register User
-
+        // need to change
         [HttpPost]
         [Route("Register")]
         public async Task<IActionResult> Register([FromBody] AuthenticationRequestDTO authenticationRequest)
@@ -263,6 +263,33 @@ namespace Authentication.Api.Controllers
 
             return BadRequest();
         }
+
+        [HttpPost]
+        [Route("RefreshToken")]
+        public async Task<IActionResult> RefreshToken([FromBody] TokenInfoDTO tokenInfoDTO)
+        {
+            if (ModelState.IsValid) {
+
+                //check is token is valid
+                var result = await _jwtTokenHandler.VerifyToken(tokenInfoDTO);
+
+                if(result != null)
+                {
+                    return Ok(
+                        result);
+                }
+                return BadRequest(
+                    new AuthenticationResponseDTO
+                    {
+                        Message="Token Request is failed"
+                    });
+            }
+
+            return BadRequest();
+        }
+        
+    
+    
     }
 
 }
