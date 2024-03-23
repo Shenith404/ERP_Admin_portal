@@ -9,7 +9,7 @@
     "Parameters": [
       {
         "Name": "authenticationRequest",
-        "Type": "ERP.Authentication.Jwt.DTOs.AuthenticationRequest",
+        "Type": "ERP.Authentication.Core.DTOs.AuthenticationRequestDTO",
         "IsRequired": true
       }
     ],
@@ -25,7 +25,7 @@
     "Parameters": [
       {
         "Name": "authenticationRequest",
-        "Type": "ERP.Authentication.Jwt.DTOs.AuthenticationRequest",
+        "Type": "ERP.Authentication.Core.DTOs.AuthenticationRequestDTO",
         "IsRequired": true
       }
     ],
@@ -41,7 +41,7 @@
     "Parameters": [
       {
         "Name": "lockOutDetailsInfo",
-        "Type": "Authentication.jwt.DTOs.LockOutDetailsInfo",
+        "Type": "Authentication.Core.DTOs.LockOutDetailsInfoDTO",
         "IsRequired": true
       }
     ],
