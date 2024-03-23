@@ -1,14 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
+﻿
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Authentication.jwt.DTOs
+
+namespace Authentication.Core.DTOs
 {
-    public class LockOutDetailsInfo
+    public class LockOutDetailsInfoDTO
     {
         [Required]
         public string  Email { get; set; }

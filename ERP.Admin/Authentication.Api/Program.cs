@@ -2,8 +2,8 @@ using AuthenticateUsers.Data;
 using Authentication.DataService;
 using Authentication.DataService.IConfiguration;
 using Authentication.jwt;
+using ERP.Authentication.Core.Entity;
 using ERP.Authentication.Jwt;
-using ERP.Authentication.Jwt.Entity;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
@@ -16,7 +16,8 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddSingleton<JwtTokenHandler>();
+builder.Services.AddScoped<IUnitOfWorks, UnitOfWorks>();
+builder.Services.AddScoped<IJwtTokenHandler,JwtTokenHandler>();
 
 builder.Services.AddIdentityCore<UserModel>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddRoles<IdentityRole>()
@@ -29,7 +30,6 @@ builder.Services.AddDbContext<AppDbContext>(o => o.UseSqlServer(builder.Configur
 
 builder.Services.AddCustomJwtAuthenticaion();
 
-builder.Services.AddScoped<IUnitOfWorks, UnitOfWorks>();
 
 var app = builder.Build();
 

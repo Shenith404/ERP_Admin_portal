@@ -1,8 +1,10 @@
-﻿using Authentication.jwt.DTOs;
-using Authentication.jwt.Entity;
-using ERP.Authentication.Jwt.DTOs;
-using ERP.Authentication.Jwt.Entity;
-using Microsoft.AspNetCore.Identity;
+﻿
+
+
+using Authentication.Core.DTOs;
+using Authentication.Core.Entity;
+using Authentication.DataService.IConfiguration;
+using ERP.Authentication.Core.DTOs;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using System;
@@ -16,20 +18,22 @@ using System.Text;
 
 namespace Authentication.jwt
 {
-    public class JwtTokenHandler
+    public class JwtTokenHandler : IJwtTokenHandler
     {
         string key = new ConfigurationBuilder().AddJsonFile("E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/Authentication.jwt/config.json").Build().GetSection("jwt")["secret"];
 
 
         private const int JWT_VALIDITY_MINS = 1;
+        private readonly IUnitOfWorks _unitOfWorks;
+        private readonly TokenValidationParameters _tokenValidationParameters;
 
-
-        public JwtTokenHandler()
+        public JwtTokenHandler(IUnitOfWorks unitOfWorks, TokenValidationParameters tokenValidationParameters)
         {
-           
+            _unitOfWorks = unitOfWorks;
+            _tokenValidationParameters = tokenValidationParameters;
         }
 
-        public  AuthenticationResponse? GenerateJwtToken(TokenRequest request)
+        public  async Task<AuthenticationResponseDTO ?>  GenerateJwtToken(TokenRequestDTO request)
         {
             if (string.IsNullOrWhiteSpace(request.UserName) )
             {
@@ -87,8 +91,11 @@ namespace Authentication.jwt
                 JwtId= securityToken.Id,
                 ExpiredDate= DateTime.UtcNow.AddMonths(1),
             };
+            await _unitOfWorks.RefreshToknes.Add(refreshtoken);
+            await _unitOfWorks.CompleteAsync();
 
-            return new AuthenticationResponse
+
+            return new AuthenticationResponseDTO
             {
                 UserName = request.UserName,
                 ExpiresIn = (int)tokenExpiryTimeStamp.Subtract(DateTime.Now).TotalSeconds,

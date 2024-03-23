@@ -5,12 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Authentication.jwt.DTOs
+namespace Authentication.Core.DTOs
 {
-    public class TokenRequest
+    public class TokenRequestDTO
     {
-    
-
+ 
         [Required]
         public string UserName { get; set; }
      

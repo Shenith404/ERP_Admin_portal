@@ -1,5 +1,5 @@
-﻿using Authentication.DataService.IRepository;
-using Authentication.jwt.Entity;
+﻿using Authentication.Core.Entity;
+using Authentication.DataService.IRepository;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using System;

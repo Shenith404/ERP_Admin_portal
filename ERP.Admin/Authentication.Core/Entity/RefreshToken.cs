@@ -1,8 +1,8 @@
-﻿using ERP.Authentication.Jwt.Entity;
+﻿using ERP.Authentication.Core.Entity;
 using System.ComponentModel.DataAnnotations.Schema;
 
 
-namespace Authentication.jwt.Entity
+namespace Authentication.Core.Entity
 {
     public class RefreshToken
     {

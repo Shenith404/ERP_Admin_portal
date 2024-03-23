@@ -1,8 +1,12 @@
-﻿using Authentication.jwt.Entity;
-using ERP.Authentication.Jwt.Entity;
+﻿
+
+
+using Authentication.Core.Entity;
+using ERP.Authentication.Core.Entity;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+
 
 
 namespace Authentication.DataService

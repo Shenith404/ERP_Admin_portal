@@ -13,6 +13,11 @@
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.4.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Authentication.Core\Authentication.Core.csproj" />
+    <ProjectReference Include="..\Authentication.DataService\Authentication.DataService.csproj" />
+  </ItemGroup>
+
   <ProjectExtensions><VisualStudio><UserProperties config_1json__JsonSchema="https://json.schemastore.org/appsettings.json" /></VisualStudio></ProjectExtensions>
 
 </Project>

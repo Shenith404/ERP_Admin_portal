@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Authentication.jwt.DTOs
+namespace Authentication.Core.DTOs
 {
-    public class TokenRespnce
+    public class TokenResponceDTO
     {
         public string  Jwt { get; set; }
         public string RefreshToken { get; set; }

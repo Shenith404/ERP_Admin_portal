@@ -2,9 +2,9 @@
 
 using System.ComponentModel.DataAnnotations;
 
-namespace ERP.Authentication.Jwt.DTOs
+namespace ERP.Authentication.Core.DTOs
 {
-    public class AuthenticationRequest
+    public class AuthenticationRequestDTO
     {
         [Required]
         public string UserName { get; set; }

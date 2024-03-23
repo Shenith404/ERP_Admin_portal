@@ -186,3 +186,5 @@ E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\Authentication.Api\bin\Debug\net8
 E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\Authentication.Api\bin\Debug\net8.0\Domain.pdb
 E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\Authentication.Api\bin\Debug\net8.0\ERP.Admin.Infastructure.Email.pdb
 E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\Authentication.Api\bin\Debug\net8.0\ERP.Admin.Pgsql.pdb
+E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\Authentication.Api\bin\Debug\net8.0\Authentication.Core.dll
+E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\Authentication.Api\bin\Debug\net8.0\Authentication.Core.pdb

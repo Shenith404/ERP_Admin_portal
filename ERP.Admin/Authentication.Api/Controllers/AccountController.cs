@@ -1,9 +1,8 @@
-﻿using Authentication.DataService.IConfiguration;
+﻿using Authentication.Core.DTOs;
+using Authentication.DataService.IConfiguration;
 using Authentication.jwt;
-using Authentication.jwt.DTOs;
-using ERP.Authentication.Jwt;
-using ERP.Authentication.Jwt.DTOs;
-using ERP.Authentication.Jwt.Entity;
+using ERP.Authentication.Core.DTOs;
+using ERP.Authentication.Core.Entity;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
@@ -15,7 +14,7 @@ namespace Authentication.Api.Controllers
     [ApiController]
     public class AccountController : ControllerBase
     {
-        private readonly JwtTokenHandler _jwtTokenHandler;
+        private readonly IJwtTokenHandler _jwtTokenHandler;
         private readonly UserManager<UserModel> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly IUnitOfWorks _unitOfWorks;
@@ -23,7 +22,7 @@ namespace Authentication.Api.Controllers
 
 
 
-        public AccountController(JwtTokenHandler jwtTokenHandler,
+        public AccountController(IJwtTokenHandler jwtTokenHandler,
             UserManager<UserModel> userManager,
             RoleManager<IdentityRole> roleManager, IUnitOfWorks unitOfWorks, 
             TokenValidationParameters tokenValidationParameters)
@@ -39,7 +38,7 @@ namespace Authentication.Api.Controllers
 
         //Login User
         [HttpPost("Login")]
-        public async Task<IActionResult> Login([FromBody] AuthenticationRequest authenticationRequest)
+        public async Task<IActionResult> Login([FromBody] AuthenticationRequestDTO authenticationRequest)
         {
             if(ModelState.IsValid)
             {
@@ -48,7 +47,7 @@ namespace Authentication.Api.Controllers
                 if (existing_user == null)
                 {
                     return BadRequest(
-                          new AuthenticationResponse()
+                          new AuthenticationResponseDTO()
                           {
                               Message = "Username is not Exist"
                           });
@@ -59,7 +58,7 @@ namespace Authentication.Api.Controllers
                 if(existing_user.Status != 1)
                 {
                     return BadRequest(
-                         new AuthenticationResponse()
+                         new AuthenticationResponseDTO()
                          {
                              Message = "This user is Deleted"
                          });
@@ -70,7 +69,7 @@ namespace Authentication.Api.Controllers
                 if (isLocked==true)
                 {
                     return BadRequest(
-                         new AuthenticationResponse()
+                         new AuthenticationResponseDTO()
                          {
                              IsLocked=true,
                              Message = "This user is Locked"
@@ -81,7 +80,7 @@ namespace Authentication.Api.Controllers
                 if (existing_user.EmailConfirmed ==false)
                 {
                     return BadRequest(
-                         new AuthenticationResponse()
+                         new AuthenticationResponseDTO()
                          {
                              EmailConfirmed = await _userManager.IsEmailConfirmedAsync(existing_user),
                              Message = "Your Email is not Confirmed"
@@ -95,7 +94,7 @@ namespace Authentication.Api.Controllers
                 if (isCorrect==false)
                 {
                     return BadRequest(
-                      new AuthenticationResponse()
+                      new AuthenticationResponseDTO()
                       {
                           Message = "Password is Incorrect"
                       });
@@ -110,7 +109,7 @@ namespace Authentication.Api.Controllers
 
                 //Generate token
 
-                TokenRequest tokenRequest = new TokenRequest();
+                TokenRequestDTO tokenRequest = new TokenRequestDTO();
                 tokenRequest.UserName = authenticationRequest.UserName;
                 if(!roles.IsNullOrEmpty() )
                 {
@@ -121,10 +120,10 @@ namespace Authentication.Api.Controllers
 
               
                
-                var result = _jwtTokenHandler.GenerateJwtToken(tokenRequest);
+                var result = await _jwtTokenHandler.GenerateJwtToken(tokenRequest);
 
                 return Ok(
-                    new AuthenticationResponse
+                    new AuthenticationResponseDTO
                     {
                         JwtToken = result!.JwtToken,
                         RefreshToken = result!.RefreshToken,
@@ -140,7 +139,7 @@ namespace Authentication.Api.Controllers
             }
 
             return BadRequest(
-              new AuthenticationResponse()
+              new AuthenticationResponseDTO()
               {
                   Message = "Invalid User Credentials"
               });
@@ -150,7 +149,7 @@ namespace Authentication.Api.Controllers
 
         [HttpPost]
         [Route("Register")]
-        public async Task<IActionResult> Register([FromBody] AuthenticationRequest authenticationRequest)
+        public async Task<IActionResult> Register([FromBody] AuthenticationRequestDTO authenticationRequest)
         {
             if(ModelState.IsValid)
             {
@@ -167,14 +166,14 @@ namespace Authentication.Api.Controllers
                     if (user_exist.Status != 1)
                     {
                         return BadRequest(
-                             new AuthenticationResponse()
+                             new AuthenticationResponseDTO()
                              {
                                  Message = "You cant user this email"
                              });
                     }
 
                     return BadRequest(
-                        new AuthenticationResponse()
+                        new AuthenticationResponseDTO()
                         {
                             Message = "Email Is Already Exist"
                         });
@@ -202,7 +201,7 @@ namespace Authentication.Api.Controllers
 
                 if (is_created.Succeeded)
                 {
-                    TokenRequest tokenRequest = new TokenRequest();
+                    TokenRequestDTO tokenRequest = new TokenRequestDTO();
                     tokenRequest.UserName = authenticationRequest.UserName;
                     tokenRequest.Role = "Reguler";
                     tokenRequest.UserId= get_created_user.Id;
@@ -210,10 +209,10 @@ namespace Authentication.Api.Controllers
                     
                     //Generate token
 
-                    var result = _jwtTokenHandler.GenerateJwtToken(tokenRequest);
+                    AuthenticationResponseDTO result = await _jwtTokenHandler.GenerateJwtToken(tokenRequest);
 
                     return Ok(
-                        new AuthenticationResponse
+                        new AuthenticationResponseDTO
                         {
                             JwtToken=result!.JwtToken,
                             ExpiresIn=result.ExpiresIn,
@@ -226,13 +225,13 @@ namespace Authentication.Api.Controllers
 
                 }
                 return BadRequest(
-                    new AuthenticationResponse() {
+                    new AuthenticationResponseDTO() {
                         Message="Server Error"
                     });
             }
 
             return BadRequest(
-                new AuthenticationResponse()
+                new AuthenticationResponseDTO()
                 {
                     Message = "Invalid User Credentials"
                 });
@@ -240,7 +239,7 @@ namespace Authentication.Api.Controllers
         }
 
         [HttpPost("Security")]
-        public async Task<IActionResult> ChangeSecurity([FromBody] LockOutDetailsInfo lockOutDetailsInfo)
+        public async Task<IActionResult> ChangeSecurity([FromBody] LockOutDetailsInfoDTO lockOutDetailsInfo)
         {
             if(ModelState.IsValid) { 
                 var exist_user = await _userManager.FindByEmailAsync(lockOutDetailsInfo.Email);

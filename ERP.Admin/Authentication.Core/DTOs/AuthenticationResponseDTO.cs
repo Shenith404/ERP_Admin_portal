@@ -1,9 +1,9 @@
 ﻿
 using System.ComponentModel.DataAnnotations;
 
-namespace ERP.Authentication.Jwt.DTOs
+namespace ERP.Authentication.Core.DTOs
 {
-    public class AuthenticationResponse
+    public class AuthenticationResponseDTO
     {
         public string UserName { get; set; }
         public string JwtToken { get; set; } 
