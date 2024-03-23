@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iEW4IqMcux9sE1KeAKXUptHSmE3eKYrSjkngQOQAlgpg/PivpXhkotTyhfmqmsGZH4z5pYP55zO0MQJ85APYSg==",
+  "dgSpecHash": "0yzPNFXtZrei0WMMVHwDDyF+D/G7HtDBV3X7QipYijTImVGPuQBzY7qsa9VMs2bw/PRQnf5ug1I+BFXcpiWxOA==",
   "success": true,
-  "projectFilePath": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\Domain\\Domain.csproj",
+  "projectFilePath": "D:\\Projects\\ERP_Admin\\ERP_Admin_portal\\ERP.Admin\\Domain\\Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -32,3 +32,15 @@ E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\Domain\obj\Debug\net8.0\Domain.dl
 E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\Domain\obj\Debug\net8.0\refint\Domain.dll
 E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\Domain\obj\Debug\net8.0\Domain.pdb
 E:\ERP_Admin_portal\ERP_Admin_portal\ERP.Admin\Domain\obj\Debug\net8.0\ref\Domain.dll
+D:\Projects\ERP_Admin\ERP_Admin_portal\ERP.Admin\Domain\bin\Debug\net8.0\Domain.deps.json
+D:\Projects\ERP_Admin\ERP_Admin_portal\ERP.Admin\Domain\bin\Debug\net8.0\Domain.dll
+D:\Projects\ERP_Admin\ERP_Admin_portal\ERP.Admin\Domain\bin\Debug\net8.0\Domain.pdb
+D:\Projects\ERP_Admin\ERP_Admin_portal\ERP.Admin\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\ERP_Admin\ERP_Admin_portal\ERP.Admin\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+D:\Projects\ERP_Admin\ERP_Admin_portal\ERP.Admin\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+D:\Projects\ERP_Admin\ERP_Admin_portal\ERP.Admin\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+D:\Projects\ERP_Admin\ERP_Admin_portal\ERP.Admin\Domain\obj\Debug\net8.0\Domain.sourcelink.json
+D:\Projects\ERP_Admin\ERP_Admin_portal\ERP.Admin\Domain\obj\Debug\net8.0\Domain.dll
+D:\Projects\ERP_Admin\ERP_Admin_portal\ERP.Admin\Domain\obj\Debug\net8.0\refint\Domain.dll
+D:\Projects\ERP_Admin\ERP_Admin_portal\ERP.Admin\Domain\obj\Debug\net8.0\Domain.pdb
+D:\Projects\ERP_Admin\ERP_Admin_portal\ERP.Admin\Domain\obj\Debug\net8.0\ref\Domain.dll

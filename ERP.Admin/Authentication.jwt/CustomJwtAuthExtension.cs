@@ -12,7 +12,7 @@ namespace ERP.Authentication.Jwt
         public static void AddCustomJwtAuthenticaion(this IServiceCollection services)
         {
 
-            string key = new ConfigurationBuilder().AddJsonFile("E:/ERP_Admin_portal/ERP_Admin_portal/ERP.Admin/Authentication.jwt/config.json").Build().GetSection("jwt")["secret"];
+            string key = new ConfigurationBuilder().AddJsonFile("D:/Projects/ERP_Admin/ERP_Admin_portal/ERP.Admin/Authentication.jwt/config.json").Build().GetSection("jwt")["secret"];
 
             services.AddAuthentication(o =>
             {
