@@ -1,4 +1,5 @@
 ﻿using Authentication.jwt.DTOs;
+using Authentication.jwt.Entity;
 using ERP.Authentication.Jwt.DTOs;
 using ERP.Authentication.Jwt.Entity;
 using Microsoft.AspNetCore.Identity;
@@ -6,11 +7,12 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Security.Claims;
 using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Authentication.jwt
 {
@@ -20,6 +22,7 @@ namespace Authentication.jwt
 
 
         private const int JWT_VALIDITY_MINS = 1;
+
 
         public JwtTokenHandler()
         {
@@ -67,18 +70,39 @@ namespace Authentication.jwt
                 SigningCredentials = signinCredentials
             };
 
-
+            //create jwt token
             var jwtSecuritTokenHandler = new JwtSecurityTokenHandler();
             var securityToken = jwtSecuritTokenHandler.CreateToken(securityTokenDescripter);
             var token = jwtSecuritTokenHandler.WriteToken(securityToken);
+
+
+            //create refresh token
+            var refreshtoken = new RefreshToken
+            {
+                Token = $"{RandomStringGenarator(25)}_{Guid.NewGuid()}" ,
+                UserId = request.UserId,
+                IsRevoked = false,
+                IsUsed = false,
+                Status=1,
+                JwtId= securityToken.Id,
+                ExpiredDate= DateTime.UtcNow.AddMonths(1),
+            };
 
             return new AuthenticationResponse
             {
                 UserName = request.UserName,
                 ExpiresIn = (int)tokenExpiryTimeStamp.Subtract(DateTime.Now).TotalSeconds,
-                JwtToken = token
+                JwtToken = token,
+                RefreshToken =refreshtoken.Token,
             };
 
+        }
+
+        private string  RandomStringGenarator(int length)
+        {
+            var random =new Random();
+            const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+            return new string(Enumerable.Repeat(chars, length).Select(s => s[random.Next(s.Length)]).ToArray());
         }
     }
 }

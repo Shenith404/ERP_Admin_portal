@@ -1,13 +1,13 @@
-﻿using Authentication.jwt;
+﻿using Authentication.DataService.IConfiguration;
+using Authentication.jwt;
 using Authentication.jwt.DTOs;
 using ERP.Authentication.Jwt;
 using ERP.Authentication.Jwt.DTOs;
 using ERP.Authentication.Jwt.Entity;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Microsoft.IdentityModel.Tokens;
+using System.Drawing.Printing;
 
 namespace Authentication.Api.Controllers
 {
@@ -18,12 +18,21 @@ namespace Authentication.Api.Controllers
         private readonly JwtTokenHandler _jwtTokenHandler;
         private readonly UserManager<UserModel> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager;
+        private readonly IUnitOfWorks _unitOfWorks;
+        private readonly TokenValidationParameters _tokenValidationParameters;
 
-        public AccountController(JwtTokenHandler jwtTokenHandler, UserManager<UserModel> userManager, RoleManager<IdentityRole> roleManager)
+
+
+        public AccountController(JwtTokenHandler jwtTokenHandler,
+            UserManager<UserModel> userManager,
+            RoleManager<IdentityRole> roleManager, IUnitOfWorks unitOfWorks, 
+            TokenValidationParameters tokenValidationParameters)
         {
             _jwtTokenHandler = jwtTokenHandler;
             _userManager = userManager;
             _roleManager = roleManager;
+            _unitOfWorks = unitOfWorks;
+            _tokenValidationParameters = tokenValidationParameters; 
         }
 
 
@@ -118,6 +127,7 @@ namespace Authentication.Api.Controllers
                     new AuthenticationResponse
                     {
                         JwtToken = result!.JwtToken,
+                        RefreshToken = result!.RefreshToken,
                         ExpiresIn = result.ExpiresIn,
                         UserName = result.UserName,
                         Message = "User Login Successfully",
@@ -185,7 +195,7 @@ namespace Authentication.Api.Controllers
 
                 // Add Default Role as Reguler
   
-                await _roleManager.CreateAsync(new IdentityRole("Reguler"));
+               // await _roleManager.CreateAsync(new IdentityRole("Reguler"));
                 await _userManager.AddToRoleAsync(get_created_user, "Reguler");
 
 

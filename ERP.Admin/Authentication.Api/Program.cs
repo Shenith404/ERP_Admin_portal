@@ -1,5 +1,6 @@
 using AuthenticateUsers.Data;
 using Authentication.DataService;
+using Authentication.DataService.IConfiguration;
 using Authentication.jwt;
 using ERP.Authentication.Jwt;
 using ERP.Authentication.Jwt.Entity;
@@ -27,6 +28,8 @@ builder.Services.AddIdentityCore<UserModel>(options => options.SignIn.RequireCon
 builder.Services.AddDbContext<AppDbContext>(o => o.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddCustomJwtAuthenticaion();
+
+builder.Services.AddScoped<IUnitOfWorks, UnitOfWorks>();
 
 var app = builder.Build();
 
