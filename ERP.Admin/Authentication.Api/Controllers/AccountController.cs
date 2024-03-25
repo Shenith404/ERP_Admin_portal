@@ -16,22 +16,17 @@ namespace Authentication.Api.Controllers
     {
         private readonly IJwtTokenHandler _jwtTokenHandler;
         private readonly UserManager<UserModel> _userManager;
-        private readonly RoleManager<IdentityRole> _roleManager;
-        private readonly IUnitOfWorks _unitOfWorks;
-        private readonly TokenValidationParameters _tokenValidationParameters;
+       
 
 
 
         public AccountController(IJwtTokenHandler jwtTokenHandler,
-            UserManager<UserModel> userManager,
-            RoleManager<IdentityRole> roleManager, IUnitOfWorks unitOfWorks, 
-            TokenValidationParameters tokenValidationParameters)
+            UserManager<UserModel> userManager
+           )
         {
             _jwtTokenHandler = jwtTokenHandler;
             _userManager = userManager;
-            _roleManager = roleManager;
-            _unitOfWorks = unitOfWorks;
-            _tokenValidationParameters = tokenValidationParameters; 
+            
         }
 
 
@@ -113,7 +108,7 @@ namespace Authentication.Api.Controllers
                 tokenRequest.UserName = authenticationRequest.UserName;
                 if(!roles.IsNullOrEmpty() )
                 {
-                    tokenRequest.Role = "Role";
+                    tokenRequest.Role = "Reguler";
                 }
                 tokenRequest.Role = roles[0];
                 tokenRequest.UserId = existing_user.Id;
@@ -175,7 +170,7 @@ namespace Authentication.Api.Controllers
                     return BadRequest(
                         new AuthenticationResponseDTO()
                         {
-                            Message = "Email Is Already Exist"
+                            Message = "Email is Already Exist"
                         });
                 }
 

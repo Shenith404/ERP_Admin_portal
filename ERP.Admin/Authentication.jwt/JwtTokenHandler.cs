@@ -61,6 +61,7 @@ namespace Authentication.jwt
                 {
                   new Claim("Id", request.UserId),
                   new Claim(JwtRegisteredClaimNames.Name, request.UserName),
+                  new Claim(ClaimTypes.NameIdentifier, request.UserId),
                   new Claim(ClaimTypes.Role, request.Role),
                   new Claim(JwtRegisteredClaimNames.Sub ,request.UserName),
                   new Claim(JwtRegisteredClaimNames.Jti ,Guid.NewGuid().ToString()),
@@ -81,9 +82,9 @@ namespace Authentication.jwt
             };
 
             //create jwt token
-            var jwtSecuritTokenHandler = new JwtSecurityTokenHandler();
-            var securityToken = jwtSecuritTokenHandler.CreateToken(securityTokenDescripter);
-            var token = jwtSecuritTokenHandler.WriteToken(securityToken);
+            var jwtSecurityTokenHandler = new JwtSecurityTokenHandler();
+            var securityToken = jwtSecurityTokenHandler.CreateToken(securityTokenDescripter);
+            var token = jwtSecurityTokenHandler.WriteToken(securityToken);
 
 
             //create refresh token
