@@ -1,6 +1,59 @@
 [
   {
     "ContainingType": "Authentication.Api.Controllers.AccountController",
+    "Method": "ChangePassword",
+    "RelativePath": "api/Account/ChangePassword",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newPassword",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "oldPassword",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Authentication.Api.Controllers.AccountController",
+    "Method": "Register",
+    "RelativePath": "api/Account/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "authenticationRequest",
+        "Type": "ERP.Authentication.Core.DTOs.AuthenticationRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Authentication.Api.Controllers.AccountController",
+    "Method": "GetUsers",
+    "RelativePath": "api/Account/getUsers-details",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "searchString",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Authentication.Api.Controllers.AccountController",
     "Method": "Login",
     "RelativePath": "api/Account/Login",
     "HttpMethod": "POST",
@@ -33,22 +86,6 @@
   },
   {
     "ContainingType": "Authentication.Api.Controllers.AccountController",
-    "Method": "Register",
-    "RelativePath": "api/Account/Register",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "authenticationRequest",
-        "Type": "ERP.Authentication.Core.DTOs.AuthenticationRequestDTO",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Authentication.Api.Controllers.AccountController",
     "Method": "ChangeSecurity",
     "RelativePath": "api/Account/Security",
     "HttpMethod": "POST",
@@ -64,9 +101,45 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Authentication.Api.Controllers.AccountController",
+    "Method": "UpdateUser",
+    "RelativePath": "api/Account/Update",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "ERP.Authentication.Core.Entity.UserModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Authentication.Api.Controllers.HomeController",
     "Method": "Index",
     "RelativePath": "api/Home",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Authentication.Api.Controllers.HomeController",
+    "Method": "Index2",
+    "RelativePath": "api/Home/test",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

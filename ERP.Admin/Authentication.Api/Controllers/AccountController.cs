@@ -1,8 +1,10 @@
 ﻿using Authentication.Core.DTOs;
 using Authentication.DataService.IConfiguration;
 using Authentication.jwt;
+using Domain.Entities;
 using ERP.Authentication.Core.DTOs;
 using ERP.Authentication.Core.Entity;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
@@ -143,7 +145,7 @@ namespace Authentication.Api.Controllers
         //Register User
         // need to change
         [HttpPost]
-        [Route("Register")]
+        [Route("Create")]
         public async Task<IActionResult> Register([FromBody] AuthenticationRequestDTO authenticationRequest)
         {
             if(ModelState.IsValid)
@@ -282,9 +284,99 @@ namespace Authentication.Api.Controllers
 
             return BadRequest();
         }
+
+        [HttpPost]
+        [Route("getUsers-details")]
+        //[Authorize] should change
+        public async Task<IActionResult> GetUsers([FromBody] string ?searchString)
+        {
+            var users = _userManager.Users.ToList();
+
+            if (users == null || !users.Any())
+            {
+                return BadRequest("User List is Empty");
+            }
+
+            if (string.IsNullOrEmpty(searchString))
+            {
+                return Ok(users);
+            }
+
+            var searchResult = users.Where(u =>
+                u.UserName!.Contains(searchString, StringComparison.OrdinalIgnoreCase) || // Search by username
+                u.Email!.Contains(searchString, StringComparison.OrdinalIgnoreCase)   // Search by email
+                  ).ToList();
+
+            return Ok(searchResult);
+        }
+
+        [HttpPost]
+        [Route("Update")]
+        //[Authorize] should change
+        public async Task<IActionResult> UpdateUser(UserModel user) {
+            if (ModelState.IsValid)
+            {
+                var result =await _userManager.UpdateAsync(user);
+                if (result.Succeeded)
+                {
+                    return Ok("Sucessfully Updated");
+                }
+                return BadRequest();
+            }
+            return BadRequest();
+
         
-    
-    
+        }
+
+        [HttpPost]
+        [Route("ChangePassword")]
+        [Authorize]
+        public async Task<IActionResult> ChangePassword( string newPassword, string oldPassword)
+        {
+            // Retrieve the current user
+            var currentUser = await _userManager.GetUserAsync(HttpContext.User);
+
+            // Ensure the current user exists and model state is valid
+            if (currentUser == null || !ModelState.IsValid)
+            {
+                return BadRequest("Invalid request");
+            }
+
+            // Validate input parameters
+            if (string.IsNullOrWhiteSpace(newPassword) || string.IsNullOrWhiteSpace(oldPassword))
+            {
+                return BadRequest("New password or old password is missing");
+            }
+
+            // Check if the old password matches
+            var isOldPasswordCorrect = await IsPasswordCorrectAsync(oldPassword, currentUser);
+            if (!isOldPasswordCorrect)
+            {
+                return BadRequest("The old password is incorrect");
+            }
+
+            // Change password
+            var result = await _userManager.ChangePasswordAsync(currentUser, oldPassword, newPassword);
+            if (result.Succeeded)
+            {
+                return Ok("Password changed successfully");
+            }
+
+            // Handle password change failure
+            var errorMessage = string.Join(", ", result.Errors.Select(error => error.Description));
+            return BadRequest(errorMessage);
+        }
+
+        // Check if the password is correct
+        private async Task<bool> IsPasswordCorrectAsync(string password, UserModel user)
+        {
+            if (user != null)
+            {
+                return await _userManager.CheckPasswordAsync(user, password);
+            }
+            return false;
+        }
+
     }
 
 }

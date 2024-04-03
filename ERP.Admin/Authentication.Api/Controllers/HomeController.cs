@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Authentication.Api.Controllers
 {
 
-    [Authorize(AuthenticationSchemes =JwtBearerDefaults.AuthenticationScheme)]
+    //[Authorize(AuthenticationSchemes =JwtBearerDefaults.AuthenticationScheme)]
     [Route("api/[controller]")]
     [ApiController]
     public class HomeController : ControllerBase
@@ -33,6 +33,15 @@ namespace Authentication.Api.Controllers
 
             var curretUser =await _userManager.GetUserAsync(HttpContext.User);
             return $"{curretUser.UserName}";
+        } 
+        
+        [HttpGet]
+        [Route("test")]
+        public async Task<string> Index2()
+        {
+
+          
+            return "sdfsdf";
         }
     }
 }
