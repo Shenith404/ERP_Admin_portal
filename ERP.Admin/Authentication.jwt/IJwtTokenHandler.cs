@@ -11,5 +11,7 @@ namespace Authentication.jwt
     public interface IJwtTokenHandler
     {
         public  Task<AuthenticationResponseDTO?> GenerateJwtToken(TokenRequestDTO request);
+
+        public Task<AuthenticationResponseDTO?> VerifyToken(TokenInfoDTO tokenInfoDTO);
     }
 }

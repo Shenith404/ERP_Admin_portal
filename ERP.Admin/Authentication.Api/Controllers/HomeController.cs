@@ -1,20 +1,47 @@
-﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+﻿using Authentication.jwt;
+using ERP.Authentication.Core.Entity;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Authentication.Api.Controllers
 {
 
-    [Authorize(AuthenticationSchemes =JwtBearerDefaults.AuthenticationScheme)]
+    //[Authorize(AuthenticationSchemes =JwtBearerDefaults.AuthenticationScheme)]
     [Route("api/[controller]")]
     [ApiController]
     public class HomeController : ControllerBase
     {
-       
-        [HttpGet]
-        public String Index()
+
+        private readonly UserManager<UserModel> _userManager;
+
+
+
+
+        public HomeController(
+            UserManager<UserModel> userManager
+           )
         {
-            return "home";
+            _userManager = userManager;
+
+        }
+
+        [HttpGet]
+        public async Task<string> Index()
+        {
+
+            var curretUser =await _userManager.GetUserAsync(HttpContext.User);
+            return $"{curretUser.UserName}";
+        } 
+        
+        [HttpGet]
+        [Route("test")]
+        public async Task<string> Index2()
+        {
+
+          
+            return "sdfsdf";
         }
     }
 }

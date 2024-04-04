@@ -1,8 +1,10 @@
 ﻿using Authentication.Core.DTOs;
 using Authentication.DataService.IConfiguration;
 using Authentication.jwt;
+using Domain.Entities;
 using ERP.Authentication.Core.DTOs;
 using ERP.Authentication.Core.Entity;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
@@ -16,22 +18,17 @@ namespace Authentication.Api.Controllers
     {
         private readonly IJwtTokenHandler _jwtTokenHandler;
         private readonly UserManager<UserModel> _userManager;
-        private readonly RoleManager<IdentityRole> _roleManager;
-        private readonly IUnitOfWorks _unitOfWorks;
-        private readonly TokenValidationParameters _tokenValidationParameters;
+       
 
 
 
         public AccountController(IJwtTokenHandler jwtTokenHandler,
-            UserManager<UserModel> userManager,
-            RoleManager<IdentityRole> roleManager, IUnitOfWorks unitOfWorks, 
-            TokenValidationParameters tokenValidationParameters)
+            UserManager<UserModel> userManager
+           )
         {
             _jwtTokenHandler = jwtTokenHandler;
             _userManager = userManager;
-            _roleManager = roleManager;
-            _unitOfWorks = unitOfWorks;
-            _tokenValidationParameters = tokenValidationParameters; 
+            
         }
 
 
@@ -46,7 +43,7 @@ namespace Authentication.Api.Controllers
                 var existing_user = await _userManager.FindByEmailAsync(authenticationRequest.UserName);
                 if (existing_user == null)
                 {
-                    return BadRequest(
+                    return Unauthorized(
                           new AuthenticationResponseDTO()
                           {
                               Message = "Username is not Exist"
@@ -57,7 +54,7 @@ namespace Authentication.Api.Controllers
                 //check is user deleted
                 if(existing_user.Status != 1)
                 {
-                    return BadRequest(
+                    return Unauthorized(
                          new AuthenticationResponseDTO()
                          {
                              Message = "This user is Deleted"
@@ -68,7 +65,7 @@ namespace Authentication.Api.Controllers
                 var isLocked = await _userManager.IsLockedOutAsync(existing_user);
                 if (isLocked==true)
                 {
-                    return BadRequest(
+                    return Unauthorized(
                          new AuthenticationResponseDTO()
                          {
                              IsLocked=true,
@@ -79,7 +76,7 @@ namespace Authentication.Api.Controllers
                 //check is user Email is conformed
                 if (existing_user.EmailConfirmed ==false)
                 {
-                    return BadRequest(
+                    return Unauthorized(
                          new AuthenticationResponseDTO()
                          {
                              EmailConfirmed = await _userManager.IsEmailConfirmedAsync(existing_user),
@@ -93,7 +90,7 @@ namespace Authentication.Api.Controllers
                 var isCorrect = await _userManager.CheckPasswordAsync(existing_user,authenticationRequest.Password);
                 if (isCorrect==false)
                 {
-                    return BadRequest(
+                    return Unauthorized(
                       new AuthenticationResponseDTO()
                       {
                           Message = "Password is Incorrect"
@@ -113,7 +110,7 @@ namespace Authentication.Api.Controllers
                 tokenRequest.UserName = authenticationRequest.UserName;
                 if(!roles.IsNullOrEmpty() )
                 {
-                    tokenRequest.Role = "Role";
+                    tokenRequest.Role = "Reguler";
                 }
                 tokenRequest.Role = roles[0];
                 tokenRequest.UserId = existing_user.Id;
@@ -138,7 +135,7 @@ namespace Authentication.Api.Controllers
 
             }
 
-            return BadRequest(
+            return Unauthorized(
               new AuthenticationResponseDTO()
               {
                   Message = "Invalid User Credentials"
@@ -146,9 +143,9 @@ namespace Authentication.Api.Controllers
         }
 
         //Register User
-
+        // need to change
         [HttpPost]
-        [Route("Register")]
+        [Route("Create")]
         public async Task<IActionResult> Register([FromBody] AuthenticationRequestDTO authenticationRequest)
         {
             if(ModelState.IsValid)
@@ -175,7 +172,7 @@ namespace Authentication.Api.Controllers
                     return BadRequest(
                         new AuthenticationResponseDTO()
                         {
-                            Message = "Email Is Already Exist"
+                            Message = "Email is Already Exist"
                         });
                 }
 
@@ -238,6 +235,11 @@ namespace Authentication.Api.Controllers
 
         }
 
+        /// <summary>
+        /// SHOULD UPDATE
+        /// </summary>
+        /// <param name="lockOutDetailsInfo"></param>
+        /// <returns></returns>
         [HttpPost("Security")]
         public async Task<IActionResult> ChangeSecurity([FromBody] LockOutDetailsInfoDTO lockOutDetailsInfo)
         {
@@ -263,6 +265,113 @@ namespace Authentication.Api.Controllers
 
             return BadRequest();
         }
+
+        [HttpPost]
+        [Route("Request-RefreshToken")]
+        public async Task<IActionResult> RefreshToken([FromBody] TokenInfoDTO tokenInfoDTO)
+        {
+            if (ModelState.IsValid) {
+
+                //check is token is valid
+                var result = await _jwtTokenHandler.VerifyToken(tokenInfoDTO);
+
+                if(result != null)
+                {
+                    return Ok(
+                        result);
+                }
+                return BadRequest(
+                    new AuthenticationResponseDTO
+                    {
+                        Message="Token Request is failed"
+                    });
+            }
+
+            return BadRequest();
+        }
+
+        
+        [HttpGet]
+        [Route("Get-User-Details")]
+        //[Authorize]
+        public async Task<IActionResult> GetUserDetails()
+        {
+            var currentUser = await _userManager.GetUserAsync(HttpContext.User);
+            if (currentUser != null)
+            {
+                return Ok(currentUser);
+            }
+            return BadRequest("Fetch user details is faild");
+        }
+    
+        [HttpPost]
+        [Route("Update")]
+        //[Authorize] should change
+        public async Task<IActionResult> UpdateUser(UserModel user) {
+            if (ModelState.IsValid)
+            {
+                var result =await _userManager.UpdateAsync(user);
+                if (result.Succeeded)
+                {
+                    return Ok("Sucessfully Updated");
+                }
+                return BadRequest();
+            }
+            return BadRequest();
+
+        
+        }
+
+        [HttpPost]
+        [Route("ChangePassword")]
+        [Authorize]
+        public async Task<IActionResult> ChangePassword([FromBody] ChangePasswordDTO changePassword)
+        {
+            // Retrieve the current user
+            var currentUser = await _userManager.GetUserAsync(HttpContext.User);
+
+            // Ensure the current user exists and model state is valid
+            if (currentUser == null || !ModelState.IsValid)
+            {
+                return BadRequest("Invalid request");
+            }
+
+            // Validate input parameters
+            if (string.IsNullOrWhiteSpace(changePassword.NewPassword) || string.IsNullOrWhiteSpace(changePassword.OldPassword))
+            {
+                return BadRequest("New password or old password is missing");
+            }
+
+            // Check if the old password matches
+            var isOldPasswordCorrect = await IsPasswordCorrectAsync(changePassword.OldPassword, currentUser);
+            if (!isOldPasswordCorrect)
+            {
+                return BadRequest("The old password is incorrect");
+            }
+
+            // Change password
+            var result = await _userManager.ChangePasswordAsync(currentUser, changePassword.OldPassword, changePassword.NewPassword);
+            if (result.Succeeded)
+            {
+                return Ok("Password changed successfully");
+            }
+
+            // Handle password change failure
+            var errorMessage = string.Join(", ", result.Errors.Select(error => error.Description));
+            return BadRequest(errorMessage);
+        }
+
+
+            // Check if the password is correct
+        private async Task<bool> IsPasswordCorrectAsync(string password, UserModel user)
+        {
+            if (user != null)
+            {
+                return await _userManager.CheckPasswordAsync(user, password);
+            }
+            return false;
+        }
+
     }
 
 }
