@@ -1,5 +1,4 @@
 ﻿using Authentication.Core.DTOs;
-using ERP.Authentication.Core.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Linq;

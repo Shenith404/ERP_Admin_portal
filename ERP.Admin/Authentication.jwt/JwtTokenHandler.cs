@@ -4,7 +4,6 @@
 using Authentication.Core.DTOs;
 using Authentication.Core.Entity;
 using Authentication.DataService.IConfiguration;
-using ERP.Authentication.Core.DTOs;
 using ERP.Authentication.Core.Entity;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Authentication.Core.DTOs
 {
-    public class UserModelDTO
+    public class UserModelResponseDTO
     {
 
         public string UserName { get; set; }

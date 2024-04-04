@@ -18,6 +18,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IUnitOfWorks, UnitOfWorks>();
 builder.Services.AddScoped<IJwtTokenHandler,JwtTokenHandler>();
+//configure Automapper
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 builder.Services.AddIdentityCore<UserModel>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddRoles<IdentityRole>()

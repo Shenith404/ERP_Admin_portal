@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "CvPaKAWipCxVtvIo+h8vQeW5S89S960uhaf/UA92I7Wy+Ix+fSqktzqYzwazdllleR+Cz4oU56dqwCegWFCPcg==",
+  "dgSpecHash": "T1kxo0CziQpqxXMXrIl2T3LKQk/VPDB4Sqk+rzW1JtTCvA9cZKYmYZCgbq+Gy0S1lVtp5M4xGbjkDlVlucf+ng==",
   "success": true,
   "projectFilePath": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\Authentication.Api\\Authentication.Api.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\SHENITH\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\SHENITH\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\SHENITH\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\SHENITH\\.nuget\\packages\\bouncycastle.cryptography\\2.2.1\\bouncycastle.cryptography.2.2.1.nupkg.sha512",

@@ -1,6 +1,7 @@
 ﻿using Authentication.Core.DTOs;
 using Authentication.DataService.IConfiguration;
 using Authentication.jwt;
+using AutoMapper;
 using Domain.Entities;
 using ERP.Authentication.Core.DTOs;
 using ERP.Authentication.Core.Entity;
@@ -14,22 +15,12 @@ namespace Authentication.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class AccountController : ControllerBase
+    public class AccountController : BaseController
     {
-        private readonly IJwtTokenHandler _jwtTokenHandler;
-        private readonly UserManager<UserModel> _userManager;
-       
-
-
-
-        public AccountController(IJwtTokenHandler jwtTokenHandler,
-            UserManager<UserModel> userManager
-           )
+        public AccountController(IJwtTokenHandler jwtTokenHandler, UserManager<UserModel> userManager, IMapper mapper) : base(jwtTokenHandler, userManager, mapper)
         {
-            _jwtTokenHandler = jwtTokenHandler;
-            _userManager = userManager;
-            
         }
+
 
 
 
@@ -301,7 +292,7 @@ namespace Authentication.Api.Controllers
             {
                 return Ok(currentUser);
             }
-            return BadRequest("Fetch user details is faild");
+            return Unauthorized("Fetch user details is faild");
         }
     
         [HttpPost]

@@ -1,4 +1,6 @@
-﻿using Authentication.jwt;
+﻿using Authentication.Core.DTOs;
+using Authentication.jwt;
+using AutoMapper;
 using ERP.Authentication.Core.Entity;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -7,21 +9,10 @@ namespace Authentication.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class AdminController : ControllerBase
+    public class AdminController : BaseController
     {
-        private readonly IJwtTokenHandler _jwtTokenHandler;
-        private readonly UserManager<UserModel> _userManager;
-
-
-
-
-        public AdminController(IJwtTokenHandler jwtTokenHandler,
-            UserManager<UserModel> userManager
-           )
+        public AdminController(IJwtTokenHandler jwtTokenHandler, UserManager<UserModel> userManager, IMapper mapper) : base(jwtTokenHandler, userManager, mapper)
         {
-            _jwtTokenHandler = jwtTokenHandler;
-            _userManager = userManager;
-
         }
 
         [HttpPost]
@@ -46,6 +37,8 @@ namespace Authentication.Api.Controllers
                 u.Email!.Contains(searchString, StringComparison.OrdinalIgnoreCase)   // Search by email
                   ).ToList();
 
+            //map the result
+          
             return Ok(searchResult);
         }
 
