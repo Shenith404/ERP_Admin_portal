@@ -8,14 +8,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "newPassword",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "oldPassword",
-        "Type": "System.String",
-        "IsRequired": false
+        "Name": "changePassword",
+        "Type": "Authentication.Core.DTOs.ChangePasswordDTO",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -38,18 +33,12 @@
   },
   {
     "ContainingType": "Authentication.Api.Controllers.AccountController",
-    "Method": "GetUsers",
-    "RelativePath": "api/Account/getUsers-details",
-    "HttpMethod": "POST",
+    "Method": "GetUserDetails",
+    "RelativePath": "api/Account/Get-User-Details",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [
-      {
-        "Name": "searchString",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
@@ -71,7 +60,7 @@
   {
     "ContainingType": "Authentication.Api.Controllers.AccountController",
     "Method": "RefreshToken",
-    "RelativePath": "api/Account/RefreshToken",
+    "RelativePath": "api/Account/Request-RefreshToken",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -112,6 +101,38 @@
         "Name": "user",
         "Type": "ERP.Authentication.Core.Entity.UserModel",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Authentication.Api.Controllers.AdminController",
+    "Method": "DeleteUser",
+    "RelativePath": "api/Admin/Delete-User",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Authentication.Api.Controllers.AdminController",
+    "Method": "GetUsers",
+    "RelativePath": "api/Admin/getUsers-details",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "searchString",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

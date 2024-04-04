@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5D4F7170-11D8-4062-9907-389F8A7D151C}|Authentication.Core\\Authentication.Core.csproj|e:\\erp_admin_portal\\erp_admin_portal\\erp.admin\\authentication.core\\entity\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D4F7170-11D8-4062-9907-389F8A7D151C}|Authentication.Core\\Authentication.Core.csproj|solutionrelative:authentication.core\\entity\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E031C244-6DC4-4257-9E21-491DCC38641D}|Authentication.Api\\Authentication.Api.csproj|e:\\erp_admin_portal\\erp_admin_portal\\erp.admin\\authentication.api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E031C244-6DC4-4257-9E21-491DCC38641D}|Authentication.Api\\Authentication.Api.csproj|solutionrelative:authentication.api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E031C244-6DC4-4257-9E21-491DCC38641D}|Authentication.Api\\Authentication.Api.csproj|e:\\erp_admin_portal\\erp_admin_portal\\erp.admin\\authentication.api\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E031C244-6DC4-4257-9E21-491DCC38641D}|Authentication.Api\\Authentication.Api.csproj|solutionrelative:authentication.api\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E031C244-6DC4-4257-9E21-491DCC38641D}|Authentication.Api\\Authentication.Api.csproj|e:\\erp_admin_portal\\erp_admin_portal\\erp.admin\\authentication.api\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E031C244-6DC4-4257-9E21-491DCC38641D}|Authentication.Api\\Authentication.Api.csproj|solutionrelative:authentication.api\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D73992CB-DA81-472E-A3DE-A95326FF15A7}|Authentication.jwt\\Authentication.jwt.csproj|e:\\erp_admin_portal\\erp_admin_portal\\erp.admin\\authentication.jwt\\jwttokenhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D73992CB-DA81-472E-A3DE-A95326FF15A7}|Authentication.jwt\\Authentication.jwt.csproj|solutionrelative:authentication.jwt\\jwttokenhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5D4F7170-11D8-4062-9907-389F8A7D151C}|Authentication.Core\\Authentication.Core.csproj|e:\\erp_admin_portal\\erp_admin_portal\\erp.admin\\authentication.core\\dtos\\changepassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D4F7170-11D8-4062-9907-389F8A7D151C}|Authentication.Core\\Authentication.Core.csproj|solutionrelative:authentication.core\\dtos\\changepassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,45 +26,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\Authentication.Api\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Authentication.Api\\Controllers\\HomeController.cs",
-              "ToolTip": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\Authentication.Api\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Authentication.Api\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAiwCEAAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "UserModel.cs",
+              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\Authentication.Core\\Entity\\UserModel.cs",
+              "RelativeDocumentMoniker": "Authentication.Core\\Entity\\UserModel.cs",
+              "ToolTip": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\Authentication.Core\\Entity\\UserModel.cs",
+              "RelativeToolTip": "Authentication.Core\\Entity\\UserModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T19:28:11.628Z",
+              "WhenOpened": "2024-04-04T04:43:09.357Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\Authentication.Api\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "Authentication.Api\\Controllers\\AccountController.cs",
-              "ToolTip": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\Authentication.Api\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "Authentication.Api\\Controllers\\AccountController.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAA0wJAAAAAXAAAA",
+              "DocumentIndex": 3,
+              "Title": "ChangePasswordDTO.cs",
+              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\Authentication.Core\\DTOs\\ChangePasswordDTO.cs",
+              "RelativeDocumentMoniker": "Authentication.Core\\DTOs\\ChangePasswordDTO.cs",
+              "ToolTip": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\Authentication.Core\\DTOs\\ChangePasswordDTO.cs",
+              "RelativeToolTip": "Authentication.Core\\DTOs\\ChangePasswordDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T19:07:41.244Z",
+              "WhenOpened": "2024-04-04T04:28:22.051Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "JwtTokenHandler.cs",
-              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\Authentication.jwt\\JwtTokenHandler.cs",
-              "RelativeDocumentMoniker": "Authentication.jwt\\JwtTokenHandler.cs",
-              "ToolTip": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\Authentication.jwt\\JwtTokenHandler.cs",
-              "RelativeToolTip": "Authentication.jwt\\JwtTokenHandler.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAOcAAAAcAAAA",
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\Authentication.Api\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Authentication.Api\\Controllers\\AdminController.cs",
+              "ToolTip": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\Authentication.Api\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Authentication.Api\\Controllers\\AdminController.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAkwDYAAABLAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T18:59:08.688Z",
+              "WhenOpened": "2024-04-04T04:06:00.137Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\Authentication.Api\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Authentication.Api\\Controllers\\AccountController.cs",
+              "ToolTip": "E:\\ERP_Admin_portal\\ERP_Admin_portal\\ERP.Admin\\Authentication.Api\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Authentication.Api\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAAC8BAAAAAAAAAAAkwC4BAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-04T03:52:56.893Z",
               "EditorCaption": ""
             }
           ]
