@@ -23,7 +23,6 @@ namespace Authentication.Api.Controllers
 
 
 
-
         //Login User
         [HttpPost("Login")]
         public async Task<IActionResult> Login([FromBody] AuthenticationRequestDTO authenticationRequest)
@@ -290,7 +289,8 @@ namespace Authentication.Api.Controllers
             var currentUser = await _userManager.GetUserAsync(HttpContext.User);
             if (currentUser != null)
             {
-                return Ok(currentUser);
+                var mappedUser =_mapper.Map<UserModelResponseDTO>(currentUser);
+                return Ok(mappedUser);
             }
             return Unauthorized("Fetch user details is faild");
         }

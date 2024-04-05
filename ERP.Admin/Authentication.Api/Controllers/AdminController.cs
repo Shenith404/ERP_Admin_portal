@@ -38,8 +38,9 @@ namespace Authentication.Api.Controllers
                   ).ToList();
 
             //map the result
+            var mapResutls =_mapper.Map<List<UserModelResponseDTO>>(searchResult);
           
-            return Ok(searchResult);
+            return Ok(mapResutls);
         }
 
         [HttpGet]
