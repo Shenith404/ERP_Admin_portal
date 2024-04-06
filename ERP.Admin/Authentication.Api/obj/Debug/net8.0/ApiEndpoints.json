@@ -138,6 +138,16 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Authentication.Api.Controllers.AdminController",
+    "Method": "test",
+    "RelativePath": "api/Admin/test",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Authentication.Api.Controllers.HomeController",
     "Method": "Index",
     "RelativePath": "api/Home",

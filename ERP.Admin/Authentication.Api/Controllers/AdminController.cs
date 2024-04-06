@@ -44,6 +44,14 @@ namespace Authentication.Api.Controllers
         }
 
         [HttpGet]
+        [Route("test")]
+        public async Task<IActionResult> test()
+        {
+            return Ok("ok");
+
+        }
+
+        [HttpGet]
         [Route("Delete-User")]
         //[Authorize] should change
         public async Task<IActionResult> DeleteUser([FromBody] string email)

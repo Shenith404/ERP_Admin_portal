@@ -1,0 +1,52 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/Home", // Downstream service path
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5028
+        }
+      ],
+      "UpstreamPathTemplate": "/", // Upstream path
+      "UpstreamHttpMethod": [ "GET" ] // HTTP method
+    },
+    {
+      "DownstreamPathTemplate": "/api/Admin/getUsers-details",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5028
+        }
+      ],
+      "UpstreamPathTemplate": "/erp/Admin/getUsers-details",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Admin",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5028
+        }
+      ],
+      "UpstreamPathTemplate": "/erp/Admin",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Admin/Delete-User",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5028
+        }
+      ],
+      "UpstreamPathTemplate": "/erp/Admin/Delete-User",
+      "UpstreamHttpMethod": [ "GET" ]
+    }
+  ]
+}

@@ -31,8 +31,8 @@ namespace Authentication.Api.Controllers
         public async Task<string> Index()
         {
 
-            var curretUser =await _userManager.GetUserAsync(HttpContext.User);
-            return $"{curretUser.UserName}";
+            
+            return $"this is home";
         } 
         
         [HttpGet]

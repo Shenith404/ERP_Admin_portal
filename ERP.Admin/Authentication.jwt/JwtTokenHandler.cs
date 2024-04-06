@@ -193,7 +193,7 @@ namespace Authentication.jwt
 
                     if(dbUser == null) { return null; }
                     TokenRequestDTO tokenRequest = new TokenRequestDTO();
-                    tokenRequest.UserName = dbUser.UserName;
+                    tokenRequest.UserName = dbUser.UserName!;
                     tokenRequest.Role = (await _userManager.GetRolesAsync(dbUser))[0];
                     tokenRequest.UserId = dbUser.Id;
                     //generate Token
